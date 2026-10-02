@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "category": "boss",
+  "group": "副本/燕子坞/桑土公",
+  "source": "开发组确认的旧功能规则，待官方资料页补证",
+  "entries": [
+    { "name": "碧磷僵尸", "allowAttack": false, "reason": "桑土公召唤物" }
+  ]
+}

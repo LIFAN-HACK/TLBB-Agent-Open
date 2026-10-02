@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "artifactId": "quest_log_panel_l1_v3_candidate",
+  "task": "detect",
+  "classNames": [
+    "quest_log_panel"
+  ],
+  "model": "quest_log_panel_l1_v3.onnx",
+  "input": {
+    "width": 960,
+    "height": 960,
+    "batch": 1,
+    "dynamic": false,
+    "layout": "NCHW",
+    "color": "RGB",
+    "normalization": "uint8_to_float32_div_255",
+    "resize": "aspect_ratio_letterbox",
+    "evaluationRect": false
+  },
+  "postprocess": {
+    "confidence": 0.45,
+    "nmsIou": 0.7,
+    "maxDetections": 5,
+    "mapBoxesToSourcePixels": true,
+    "coordinateFormat": "source_frame_xyxy"
+  },
+  "temporalGate": {
+    "minimumStableFrames": 2,
+    "lowConfidenceState": "unknown",
+    "ambiguousState": "unknown"
+  },
+  "l2Contract": "L2 OCR and control detection must consume only the confirmed L1 crop",
+  "runtimeAuthorized": false
+}

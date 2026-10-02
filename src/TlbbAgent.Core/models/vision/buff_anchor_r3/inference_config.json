@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "model_role": "l1_auxiliary_coordinate_detector",
+  "hashes": {
+    "onnx_sha256": "07f2f73ef15abd74225980e10719ed83f5216ccd1eaa7bb3b2308a550c332610"
+  },
+  "class_names": {
+    "0": "buff_anchor_row"
+  },
+  "input": {
+    "shape": [
+      1,
+      3,
+      1280,
+      1280
+    ],
+    "layout": "NCHW",
+    "color": "RGB",
+    "dtype": "float32",
+    "normalization": "divide_by_255",
+    "resize": "YOLO letterbox; retain scale and padding for source-pixel restoration"
+  },
+  "output": {
+    "shape": [
+      1,
+      5,
+      33600
+    ],
+    "format": "YOLOv8 detect: cx, cy, w, h, class0 score",
+    "confidence_threshold": 0.5,
+    "nms_iou_threshold": 0.5,
+    "coordinate_space": "restore to original screenshot pixels"
+  },
+  "failure_policy": "zero or low-confidence detections return absent/unknown and must not trigger clicks",
+  "l2_contract": "L2 receives crops derived from the detected first row. It identifies individual Buff icons and state; L1 never decides mounted, cooldown, or skill identity.",
+  "derived_capacity": "refine icon pitch from the detected row, then scan at most 6 columns by 5 rows; do not train or click an invisible capacity boundary",
+  "observed_resolutions": [
+    "1659x785",
+    "2560x1369",
+    "2576x1408"
+  ],
+  "authorization": "candidate_passed_current_suite_feature_flag_only"
+}

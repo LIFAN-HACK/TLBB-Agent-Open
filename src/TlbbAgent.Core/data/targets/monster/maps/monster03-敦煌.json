@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "敦煌",
+    "source":  "https://tl.changyou.com/data/monster/monster03.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 敦煌",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "残破兵俑",
+                        "group":  "敦煌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "恶猿",
+                        "group":  "敦煌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "荒原豹",
+                        "group":  "敦煌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "沙漠马匪",
+                        "group":  "敦煌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "沙坡狼",
+                        "group":  "敦煌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "榆木傀儡",
+                        "group":  "敦煌",
+                        "allowAttack":  true
+                    }
+                ]
+}

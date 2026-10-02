@@ -1,0 +1,606 @@
+{
+  "schema": 2,
+  "class_id": "bag_panel",
+  "zh_name": "背包",
+  "coordinate_space": "exact_l1_v3_crop_pixels_xyxy_half_open",
+  "crop_size": [
+    362,
+    441
+  ],
+  "reference_to_v3_offset_xy": [
+    0,
+    14
+  ],
+  "controls": [
+    {
+      "control_id": "tab_item",
+      "zh_name": "道具栏",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        12,
+        38,
+        52,
+        61
+      ],
+      "visual_bbox_norm": [
+        0.033149,
+        0.086168,
+        0.143646,
+        0.138322
+      ],
+      "safe_click_bbox_xyxy": [
+        17,
+        43,
+        47,
+        56
+      ],
+      "safe_click_bbox_norm": [
+        0.046961,
+        0.097506,
+        0.129834,
+        0.126984
+      ],
+      "click_point_xy": [
+        32,
+        49
+      ],
+      "click_point_norm": [
+        0.088398,
+        0.111111
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "tab_material",
+      "zh_name": "材料栏",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        56,
+        38,
+        96,
+        61
+      ],
+      "visual_bbox_norm": [
+        0.154696,
+        0.086168,
+        0.265193,
+        0.138322
+      ],
+      "safe_click_bbox_xyxy": [
+        61,
+        43,
+        91,
+        56
+      ],
+      "safe_click_bbox_norm": [
+        0.168508,
+        0.097506,
+        0.251381,
+        0.126984
+      ],
+      "click_point_xy": [
+        76,
+        49
+      ],
+      "click_point_norm": [
+        0.209945,
+        0.111111
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "tab_quest",
+      "zh_name": "任务栏",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        101,
+        38,
+        141,
+        61
+      ],
+      "visual_bbox_norm": [
+        0.279006,
+        0.086168,
+        0.389503,
+        0.138322
+      ],
+      "safe_click_bbox_xyxy": [
+        106,
+        43,
+        136,
+        56
+      ],
+      "safe_click_bbox_norm": [
+        0.292818,
+        0.097506,
+        0.375691,
+        0.126984
+      ],
+      "click_point_xy": [
+        121,
+        49
+      ],
+      "click_point_norm": [
+        0.334254,
+        0.111111
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "stall",
+      "zh_name": "摆摊",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        43,
+        277,
+        77,
+        295
+      ],
+      "visual_bbox_norm": [
+        0.118785,
+        0.628118,
+        0.212707,
+        0.668934
+      ],
+      "safe_click_bbox_xyxy": [
+        48,
+        280,
+        72,
+        292
+      ],
+      "safe_click_bbox_norm": [
+        0.132597,
+        0.634921,
+        0.198895,
+        0.662132
+      ],
+      "click_point_xy": [
+        60,
+        286
+      ],
+      "click_point_norm": [
+        0.165746,
+        0.648526
+      ],
+      "risk": "normal",
+      "runtime_default": "disabled_not_in_current_task",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "organize",
+      "zh_name": "整理",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        125,
+        277,
+        159,
+        295
+      ],
+      "visual_bbox_norm": [
+        0.345304,
+        0.628118,
+        0.439227,
+        0.668934
+      ],
+      "safe_click_bbox_xyxy": [
+        130,
+        280,
+        154,
+        292
+      ],
+      "safe_click_bbox_norm": [
+        0.359116,
+        0.634921,
+        0.425414,
+        0.662132
+      ],
+      "click_point_xy": [
+        142,
+        286
+      ],
+      "click_point_norm": [
+        0.392265,
+        0.648526
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "bag_grid_hash_changed_or_already_sorted"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "lock",
+      "zh_name": "锁定",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        207,
+        277,
+        241,
+        295
+      ],
+      "visual_bbox_norm": [
+        0.571823,
+        0.628118,
+        0.665746,
+        0.668934
+      ],
+      "safe_click_bbox_xyxy": [
+        212,
+        280,
+        236,
+        292
+      ],
+      "safe_click_bbox_norm": [
+        0.585635,
+        0.634921,
+        0.651934,
+        0.662132
+      ],
+      "click_point_xy": [
+        224,
+        286
+      ],
+      "click_point_norm": [
+        0.618785,
+        0.648526
+      ],
+      "risk": "normal",
+      "runtime_default": "disabled_not_in_current_task",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "split",
+      "zh_name": "拆分",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        289,
+        277,
+        323,
+        295
+      ],
+      "visual_bbox_norm": [
+        0.798343,
+        0.628118,
+        0.892265,
+        0.668934
+      ],
+      "safe_click_bbox_xyxy": [
+        294,
+        280,
+        318,
+        292
+      ],
+      "safe_click_bbox_norm": [
+        0.812155,
+        0.634921,
+        0.878453,
+        0.662132
+      ],
+      "click_point_xy": [
+        306,
+        286
+      ],
+      "click_point_norm": [
+        0.845304,
+        0.648526
+      ],
+      "risk": "normal",
+      "runtime_default": "disabled_not_in_current_task",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "close",
+      "zh_name": "关闭",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        330,
+        15,
+        359,
+        41
+      ],
+      "visual_bbox_norm": [
+        0.911602,
+        0.034014,
+        0.991713,
+        0.092971
+      ],
+      "safe_click_bbox_xyxy": [
+        336,
+        20,
+        354,
+        36
+      ],
+      "safe_click_bbox_norm": [
+        0.928177,
+        0.045351,
+        0.977901,
+        0.081633
+      ],
+      "click_point_xy": [
+        345,
+        28
+      ],
+      "click_point_norm": [
+        0.953039,
+        0.063492
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "bag_panel_absent"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "secondary_password",
+      "zh_name": "二级密码",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        9,
+        400,
+        83,
+        420
+      ],
+      "visual_bbox_norm": [
+        0.024862,
+        0.907029,
+        0.229282,
+        0.952381
+      ],
+      "safe_click_bbox_xyxy": [
+        15,
+        405,
+        77,
+        415
+      ],
+      "safe_click_bbox_norm": [
+        0.041436,
+        0.918367,
+        0.212707,
+        0.941043
+      ],
+      "click_point_xy": [
+        46,
+        410
+      ],
+      "click_point_norm": [
+        0.127072,
+        0.929705
+      ],
+      "risk": "normal",
+      "runtime_default": "disabled_not_in_current_task",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "recharge",
+      "zh_name": "充值",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        283,
+        401,
+        317,
+        420
+      ],
+      "visual_bbox_norm": [
+        0.781768,
+        0.909297,
+        0.875691,
+        0.952381
+      ],
+      "safe_click_bbox_xyxy": [
+        288,
+        405,
+        312,
+        416
+      ],
+      "safe_click_bbox_norm": [
+        0.79558,
+        0.918367,
+        0.861878,
+        0.943311
+      ],
+      "click_point_xy": [
+        300,
+        410
+      ],
+      "click_point_norm": [
+        0.828729,
+        0.929705
+      ],
+      "risk": "financial",
+      "runtime_default": "disabled_financial_action",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "exchange",
+      "zh_name": "兑换",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        321,
+        401,
+        355,
+        420
+      ],
+      "visual_bbox_norm": [
+        0.88674,
+        0.909297,
+        0.980663,
+        0.952381
+      ],
+      "safe_click_bbox_xyxy": [
+        326,
+        405,
+        350,
+        416
+      ],
+      "safe_click_bbox_norm": [
+        0.900552,
+        0.918367,
+        0.966851,
+        0.943311
+      ],
+      "click_point_xy": [
+        338,
+        410
+      ],
+      "click_point_norm": [
+        0.933702,
+        0.929705
+      ],
+      "risk": "financial",
+      "runtime_default": "disabled_financial_action",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "bag_cells",
+      "zh_name": "背包物品格",
+      "kind": "regular_grid",
+      "rows": 6,
+      "columns": 10,
+      "cell_size_px": [
+        35,
+        35
+      ],
+      "cell_gesture_default": "inspect_only",
+      "sell_gesture": "right_click",
+      "preconditions": [
+        "bag_panel_present_stable",
+        "shop_panel_present_stable",
+        "item_policy_equals_sell",
+        "item_identity_not_unknown",
+        "item_never_sell_false"
+      ],
+      "failure_policy": "unknown_or_protected_item_never_sell_and_noop",
+      "bbox_xyxy": [
+        8,
+        63,
+        358,
+        273
+      ],
+      "bbox_norm": [
+        0.022099,
+        0.142857,
+        0.98895,
+        0.619048
+      ],
+      "safe_cell_inset_px": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "cell_click_point_policy": "center_after_identity_and_policy_confirmation"
+    }
+  ],
+  "policy": {
+    "sell": "商店已稳定打开后，仅右键已通过白名单与保护规则的背包格；unknown、任务、绑定、技能书和never_sell物品一律不卖。",
+    "tab_switch": "必须先确认目标分页高亮，再解释格子内容。"
+  },
+  "annotation_status": "codex_pixel_audited_pending_user_review_not_runtime_authorized",
+  "runtime_authorized": false,
+  "provenance": {
+    "geometry_source": "train/runtime_db/ui_interactions_v2/bag_panel/annotation.json",
+    "migration": "pixel-audited control geometry aligned to the exact L1 V3 crop",
+    "legacy_111_rough_boxes_imported": false
+  }
+}

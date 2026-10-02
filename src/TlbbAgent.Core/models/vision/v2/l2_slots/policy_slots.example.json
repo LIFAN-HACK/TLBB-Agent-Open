@@ -1,0 +1,60 @@
+{
+  "mana_threshold": {
+    "player_mp_ratio_below": 0.35,
+    "required_skill_business_class": "mana_restore_skill",
+    "required_skill_cd_state": "ready"
+  },
+  "pet_health_threshold": {
+    "pet_hp_ratio_below": 0.45,
+    "required_skill_business_class": "health_restore_skill",
+    "required_skill_cd_state": "ready"
+  },
+  "minimap_tracking": {
+    "nearby_monster_present_false_action": "stop_find_monster_polling",
+    "nearby_monster_present_true_action": "allow_find_monster_or_attack_loop",
+    "coordinate_reader": "IOpenTextRecognizer on coord_text_roi_normalized"
+  },
+  "auto_navigation": {
+    "mode": "auto_nav",
+    "required_confirmations": ["map_name_ocr", "coord_text_ocr"],
+    "planner_modes": ["auto_nav_arrival", "auto_nav_progress"],
+    "actions": ["arrived", "continue_navigation", "maybe_stuck"],
+    "missing_samples": "datasets/07_寻路模块 currently has 0 images; coordinate-policy fallback is implemented"
+  },
+  "material_processing": {
+    "mode": "material",
+    "required_confirmations": ["panel_like_score", "button_candidate", "OpenText keyword"],
+    "keywords": ["材料", "加工", "合成", "制造", "确定", "全部制造"]
+  },
+  "monthly_card": {
+    "mode": "monthly_card",
+    "required_confirmations": ["panel_like_score", "button_candidate", "OpenText keyword"],
+    "keywords": ["月卡", "领取", "奖励", "福利", "确定"]
+  },
+  "town_return": {
+    "mode": "town_return",
+    "required_confirmations": ["OpenText keyword", "post_action_map_name_or_coord_changed"],
+    "keywords": ["回城", "返回", "传送", "驿站", "确定"]
+  },
+  "shop_cleanup": {
+    "mode": "shop_cleanup",
+    "required_confirmations": ["shop_or_bag_panel", "OpenText item name", "external keep_sell_policy"],
+    "keywords": ["商店", "出售", "修理", "背包", "确定"],
+    "policy_file": "shop_cleanup_policy.example.json",
+    "hard_rule": "never sell unknown item names"
+  },
+  "auto_nav_arrival": {
+    "mode": "auto_nav_arrival",
+    "required_inputs": ["coord_text", "target_x", "target_y"],
+    "optional_inputs": ["current_map", "target_map", "tolerance"],
+    "actions": ["arrived", "continue_navigation"],
+    "hard_rule": "arrival is based on OCR coordinate tolerance, not visual panel presence"
+  },
+  "auto_nav_progress": {
+    "mode": "auto_nav_progress",
+    "required_inputs": ["coord_texts", "target_x", "target_y"],
+    "optional_inputs": ["current_map", "target_map", "tolerance", "stuck_radius", "min_samples"],
+    "actions": ["arrived", "continue_navigation", "maybe_stuck"],
+    "hard_rule": "stuck detection is based on repeated OCR coordinates, not visual panel presence"
+  }
+}

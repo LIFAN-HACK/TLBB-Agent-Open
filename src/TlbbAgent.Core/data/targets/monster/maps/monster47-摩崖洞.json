@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "摩崖洞",
+    "source":  "https://tl.changyou.com/data/monster/monster47.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 摩崖洞",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "工魂影像",
+                        "group":  "摩崖洞",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨恶霸",
+                        "group":  "摩崖洞",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨护卫使",
+                        "group":  "摩崖洞",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨头领",
+                        "group":  "摩崖洞",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨土匪",
+                        "group":  "摩崖洞",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨卫兵",
+                        "group":  "摩崖洞",
+                        "allowAttack":  true
+                    }
+                ]
+}

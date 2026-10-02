@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "梅岭",
+    "source":  "https://tl.changyou.com/data/monster/monster15.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 梅岭",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "丛林野人",
+                        "group":  "梅岭",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "红袍蜘蛛",
+                        "group":  "梅岭",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "流寇",
+                        "group":  "梅岭",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "棚民",
+                        "group":  "梅岭",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山越护法",
+                        "group":  "梅岭",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山越祭司",
+                        "group":  "梅岭",
+                        "allowAttack":  true
+                    }
+                ]
+}

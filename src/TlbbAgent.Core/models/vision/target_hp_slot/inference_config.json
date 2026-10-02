@@ -1,0 +1,86 @@
+{
+  "artifact_key": "target_hp_slot",
+  "model_type": "yolov8n-detect",
+  "format": "onnx",
+  "model_file": "target_hp_slot_detect.onnx",
+  "model_version": "target-hp-slot-p2-20260710",
+  "input_scope": "target_frame_crop",
+  "input_size": 640,
+  "letterbox": true,
+  "input_tensor": {
+    "name": "images",
+    "shape": [
+      "batch",
+      3,
+      "height",
+      "width"
+    ],
+    "layout": "NCHW",
+    "dtype": "float32",
+    "color": "RGB",
+    "range": [
+      0.0,
+      1.0
+    ],
+    "letterbox_padding_rgb": [
+      114,
+      114,
+      114
+    ]
+  },
+  "output_tensor": {
+    "name": "output0",
+    "shape_at_640": [
+      "batch",
+      6,
+      8400
+    ],
+    "layout": "batch,(cx,cy,w,h,class0_score,class1_score),anchors",
+    "coordinates": "letterboxed_input_pixels",
+    "has_objectness_channel": false
+  },
+  "classes": [
+    "hp_bar_group",
+    "hp_fill_visible"
+  ],
+  "class_conf_thresholds": {
+    "hp_bar_group": 0.5,
+    "hp_fill_visible": 0.75
+  },
+  "nms_iou_threshold": 0.7,
+  "maximum_detections": 10,
+  "min_fill_width_px_in_target_frame": 2.0,
+  "native_target_frame_reference": {
+    "width": 260,
+    "height": 82,
+    "active_row_fill_width_px": 130
+  },
+  "state_policy": {
+    "gone": "target_frame_present == false",
+    "unknown": "target_frame_present == true and hp_bar_group_conf < 0.5",
+    "dead": "target_frame_present == true and hp_bar_group_conf >= 0.5 and no hp_fill_visible box passes confidence 0.75 and native-frame width 2px",
+    "alive": "target_frame_present == true and hp_bar_group_conf >= 0.5 and hp_fill_visible passes confidence 0.75 and native-frame width 2px"
+  },
+  "onnx_export": {
+    "dynamic": true,
+    "opset": 17,
+    "nms_in_model": false
+  },
+  "calibration": {
+    "validation_images": 65,
+    "test_images": 67,
+    "validation_state_accuracy": 1.0,
+    "test_state_accuracy": 1.0,
+    "validation_max_dead_fill_conf": 0.525416,
+    "validation_min_alive_fill_conf": 0.915205
+  },
+  "source_run": "train/runs/target_hp_slot_p2_group_detect_yolov8n",
+  "dataset_package": "train/packages/target_hp_slot_p2_group_detect",
+  "sha256": "cd006238f44523bc0780478eab01883f867f453b9c3459f1b4df48af47285ef0",
+  "limitations": [
+    "This slot model must run only after the main detector has localized target_frame.",
+    "A missing hp_bar_group is unknown, not dead.",
+    "The fill width estimates the active HP row and is not the aggregate percentage across all three staged boss bars.",
+    "The held-out test set contains 7 dead and 60 alive target-frame crops; new scene captures remain required for external validation."
+  ]
+}

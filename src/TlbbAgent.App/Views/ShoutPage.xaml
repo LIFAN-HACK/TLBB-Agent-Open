@@ -1,0 +1,168 @@
+<UserControl x:Class="TlbbAgent.App.Views.ShoutPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             FontFamily="{StaticResource AppFont}">
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled"
+                  HorizontalContentAlignment="Stretch"
+                  PanningMode="VerticalOnly">
+        <StackPanel Margin="24,20" MaxWidth="1120" HorizontalAlignment="Stretch">
+            <Grid Margin="0,0,0,16">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="喊话" Style="{StaticResource H1}" VerticalAlignment="Center" />
+                <Button Grid.Column="1"
+                        Content="＋ 新增喊话"
+                        Command="{Binding AddMessageCommand}"
+                        Style="{StaticResource PrimaryButton}" />
+            </Grid>
+
+            <Border Style="{StaticResource Card}" Padding="16,13" Margin="0,0,0,12">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Ellipse Width="7" Height="7" Fill="{StaticResource WarnBrush}" Margin="0,0,8,0" />
+                        <TextBlock Text="{Binding ChannelRoutingStatus}"
+                                   Style="{StaticResource Label}"
+                                   VerticalAlignment="Center" />
+                    </StackPanel>
+                    <TextBlock Grid.Column="1"
+                               Text="顺序喊话"
+                               Style="{StaticResource Label}"
+                               Margin="0,0,10,0"
+                               VerticalAlignment="Center" />
+                    <CheckBox Grid.Column="2"
+                              Style="{StaticResource ToggleSwitch}"
+                              IsChecked="{Binding QueueEnabled}"
+                              IsEnabled="{Binding IsChannelRoutingReady}"
+                              AutomationProperties.Name="顺序喊话总开关"
+                              VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+
+            <ListBox x:Name="MessageList"
+                     ItemsSource="{Binding Messages}"
+                     AllowDrop="True"
+                     Drop="MessageList_Drop"
+                     Background="Transparent"
+                     BorderThickness="0"
+                     Padding="0"
+                     HorizontalContentAlignment="Stretch"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Padding" Value="0" />
+                        <Setter Property="Margin" Value="0" />
+                        <Setter Property="Background" Value="Transparent" />
+                        <Setter Property="BorderThickness" Value="0" />
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListBoxItem">
+                                    <ContentPresenter />
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border Style="{StaticResource Card}" Padding="12" Margin="0,0,0,8">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="38" />
+                                    <ColumnDefinition Width="88" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="176" />
+                                    <ColumnDefinition Width="66" />
+                                    <ColumnDefinition Width="54" />
+                                    <ColumnDefinition Width="38" />
+                                </Grid.ColumnDefinitions>
+
+                                <Border Grid.Column="0"
+                                        Width="30"
+                                        Height="38"
+                                        Background="{StaticResource Bg.SurfaceAltBrush}"
+                                        CornerRadius="7"
+                                        Cursor="SizeAll"
+                                        PreviewMouseLeftButtonDown="DragHandle_PreviewMouseLeftButtonDown"
+                                        PreviewMouseMove="DragHandle_PreviewMouseMove">
+                                    <TextBlock Text="⋮⋮"
+                                               Foreground="{StaticResource Text.MutedBrush}"
+                                               FontSize="14"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center" />
+                                </Border>
+
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding Title}"
+                                           Style="{StaticResource H2}"
+                                           VerticalAlignment="Center"
+                                           Margin="8,0,10,0" />
+
+                                <TextBox Grid.Column="2"
+                                         Text="{Binding Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                         Margin="0,0,10,0"
+                                         VerticalContentAlignment="Center" />
+
+                                <ComboBox Grid.Column="3"
+                                          ItemsSource="{Binding ChannelOptions}"
+                                          DisplayMemberPath="Display"
+                                          SelectedValuePath="Value"
+                                          SelectedValue="{Binding Channel, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                          Margin="0,0,10,0"
+                                          VerticalContentAlignment="Center" />
+
+                                <Border Grid.Column="4"
+                                        Padding="7,3"
+                                        Margin="0,0,8,0"
+                                        Background="{StaticResource Accent.SoftBrush}"
+                                        CornerRadius="7"
+                                        VerticalAlignment="Center">
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsWorldChannel}" Value="True">
+                                                    <Setter Property="Visibility" Value="Visible" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
+                                    <TextBlock Text="3 分钟"
+                                               Foreground="{StaticResource Accent.HiBrush}"
+                                               FontSize="11"
+                                               HorizontalAlignment="Center" />
+                                </Border>
+
+                                <CheckBox Grid.Column="5"
+                                          Style="{StaticResource ToggleSwitch}"
+                                          IsChecked="{Binding Enabled, Mode=TwoWay}"
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" />
+
+                                <Button Grid.Column="6"
+                                        Width="34"
+                                        Height="34"
+                                        Padding="0"
+                                        Content="&#xE74D;"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        ToolTip="删除"
+                                        Style="{StaticResource GhostButton}"
+                                        Command="{Binding DataContext.RemoveMessageCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                        CommandParameter="{Binding}" />
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

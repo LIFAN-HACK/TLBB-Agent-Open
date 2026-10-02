@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "sect": "少林",
+  "purpose": "global_skill_library_bootstrap_for_client_version",
+  "safety_policy": "candidate_only_until_reviewed_ingame_templates_exist",
+  "capture_requirements": {
+    "scope": "one-time shared asset production; never per player or per slot arrangement",
+    "client_version": "0.08.1808 or record the actual tested version",
+    "states": [
+      "ready_without_cd_overlay",
+      "cooling_with_gray_or_digit_overlay"
+    ],
+    "minimum_ready_samples_per_visible_skill": 2,
+    "minimum_cooling_samples_per_visible_skill": 2,
+    "resolutions": [
+      "native",
+      "0.75_scale",
+      "0.50_scale"
+    ],
+    "crop_source": "L1 skill_bar crop; never use a hand-entered full-screen absolute ROI"
+  },
+  "skills": [
+    {
+      "skill_id": "sl_001",
+      "name": "伏虎拳",
+      "official_icon": "icons_raw/sl_001.jpg",
+      "official_sha256": "785ede6c33e8a8abcc6a20fb254baebe1da3ca474173c0f3243ecfa51f8c0bcc",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_002",
+      "name": "金刚伏魔圈",
+      "official_icon": "icons_raw/sl_002.jpg",
+      "official_sha256": "6a3cdd45c8611844221926d47d325efb39a5e6ca09e88fe5d600983d60bc2220",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_003",
+      "name": "弥勒护身",
+      "official_icon": "icons_raw/sl_003.jpg",
+      "official_sha256": "39e6a178f00a56c68fdd7d08ea9408c1ef3372af917343342075b7f879b91716",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_004",
+      "name": "大力金刚掌",
+      "official_icon": "icons_raw/sl_004.jpg",
+      "official_sha256": "8c28c66f5d19f6f0073e09e032c64be34bed223a865481eb79f41473d31e30e2",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_005",
+      "name": "一苇渡江",
+      "official_icon": "icons_raw/sl_005.jpg",
+      "official_sha256": "fd814a7bd7dd663c58fc071bf4aa3ce110df97b94d15f57cb1473b23d021c50c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_006",
+      "name": "拈花指",
+      "official_icon": "icons_raw/sl_006.jpg",
+      "official_sha256": "414066989a18af2761335d9354550335050d252bd7c93a4157eb48abdf5bf9da",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_007",
+      "name": "罗汉阵",
+      "official_icon": "icons_raw/sl_007.jpg",
+      "official_sha256": "657e52b855bba947d3575fda973c599b67a6da03d2817acf73a2bb8982a9d898",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_008",
+      "name": "狮子吼",
+      "official_icon": "icons_raw/sl_008.jpg",
+      "official_sha256": "246e02009903415e2c83de2bf5567e94df435e5b34f0384c63fcb9cc81a08116",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_009",
+      "name": "袈裟伏魔功",
+      "official_icon": "icons_raw/sl_009.jpg",
+      "official_sha256": "5a9686892c361f0644d2499ba6424d79dd01b68492416e2fc0a59e5f88d4c181",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_010",
+      "name": "礼敬如来",
+      "official_icon": "icons_raw/sl_010.jpg",
+      "official_sha256": "b98af3831263eddb9c6da2bcc285a59562ddc3e0ada0c2f6da24a45acc08ad0a",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_011",
+      "name": "灭此朝食",
+      "official_icon": "icons_raw/sl_011.gif",
+      "official_sha256": "9f1659cc9e8ce740c0e1d439e32a8fb43687003409737389aa2a1c62cd08368f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_012",
+      "name": "金钟罩",
+      "official_icon": "icons_raw/sl_012.jpg",
+      "official_sha256": "619d8023402d678304b78c224e0860d9c1002d8bd5e447bf52225aabeb0717e7",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_013",
+      "name": "摩诃无量",
+      "official_icon": "icons_raw/sl_013.jpg",
+      "official_sha256": "42973c9af5187fa2be0a266b70ae8396a9128a479a0c191a7f8c0ebee3b3dd8e",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_014",
+      "name": "铁布衫",
+      "official_icon": "icons_raw/sl_014.jpg",
+      "official_sha256": "7c85aa6cc0dd12cbc40f975901ca48328ddc3088d168c82938ed277591c91931",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_015",
+      "name": "百无禁忌",
+      "official_icon": "icons_raw/sl_015.jpg",
+      "official_sha256": "3724f5419a67a0de9f2d1b403a490b6194f236b573e043b65aa0531ee90eab8e",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_016",
+      "name": "破衲功",
+      "official_icon": "icons_raw/sl_016.jpg",
+      "official_sha256": "f111c59d27d160db2399c1d864d100120549ccb93a68babeafc0e1fb8674c833",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_017",
+      "name": "一拍两散",
+      "official_icon": "icons_raw/sl_017.jpg",
+      "official_sha256": "b047be5fdbfa5c6e34f428f5234ea6318a5a090a8166f53d245b4bbe8be8ee95",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_018",
+      "name": "韦陀杵",
+      "official_icon": "icons_raw/sl_018.jpg",
+      "official_sha256": "281a20a6c23d06d184be747f74b6e074bd66ecad9ba3a48be8d826df9af35204",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_019",
+      "name": "气贯长虹",
+      "official_icon": "icons_raw/sl_019.jpg",
+      "official_sha256": "2439a204a3217908462025c31c4dcd4faf274e95a9f5cecce0931559d33fc015",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_020",
+      "name": "如来神掌",
+      "official_icon": "icons_raw/sl_020.jpg",
+      "official_sha256": "22ac7c6db84cffddd5c07a8cde7bf6c03be3c798ee33ed59af8ab8cf3bef2953",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_021",
+      "name": "明镜台",
+      "official_icon": "icons_raw/sl_021.jpg",
+      "official_sha256": "a48b7d697ea2a647490005bc4fddba7323ce91a241a6e9b3e2a380d15ae9356d",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_022",
+      "name": "金刚不坏体",
+      "official_icon": "icons_raw/sl_022.jpg",
+      "official_sha256": "dfe89f6051d377424a253feb0908ca2cc336f7b4f25caf5ada162bb09dc23327",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_023",
+      "name": "易筋锻骨",
+      "official_icon": "icons_raw/sl_023.jpg",
+      "official_sha256": "96fa669cc035ba57a3249aaaf213c016efb33a67f2affc8b8283ead7b6b0a832",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_024",
+      "name": "调虎离山",
+      "official_icon": "icons_raw/sl_024.jpg",
+      "official_sha256": "34fb8b2c1257578afbcdb2abf91fe6963d020ee4ffa7307dbd2cc7a7e714900b",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "sl_025",
+      "name": "慈航普度",
+      "official_icon": "icons_raw/sl_025.jpg",
+      "official_sha256": "1b32b9762a009f16f587ac11cee74378dfb49fa57c9e23c669e0c7919998b529",
+      "ingame_variants": [],
+      "state": "capture_required"
+    }
+  ]
+}

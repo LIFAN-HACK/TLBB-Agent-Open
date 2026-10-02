@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "草原",
+    "source":  "https://tl.changyou.com/data/monster/monster13.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 草原",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "草原狼",
+                        "group":  "草原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "打草谷宋兵",
+                        "group":  "草原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "蒙古黑蜂",
+                        "group":  "草原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "闪电马匪",
+                        "group":  "草原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "弯刀马匪",
+                        "group":  "草原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "追风马匪",
+                        "group":  "草原",
+                        "allowAttack":  true
+                    }
+                ]
+}

@@ -1,0 +1,98 @@
+<Application x:Class="TlbbAgent.App.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:app="clr-namespace:TlbbAgent.App"
+             xmlns:vm="clr-namespace:TlbbAgent.App.ViewModels"
+             xmlns:views="clr-namespace:TlbbAgent.App.Views">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <app:IntegrationStatusToBrushConverter x:Key="StatusBrush" />
+            <app:IntegrationStatusToTextConverter x:Key="StatusText" />
+            <app:RunStateToTextConverter x:Key="RunStateText" />
+            <app:RunStateToBrushConverter x:Key="RunStateBrush" />
+            <app:LogLevelToBrushConverter x:Key="LevelBrush" />
+            <app:BitnessToTextConverter x:Key="BitnessText" />
+            <app:NullToVisibilityConverter x:Key="NotNullToVis" />
+            <app:NullToVisibilityConverter x:Key="NullToVis" Invert="True" />
+            <app:BoolToVisibilityConverter x:Key="BoolToVis" />
+            <app:BoolToVisibilityConverter x:Key="InvBoolToVis" Invert="True" />
+            <app:InverseBoolConverter x:Key="InvBool" />
+            <app:SkillConditionToTextConverter x:Key="CondText" />
+            <app:SkillKindToTextConverter x:Key="SkillKindText" />
+            <app:TargetFilterToTextConverter x:Key="TargetText" />
+            <app:TargetSwitchModeToTextConverter x:Key="TargetSwitchModeText" />
+            <app:DeathSwitchStrategyToTextConverter x:Key="DeathSwitchStrategyText" />
+            <app:InputDispatchModeToTextConverter x:Key="DispatchModeText" />
+            <app:CombatBackendPreferenceToTextConverter x:Key="CombatBackendPreferenceText" />
+            <app:GameBuiltInHangSwitchModeToTextConverter x:Key="BuiltInHangSwitchModeText" />
+            <app:SmallNpcGrabStrategyToTextConverter x:Key="SmallNpcStrategyText" />
+            <app:AutoLoginStepKindToTextConverter x:Key="AutoLoginStepKindText" />
+            <app:LifeCollectModeToTextConverter x:Key="LifeCollectModeText" />
+            <app:LifeCollectActionModeToTextConverter x:Key="LifeCollectActionModeText" />
+            <app:ReturnNavigationModeToTextConverter x:Key="ReturnNavigationModeText" />
+            <app:ReturnNavigationSlotToTextConverter x:Key="ReturnNavigationSlotText" />
+            <app:TradeRouteActionToTextConverter x:Key="TradeRouteActionText" />
+            <app:TradeExecutionModeToTextConverter x:Key="TradeExecutionModeText" />
+            <app:MaterialCraftStepActionToTextConverter x:Key="MaterialCraftStepActionText" />
+            <app:SchoolTaskStepActionToTextConverter x:Key="SchoolTaskStepActionText" />
+            <app:SchoolTaskExecutionModeToTextConverter x:Key="SchoolTaskExecutionModeText" />
+            <app:TreasureMapStepActionToTextConverter x:Key="TreasureMapStepActionText" />
+            <app:TreasureMapActionModeToTextConverter x:Key="TreasureMapActionModeText" />
+            <app:GuildContributionStepActionToTextConverter x:Key="GuildContributionStepActionText" />
+            <app:GuildContributionExecutionModeToTextConverter x:Key="GuildContributionExecutionModeText" />
+            <app:UtilityActionGroupToTextConverter x:Key="UtilityActionGroupText" />
+            <app:UtilityActionKindToTextConverter x:Key="UtilityActionKindText" />
+            <app:IntegrationStatusToBgConverter x:Key="StatusBg" />
+            <app:BoolToStableBgConverter x:Key="BoolToStableBg" />
+            <app:InputYieldActiveToBgConverter x:Key="InputYieldBg" />
+            <app:InputYieldActiveToBrushConverter x:Key="InputYieldBrush" />
+
+            <DataTemplate DataType="{x:Type vm:GlobalConfigPageViewModel}">
+                <views:GlobalConfigPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:AgentFeaturePageViewModel}">
+                <views:AgentFeaturePage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:BossModePageViewModel}">
+                <views:BossModePage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:DungeonModePageViewModel}">
+                <views:DungeonModePage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ShoutPageViewModel}">
+                <views:ShoutPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:TaskAutomationPageViewModel}">
+                <views:TaskAutomationPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ActivityCenterPageViewModel}">
+                <views:ActivityCenterPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:AutoCleanupPageViewModel}">
+                <views:AutoCleanupPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:MaterialProcessingPageViewModel}">
+                <views:MaterialProcessingPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:QuizAssistantPageViewModel}">
+                <views:QuizAssistantPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ModeConfigPageViewModel}">
+                <views:ModeConfigPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:HangPageViewModel}">
+                <views:HangPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ReturnPointPageViewModel}">
+                <views:ReturnPointPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:DataToolPageViewModel}">
+                <views:DataToolPage />
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

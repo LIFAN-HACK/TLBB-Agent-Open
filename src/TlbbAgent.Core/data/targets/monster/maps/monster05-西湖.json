@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "西湖",
+    "source":  "https://tl.changyou.com/data/monster/monster05.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 西湖",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "白堤柳鬼",
+                        "group":  "西湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "断桥花妖",
+                        "group":  "西湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "归风庄庄客",
+                        "group":  "西湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "花港毒蜂",
+                        "group":  "西湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "龙井水贼",
+                        "group":  "西湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "水鬼探子",
+                        "group":  "西湖",
+                        "allowAttack":  true
+                    }
+                ]
+}

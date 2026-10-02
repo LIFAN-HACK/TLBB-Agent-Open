@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "category": "boss",
+  "source": "https://tl.changyou.com/data/monster/monster23.shtml",
+  "sourceTitle": "新天龙八部官方网站 - 敌人 - BOSS",
+  "entries": [
+    { "name": "BOSS巡逻队——无敌飞天猫", "group": "玄武岛", "allowAttack": true },
+    { "name": "蹴鞠效率副本——孙美美", "group": "蹴鞠效率副本", "allowAttack": true },
+    { "name": "尖牙野猪王", "group": "野外BOSS", "allowAttack": true },
+    { "name": "暴龙", "group": "野外BOSS", "allowAttack": true },
+    { "name": "银皑企鹅王", "group": "银皑雪原", "allowAttack": true },
+    { "name": "混江龙", "group": "镜湖", "allowAttack": true },
+    { "name": "翻江蜃", "group": "镜湖/混江龙", "allowAttack": false },
+    { "name": "护宝神兽", "group": "宝藏洞", "allowAttack": true },
+    { "name": "护岛神兽", "group": "玄武岛", "allowAttack": true },
+    { "name": "莽牯朱蛤王", "group": "玄武岛", "allowAttack": true },
+    { "name": "白冥启", "group": "草原", "allowAttack": true },
+    { "name": "远古棋魂", "group": "珍珑棋局", "allowAttack": true },
+    { "name": "伪宋军副都统", "group": "连环副本", "allowAttack": true },
+    { "name": "伪宋军都统", "group": "连环副本", "allowAttack": true },
+    { "name": "余毒", "group": "连环副本", "allowAttack": true },
+    { "name": "红熊王", "group": "苏州", "allowAttack": true },
+    { "name": "毒丝蜘蛛王", "group": "燕王古墓", "allowAttack": true },
+    { "name": "白帝的阴影", "group": "燕王古墓", "allowAttack": true },
+    { "name": "赤霄", "group": "燕王古墓", "allowAttack": true }
+  ]
+}

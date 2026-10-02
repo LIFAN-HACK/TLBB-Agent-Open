@@ -1,0 +1,55 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "石林",
+    "source":  "https://tl.changyou.com/data/monster/monster12.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 石林",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "阿支",
+                        "group":  "石林",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "花岗狮王",
+                        "group":  "石林",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "花岗石人",
+                        "group":  "石林",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "花岗石狮",
+                        "group":  "石林",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "狼蛛",
+                        "group":  "石林",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山神",
+                        "group":  "石林",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "石人偃师",
+                        "group":  "石林",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "页岩石人",
+                        "group":  "石林",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "棕熊",
+                        "group":  "石林",
+                        "allowAttack":  true
+                    }
+                ]
+}

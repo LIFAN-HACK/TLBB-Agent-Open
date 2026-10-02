@@ -1,0 +1,58 @@
+{
+  "artifact_key": "tlbb_minimap_monster_marker_templates_v1",
+  "input_contract": "L1 minimap crop only",
+  "business_class": "orange_marker_evidence",
+  "templates": [
+    "orange_ring_1.png",
+    "orange_ring_2.png",
+    "orange_ring_3.png"
+  ],
+  "scales": [
+    0.65,
+    0.75,
+    0.85,
+    1.0,
+    1.15,
+    1.3
+  ],
+  "presence_threshold": 0.73,
+  "absence_threshold": 0.58,
+  "center_color_gate": "R>=205, B<=45, R-G>=65",
+  "sources": [
+    {
+      "image": "train/packages/layout_v2_new_modules_r3_pet_clean/dataset/images/map_000001.png",
+      "bbox": [
+        2446,
+        75,
+        2461,
+        90
+      ],
+      "sha256": "65b6db315fbe5e721b91cc22ebfc9b335bf39cca974b71a098cd7e68406add15",
+      "template": "orange_ring_1.png"
+    },
+    {
+      "image": "train/packages/layout_v2_new_modules_r3_pet_clean/dataset/images/map_000002.png",
+      "bbox": [
+        2446,
+        75,
+        2461,
+        90
+      ],
+      "sha256": "683176ca65293abf0e98aad361d3a038a505a4991270a3818e485813d1c63fd8",
+      "template": "orange_ring_2.png"
+    },
+    {
+      "image": "train/packages/layout_v2_new_modules_r3_pet_clean/dataset/images/map_000004.png",
+      "bbox": [
+        2446,
+        75,
+        2461,
+        90
+      ],
+      "sha256": "86160deb00d95a2830f2841e0fd2dd96f7bd815900e4825863f12c423901659f",
+      "template": "orange_ring_3.png"
+    }
+  ],
+  "semantic_note": "The three templates are animation phases captured with the blue-diamond UU helper enabled. orange_ring_1/3 are ring-like UU evidence; orange_ring_2 is visually ambiguous with a native filled monster dot. Resource diamonds are detected separately and are explicit non-monsters.",
+  "unknown_policy": "Scores between absence_threshold and presence_threshold are unknown; the planner must not start or stop polling from an unknown state."
+}

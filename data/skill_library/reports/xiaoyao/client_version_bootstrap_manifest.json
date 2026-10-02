@@ -1,0 +1,347 @@
+{
+  "schema": 1,
+  "sect": "逍遥",
+  "purpose": "global_skill_library_bootstrap_for_client_version",
+  "safety_policy": "candidate_only_until_reviewed_ingame_templates_exist",
+  "capture_requirements": {
+    "scope": "one-time shared asset production; never per player or per slot arrangement",
+    "client_version": "0.08.1808 or record the actual tested version",
+    "states": [
+      "ready_without_cd_overlay",
+      "cooling_with_gray_or_digit_overlay"
+    ],
+    "minimum_ready_samples_per_visible_skill": 2,
+    "minimum_cooling_samples_per_visible_skill": 2,
+    "resolutions": [
+      "native",
+      "0.75_scale",
+      "0.50_scale"
+    ],
+    "crop_source": "L1 skill_bar crop; never use a hand-entered full-screen absolute ROI"
+  },
+  "skills": [
+    {
+      "skill_id": "xy_001",
+      "name": "落英剑",
+      "official_icon": "icons_raw/xy_001.jpg",
+      "official_sha256": "83592a78f95d9e8a0214cc709dd781763294e597e1e35e4c7fa11e3b95c66b54",
+      "ingame_variants": [
+        "icons_ingame/xy_001_ready_01.png",
+        "icons_ingame/xy_001_ready_02.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_002",
+      "name": "桃花阵",
+      "official_icon": "icons_raw/xy_002.jpg",
+      "official_sha256": "dae8c824cd118d5d2d3822a33451525ec0407d3d3a41fc76c407a9a526edbb18",
+      "ingame_variants": [
+        "icons_ingame/xy_002_cooling_01.png",
+        "icons_ingame/xy_002_ready_01.png",
+        "icons_ingame/xy_002_ready_02.png",
+        "icons_ingame/xy_002_ready_03.png",
+        "icons_ingame/xy_002_ready_04.png",
+        "icons_ingame/xy_002_ready_05.png",
+        "icons_ingame/xy_002_ready_06.png",
+        "icons_ingame/xy_002_ready_07.png",
+        "icons_ingame/xy_002_ready_08.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_003",
+      "name": "墨守成规",
+      "official_icon": "icons_raw/xy_003.jpg",
+      "official_sha256": "d00f2f167cfd7225677b7449500143a339fbdfa25f410a9c2f5caef423c32d30",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xy_004",
+      "name": "弹指神功",
+      "official_icon": "icons_raw/xy_004.jpg",
+      "official_sha256": "54c787df8a94f5876a3fbcf16106625d4a857a56e45dd8fedea0281aaa723cd0",
+      "ingame_variants": [
+        "icons_ingame/xy_004_cooling_01.png",
+        "icons_ingame/xy_004_cooling_02.png",
+        "icons_ingame/xy_004_cooling_03.png",
+        "icons_ingame/xy_004_cooling_04.png",
+        "icons_ingame/xy_004_cooling_05.png",
+        "icons_ingame/xy_004_cooling_06.png",
+        "icons_ingame/xy_004_cooling_07.png",
+        "icons_ingame/xy_004_cooling_08.png",
+        "icons_ingame/xy_004_ready_01.png",
+        "icons_ingame/xy_004_ready_02.png",
+        "icons_ingame/xy_004_ready_03.png",
+        "icons_ingame/xy_004_ready_04.png",
+        "icons_ingame/xy_004_ready_05.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_005",
+      "name": "凌波微步",
+      "official_icon": "icons_raw/xy_005.jpg",
+      "official_sha256": "718f29aac4e490e26f2f957e68635efeb582ac6219b563f454b843f871e5ffcb",
+      "ingame_variants": [
+        "icons_ingame/xy_005_cooling_01.png",
+        "icons_ingame/xy_005_cooling_02.png",
+        "icons_ingame/xy_005_ready_01.png",
+        "icons_ingame/xy_005_ready_02.png",
+        "icons_ingame/xy_005_ready_03.png",
+        "icons_ingame/xy_005_ready_04.png",
+        "icons_ingame/xy_005_ready_05.png",
+        "icons_ingame/xy_005_ready_06.png",
+        "icons_ingame/xy_005_ready_07.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_006",
+      "name": "画地为牢",
+      "official_icon": "icons_raw/xy_006.jpg",
+      "official_sha256": "c3b5985be187532ff26849f998fe214728de1947cae6264fa667de86212e320e",
+      "ingame_variants": [
+        "icons_ingame/xy_006_cooling_01.png",
+        "icons_ingame/xy_006_cooling_02.png",
+        "icons_ingame/xy_006_cooling_03.png",
+        "icons_ingame/xy_006_cooling_04.png",
+        "icons_ingame/xy_006_ready_01.png",
+        "icons_ingame/xy_006_ready_02.png",
+        "icons_ingame/xy_006_ready_03.png",
+        "icons_ingame/xy_006_ready_04.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_007",
+      "name": "云体风身",
+      "official_icon": "icons_raw/xy_007.jpg",
+      "official_sha256": "0c59123c71b3b154cc35a2264223d6bf840b22e11b325d38908242e79fa5af5f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xy_008",
+      "name": "八阵图",
+      "official_icon": "icons_raw/xy_008.jpg",
+      "official_sha256": "e08185464ca55a302ccf1f4ff431a75ac4c70b44f288a41b8d06df10437418d7",
+      "ingame_variants": [
+        "icons_ingame/xy_008_ready_01.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_009",
+      "name": "火眼金睛",
+      "official_icon": "icons_raw/xy_009.jpg",
+      "official_sha256": "c44f855953ca6d4e1d893742262bec44dc7bcd2de938b2d115fb63f74bd7d8da",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xy_010",
+      "name": "诛仙阵",
+      "official_icon": "icons_raw/xy_010.jpg",
+      "official_sha256": "c8d99fec272208402908206b85171697dcfd7a3de734aa5085a3cc290981764f",
+      "ingame_variants": [
+        "icons_ingame/xy_010_ready_01.png",
+        "icons_ingame/xy_010_ready_02.png",
+        "icons_ingame/xy_010_ready_03.png",
+        "icons_ingame/xy_010_ready_04.png",
+        "icons_ingame/xy_010_ready_05.png",
+        "icons_ingame/xy_010_ready_06.png",
+        "icons_ingame/xy_010_ready_07.png",
+        "icons_ingame/xy_010_ready_08.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_011",
+      "name": "百鸟朝凤",
+      "official_icon": "icons_raw/xy_011.jpg",
+      "official_sha256": "4469918d09c3c7a79cf98fb81640aebb01aa770140abdc648ee601b8f4d8e1ae",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xy_012",
+      "name": "高山流水",
+      "official_icon": "icons_raw/xy_012.jpg",
+      "official_sha256": "66171908aacdfd4b2c0677335090e3f58419038137b41149fdc97cf81bfca386",
+      "ingame_variants": [
+        "icons_ingame/xy_012_ready_01.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_013",
+      "name": "大风歌",
+      "official_icon": "icons_raw/xy_013.jpg",
+      "official_sha256": "6023f93b9e8d76d369ec0c40b681ed1e565cc26d712db0c55b0a4326f66b35b8",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xy_014",
+      "name": "潇湘夜雨",
+      "official_icon": "icons_raw/xy_014.jpg",
+      "official_sha256": "1422da8cb22bb93230025b8aecb8b7584355eefabc019c17f48985dff96f7f12",
+      "ingame_variants": [
+        "icons_ingame/xy_014_cooling_01.png",
+        "icons_ingame/xy_014_cooling_02.png",
+        "icons_ingame/xy_014_cooling_03.png",
+        "icons_ingame/xy_014_cooling_04.png",
+        "icons_ingame/xy_014_cooling_05.png",
+        "icons_ingame/xy_014_cooling_06.png",
+        "icons_ingame/xy_014_cooling_07.png",
+        "icons_ingame/xy_014_cooling_08.png",
+        "icons_ingame/xy_014_ready_01.png",
+        "icons_ingame/xy_014_ready_02.png",
+        "icons_ingame/xy_014_ready_03.png",
+        "icons_ingame/xy_014_ready_04.png",
+        "icons_ingame/xy_014_ready_05.png",
+        "icons_ingame/xy_014_ready_06.png",
+        "icons_ingame/xy_014_ready_07.png",
+        "icons_ingame/xy_014_ready_08.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_015",
+      "name": "万壑松风",
+      "official_icon": "icons_raw/xy_015.jpg",
+      "official_sha256": "5ca7080ce9b78ae2518c0345538e026cb8639d2ae9c6929522ed52f3cd8e7f44",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xy_016",
+      "name": "溪山行旅",
+      "official_icon": "icons_raw/xy_016.jpg",
+      "official_sha256": "2bc64cd16db7d72346a9611d6626c84deedd0f91b8a1c0baed2396a22c7f9fa6",
+      "ingame_variants": [
+        "icons_ingame/xy_016_cooling_01.png",
+        "icons_ingame/xy_016_cooling_02.png",
+        "icons_ingame/xy_016_cooling_03.png",
+        "icons_ingame/xy_016_cooling_04.png",
+        "icons_ingame/xy_016_cooling_05.png",
+        "icons_ingame/xy_016_cooling_06.png",
+        "icons_ingame/xy_016_cooling_07.png",
+        "icons_ingame/xy_016_cooling_08.png",
+        "icons_ingame/xy_016_ready_01.png",
+        "icons_ingame/xy_016_ready_02.png",
+        "icons_ingame/xy_016_ready_03.png",
+        "icons_ingame/xy_016_ready_04.png",
+        "icons_ingame/xy_016_ready_05.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_017",
+      "name": "洛神图",
+      "official_icon": "icons_raw/xy_017.jpg",
+      "official_sha256": "c62794148b55825e490352dcaa0395d27cc8b838524175716c220a6ac2013cc3",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xy_018",
+      "name": "江行初雪",
+      "official_icon": "icons_raw/xy_018.jpg",
+      "official_sha256": "11d503c0727c28f3d44ffb522f8fe651ac79a47bbf783a123ade1e74e2d769bd",
+      "ingame_variants": [
+        "icons_ingame/xy_018_cooling_01.png",
+        "icons_ingame/xy_018_ready_01.png",
+        "icons_ingame/xy_018_ready_02.png",
+        "icons_ingame/xy_018_ready_03.png",
+        "icons_ingame/xy_018_ready_04.png",
+        "icons_ingame/xy_018_ready_05.png",
+        "icons_ingame/xy_018_ready_06.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_019",
+      "name": "排山倒海",
+      "official_icon": "icons_raw/xy_019.jpg",
+      "official_sha256": "1e3821cce2e0b2185100de3a1974ae43300cbed37081bc1266ae9cdd10ae2f9e",
+      "ingame_variants": [
+        "icons_ingame/xy_019_cooling_01.png",
+        "icons_ingame/xy_019_cooling_02.png",
+        "icons_ingame/xy_019_cooling_03.png",
+        "icons_ingame/xy_019_cooling_04.png",
+        "icons_ingame/xy_019_cooling_05.png",
+        "icons_ingame/xy_019_cooling_06.png",
+        "icons_ingame/xy_019_cooling_07.png",
+        "icons_ingame/xy_019_cooling_08.png",
+        "icons_ingame/xy_019_ready_01.png",
+        "icons_ingame/xy_019_ready_02.png",
+        "icons_ingame/xy_019_ready_03.png",
+        "icons_ingame/xy_019_ready_04.png",
+        "icons_ingame/xy_019_ready_05.png",
+        "icons_ingame/xy_019_ready_06.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_020",
+      "name": "波澜不惊",
+      "official_icon": "icons_raw/xy_020.jpg",
+      "official_sha256": "a186d9ec8e196c87224c3fc49e4e86a460d92b5e372f6e178269df2fb54e4546",
+      "ingame_variants": [
+        "icons_ingame/xy_020_cooling_01.png",
+        "icons_ingame/xy_020_ready_01.png",
+        "icons_ingame/xy_020_ready_02.png",
+        "icons_ingame/xy_020_ready_03.png",
+        "icons_ingame/xy_020_ready_04.png",
+        "icons_ingame/xy_020_ready_05.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_021",
+      "name": "惊涛骇浪",
+      "official_icon": "icons_raw/xy_021.jpg",
+      "official_sha256": "b56332c3b6c7ebdfba376436db13e1a4adc46f2ea65b8b9e6e7e4c8be81a7e78",
+      "ingame_variants": [
+        "icons_ingame/xy_021_cooling_01.png",
+        "icons_ingame/xy_021_cooling_02.png",
+        "icons_ingame/xy_021_cooling_03.png",
+        "icons_ingame/xy_021_cooling_04.png",
+        "icons_ingame/xy_021_cooling_05.png",
+        "icons_ingame/xy_021_ready_01.png",
+        "icons_ingame/xy_021_ready_02.png",
+        "icons_ingame/xy_021_ready_03.png",
+        "icons_ingame/xy_021_ready_04.png",
+        "icons_ingame/xy_021_ready_05.png"
+      ],
+      "state": "calibrated"
+    },
+    {
+      "skill_id": "xy_022",
+      "name": "定海神针",
+      "official_icon": "icons_raw/xy_022.jpg",
+      "official_sha256": "89d6a76e14ed69fb15363ab04607f82bbc75b790c6749bcae354628c068de79f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xy_023",
+      "name": "鲲跃北溟",
+      "official_icon": "icons_raw/xy_023.jpg",
+      "official_sha256": "deaf038b24c35df548ade32965d64d68be972c1c86ab4af460f6da3a3ad091f5",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xy_024",
+      "name": "步步生花",
+      "official_icon": "icons_raw/xy_024.jpg",
+      "official_sha256": "821e4e39c7a5577b87a619b9c0c2c22184ee7b3d27e0375441e91498cb789dd2",
+      "ingame_variants": [],
+      "state": "capture_required"
+    }
+  ]
+}

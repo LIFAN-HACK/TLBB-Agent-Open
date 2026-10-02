@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "status": "candidate_exported_not_runtime_authorized",
+  "bestEpoch": 2,
+  "epochsRun": 8,
+  "testResults": {
+    "metrics/precision(B)": 1.0,
+    "metrics/recall(B)": 1.0,
+    "metrics/mAP50(B)": 0.995,
+    "metrics/mAP50-95(B)": 0.9949999999999999,
+    "fitness": 0.9949999999999999
+  },
+  "knownRegressionProbe": "<TLBB_VISION_ROOT>/datasets/quest_log_panel_l1_v3/images/train/hard_npc_dialog_long_batian_native_001.png",
+  "knownRegressionProbeDetectionsAtConf045Nms070": [],
+  "knownRegressionProbePass": true,
+  "pt": {
+    "path": "<TLBB_VISION_ROOT>/artifacts/quest_log_panel_l1_v3_candidate/quest_log_panel_l1_v3.pt",
+    "sha256": "49EA217BED2CED0CEE3D2126C79E200D23B5DB98FDA4E51B198E941F08706C50"
+  },
+  "onnx": {
+    "path": "<TLBB_VISION_ROOT>/artifacts/quest_log_panel_l1_v3_candidate/quest_log_panel_l1_v3.onnx",
+    "sha256": "15AB659C94DB902ABA18A9EBE146465D4A1BAA1ACCF1223D0DD2964DD9795F4E"
+  },
+  "inference": {
+    "imgsz": 960,
+    "confidence": 0.45,
+    "nmsIou": 0.7,
+    "maxDet": 5
+  },
+  "runtimeAuthorized": false,
+  "releaseBlocker": "backend live regression and independent native cross-resolution positives required"
+}

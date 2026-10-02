@@ -1,0 +1,325 @@
+{
+  "artifact_key": "tlbb_l1_ui_aux_template_locator_v1",
+  "coordinate_space": "screen_xyxy",
+  "search_downsample": 0.5,
+  "nms_iou": 0.4,
+  "classes": {
+    "material_panel": {
+      "templates": [
+        "templates/material_panel.png"
+      ],
+      "panel_size": [
+        331,
+        438
+      ],
+      "template_offset": [
+        0,
+        0
+      ],
+      "search_roi_normalized": [
+        0.25,
+        0.08,
+        0.75,
+        0.88
+      ],
+      "threshold": 0.7,
+      "scales": [
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "source_image": "datasets\\99_其他杂项\\images\\20260710_065057_355_99_其他杂项_2576x1408_000128.png",
+      "source_panel_bbox": [
+        1091,
+        308,
+        1422,
+        746
+      ],
+      "source_sha256": "b81a03cb61c07f867f02fd78368e20d9ab57ff0eab2ee679c6a35cd149371fa1"
+    },
+    "monthly_card_panel": {
+      "templates": [
+        "templates/monthly_card_panel.png"
+      ],
+      "panel_size": [
+        353,
+        416
+      ],
+      "template_offset": [
+        0,
+        0
+      ],
+      "search_roi_normalized": [
+        0.25,
+        0.08,
+        0.75,
+        0.9
+      ],
+      "threshold": 0.7,
+      "scales": [
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "source_image": "datasets\\09_背包\\images\\20260710_014121_698_09_背包_2560x1369_000038.png",
+      "source_panel_bbox": [
+        1105,
+        454,
+        1458,
+        870
+      ],
+      "source_sha256": "a7a9c2a6322f0de6e185993b1ace8a380df7a4d7486bc23d309e301143f56f03"
+    },
+    "shop_panel": {
+      "templates": [
+        "templates/shop_panel.png",
+        "templates/shop_panel_2.png"
+      ],
+      "panel_size": [
+        349,
+        410
+      ],
+      "template_offset": [
+        0,
+        0
+      ],
+      "search_roi_normalized": [
+        0.2,
+        0.05,
+        0.78,
+        0.92
+      ],
+      "threshold": 0.62,
+      "scales": [
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "source_image": "datasets\\09_背包\\images\\20260710_011552_763_09_背包_2560x1369_000001.png",
+      "source_panel_bbox": [
+        1104,
+        167,
+        1453,
+        577
+      ],
+      "source_sha256": "84c1f2332a6778966109064f53ec444fc8cda5ca60fafb98a1100b9ff7d2396d"
+    },
+    "bag_panel": {
+      "templates": [
+        "templates/bag_panel.png"
+      ],
+      "panel_size": [
+        362,
+        441
+      ],
+      "template_offset": [
+        0,
+        0
+      ],
+      "search_roi_normalized": [
+        0.3,
+        0.05,
+        1.0,
+        1.0
+      ],
+      "threshold": 0.68,
+      "scales": [
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "source_image": "datasets\\09_背包\\images\\20260710_014132_905_09_背包_2560x1369_000042.png",
+      "source_panel_bbox": [
+        1710,
+        723,
+        2072,
+        1164
+      ],
+      "source_sha256": "dd647f8ea8a2d0b9c7f449037a7cde7e7cd1f3890728902f0c62afe8bad87ced"
+    },
+    "bank_panel": {
+      "templates": [
+        "templates/bank_panel.png"
+      ],
+      "panel_size": [
+        839,
+        442
+      ],
+      "template_offset": [
+        0,
+        0
+      ],
+      "search_roi_normalized": [
+        0.1,
+        0.05,
+        0.85,
+        0.9
+      ],
+      "threshold": 0.68,
+      "scales": [
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "source_image": "datasets\\09_背包\\images\\20260710_014259_397_09_背包_2560x1369_000067.png",
+      "source_panel_bbox": [
+        854,
+        274,
+        1693,
+        716
+      ],
+      "source_sha256": "22fa22b6303ac4448163e867b35eced32480a28b6e98efcb5b61d48e6b6f4e58"
+    },
+    "death_dialog": {
+      "templates": [
+        "templates/death_dialog.png"
+      ],
+      "panel_size": [
+        255,
+        119
+      ],
+      "template_offset": [
+        0,
+        0
+      ],
+      "search_roi_normalized": [
+        0.25,
+        0.05,
+        0.75,
+        0.55
+      ],
+      "threshold": 0.72,
+      "scales": [
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "source_image": "datasets\\99_其他杂项\\images\\20260710_082050_363_99_其他杂项_2576x1408_000174.png",
+      "source_panel_bbox": [
+        1135,
+        314,
+        1390,
+        433
+      ],
+      "source_sha256": "3d650f2fa3533f3ca6c0af50d5048f32873389f44298843306a347be5f7f1554"
+    },
+    "npc_destination_panel": {
+      "templates": [
+        "templates/npc_destination_panel.png"
+      ],
+      "panel_size": [
+        269,
+        372
+      ],
+      "template_offset": [
+        0,
+        0
+      ],
+      "search_roi_normalized": [
+        0.0,
+        0.02,
+        0.45,
+        0.8
+      ],
+      "threshold": 0.7,
+      "scales": [
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "source_image": "datasets\\99_其他杂项\\images\\20260710_082151_223_99_其他杂项_2576x1408_000185.png",
+      "source_panel_bbox": [
+        9,
+        201,
+        278,
+        573
+      ],
+      "source_sha256": "151f97ffa5704073649fd507ed5d592a03791aaa0bf2d9701363365dcd6dd229"
+    },
+    "auto_nav_panel": {
+      "templates": [
+        "templates/auto_nav_panel.png"
+      ],
+      "panel_size": [
+        216,
+        219
+      ],
+      "template_offset": [
+        0,
+        0
+      ],
+      "search_roi_normalized": [
+        0.6,
+        0.02,
+        1.0,
+        0.75
+      ],
+      "threshold": 0.68,
+      "scales": [
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "source_image": "datasets\\99_其他杂项\\images\\20260710_082155_762_99_其他杂项_2576x1408_000186.png",
+      "source_panel_bbox": [
+        2360,
+        300,
+        2576,
+        519
+      ],
+      "source_sha256": "8628e0b3196de64aedb9d8bfafba4454f4db569cb3395ef04e9433f1f4ee7dc5"
+    },
+    "confirm_dialog": {
+      "templates": [
+        "templates/confirm_dialog.png"
+      ],
+      "panel_size": [
+        253,
+        227
+      ],
+      "template_offset": [
+        0,
+        0
+      ],
+      "search_roi_normalized": [
+        0.25,
+        0.1,
+        0.75,
+        0.9
+      ],
+      "threshold": 0.65,
+      "scales": [
+        0.75,
+        0.875,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "source_image": "datasets\\14_常用NPC模块\\images\\20260710_015322_527_14_常用NPC模块_2560x1369_000009.png",
+      "source_panel_bbox": [
+        1155,
+        571,
+        1408,
+        798
+      ],
+      "source_sha256": "6e14bab3f2e49afe12d1cd31fed8f11cf4d2762273751a1e30d662f1d7ab996a"
+    }
+  },
+  "contract": "L1-Aux locates and classifies full-screen UI panels. L2 workers consume only the returned crop."
+}

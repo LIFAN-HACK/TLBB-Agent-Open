@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "玉溪",
+    "source":  "https://tl.changyou.com/data/monster/monster16.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 玉溪",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "大偃师",
+                        "group":  "玉溪",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "河妖",
+                        "group":  "玉溪",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "剧毒狼蛛",
+                        "group":  "玉溪",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "龙血石人",
+                        "group":  "玉溪",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "女娲石人",
+                        "group":  "玉溪",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "热不巴拉",
+                        "group":  "玉溪",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "偃师护法",
+                        "group":  "玉溪",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "云母石人",
+                        "group":  "玉溪",
+                        "allowAttack":  true
+                    }
+                ]
+}

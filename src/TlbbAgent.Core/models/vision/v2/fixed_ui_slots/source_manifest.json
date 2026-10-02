@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/kaijun924/TLBB_for_learn",
+  "source_file": "Client/Material2/Icons/PetSkill1.jpg",
+  "repository_declared_license": "Unlicense",
+  "copyright_note": "The repository license may not establish redistribution rights for original game artwork. Use internally and retain this provenance note.",
+  "sprite_mapping": {
+    "blood_sacrifice": {
+      "row": 2,
+      "column": 0
+    },
+    "advanced_blood_sacrifice": {
+      "row": 2,
+      "column": 1
+    },
+    "symbiosis": {
+      "row": 2,
+      "column": 2
+    },
+    "advanced_symbiosis": {
+      "row": 2,
+      "column": 3
+    }
+  },
+  "real_screenshot_checks": [
+    "blood_sacrifice",
+    "advanced_blood_sacrifice",
+    "advanced_symbiosis"
+  ]
+}

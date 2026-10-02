@@ -1,0 +1,55 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "龙泉",
+    "source":  "https://tl.changyou.com/data/monster/monster08.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 龙泉",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "常归云",
+                        "group":  "龙泉",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "归风剑魄",
+                        "group":  "龙泉",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "归风庄剑师",
+                        "group":  "龙泉",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "拦路水鬼",
+                        "group":  "龙泉",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "龙泉豹",
+                        "group":  "龙泉",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "水鬼刺客",
+                        "group":  "龙泉",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "通天",
+                        "group":  "龙泉",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "凿船水鬼",
+                        "group":  "龙泉",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "纵火水鬼",
+                        "group":  "龙泉",
+                        "allowAttack":  true
+                    }
+                ]
+}

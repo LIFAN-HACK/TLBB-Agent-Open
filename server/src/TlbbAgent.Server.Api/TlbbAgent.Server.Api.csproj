@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <RootNamespace>TlbbAgent.Server.Api</RootNamespace>
+    <AssemblyName>TlbbAgent.Server.Api</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TlbbAgent.Server.SharedKernel\TlbbAgent.Server.SharedKernel.csproj" />
+    <ProjectReference Include="..\TlbbAgent.Server.Modules.Identity\TlbbAgent.Server.Modules.Identity.csproj" />
+    <ProjectReference Include="..\TlbbAgent.Server.Modules.Billing\TlbbAgent.Server.Modules.Billing.csproj" />
+    <ProjectReference Include="..\TlbbAgent.Server.Modules.Entitlement\TlbbAgent.Server.Modules.Entitlement.csproj" />
+    <ProjectReference Include="..\TlbbAgent.Server.Modules.Licensing\TlbbAgent.Server.Modules.Licensing.csproj" />
+    <ProjectReference Include="..\TlbbAgent.Server.Modules.Release\TlbbAgent.Server.Modules.Release.csproj" />
+    <ProjectReference Include="..\TlbbAgent.Server.Modules.Audit\TlbbAgent.Server.Modules.Audit.csproj" />
+  </ItemGroup>
+</Project>

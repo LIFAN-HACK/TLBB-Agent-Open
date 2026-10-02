@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "sect": "星宿",
+  "purpose": "global_skill_library_bootstrap_for_client_version",
+  "safety_policy": "candidate_only_until_reviewed_ingame_templates_exist",
+  "capture_requirements": {
+    "scope": "one-time shared asset production; never per player or per slot arrangement",
+    "client_version": "0.08.1808 or record the actual tested version",
+    "states": [
+      "ready_without_cd_overlay",
+      "cooling_with_gray_or_digit_overlay"
+    ],
+    "minimum_ready_samples_per_visible_skill": 2,
+    "minimum_cooling_samples_per_visible_skill": 2,
+    "resolutions": [
+      "native",
+      "0.75_scale",
+      "0.50_scale"
+    ],
+    "crop_source": "L1 skill_bar crop; never use a hand-entered full-screen absolute ROI"
+  },
+  "skills": [
+    {
+      "skill_id": "xs_001",
+      "name": "蓝砂手",
+      "official_icon": "icons_raw/xs_001.jpg",
+      "official_sha256": "7b46571d90a4796c08f5648aabcaf64d264751ec020fd7817d89ea38bb3694f6",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_002",
+      "name": "连珠腐尸毒",
+      "official_icon": "icons_raw/xs_002.jpg",
+      "official_sha256": "b92c3d0db2afc97b5e1227bbf0d8dbc2fd2b7c0b99f2af308332128ff1a7063d",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_003",
+      "name": "百毒不侵",
+      "official_icon": "icons_raw/xs_003.jpg",
+      "official_sha256": "a2c45479974d1ae15bf9763aab9a53d93e3647b008c549580a60b3955e3eb1ac",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_004",
+      "name": "幽冥神掌",
+      "official_icon": "icons_raw/xs_004.jpg",
+      "official_sha256": "e9c7b32e52be223698a43e00a532d5a353afbf067efcf72f3aa9259232943992",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_005",
+      "name": "蝎尾针",
+      "official_icon": "icons_raw/xs_005.jpg",
+      "official_sha256": "bf85dc00a3aa7f7120f1083a4cf1767301cabdb37075306b8b5ce79ec3ef762f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_006",
+      "name": "毒蟾功",
+      "official_icon": "icons_raw/xs_006.jpg",
+      "official_sha256": "8d13ab066afaf4e69e146ad501ed18a495701467829c413a5608b1b6e8e90a4f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_007",
+      "name": "蜈蚣阵",
+      "official_icon": "icons_raw/xs_007.jpg",
+      "official_sha256": "67433aa9299deac7c0f4dafea74f7ceb2a2a36876229a7ecddcb062f4b2a6bdc",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_008",
+      "name": "笑里藏刀",
+      "official_icon": "icons_raw/xs_008.jpg",
+      "official_sha256": "dc370b7c3679ae39e9f1a41485e65e2ae24781bc7dbd28523dce9975a6e359cc",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_009",
+      "name": "谈笑自若",
+      "official_icon": "icons_raw/xs_009.jpg",
+      "official_sha256": "7fcd35ac706876868076ec0fd12b495f0c964f41022837c1359c0602efa53bee",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_010",
+      "name": "含笑九泉",
+      "official_icon": "icons_raw/xs_010.jpg",
+      "official_sha256": "f94b21889437fc4d57f793b38542efd07edf0e130a0c36b4fb106f096f5efb7f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_011",
+      "name": "木甲术",
+      "official_icon": "icons_raw/xs_011.jpg",
+      "official_sha256": "1132636638e3b06d9729c9c83884d1143797238cb30077678c40221caaa80b80",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_012",
+      "name": "青蛇毒掌",
+      "official_icon": "icons_raw/xs_012.jpg",
+      "official_sha256": "124ff47a8087d9eda0a5cbbaa2b54415075ebb9ccfbde0a06565afc5a7dcf9a6",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_013",
+      "name": "木遁",
+      "official_icon": "icons_raw/xs_013.jpg",
+      "official_sha256": "a49020e065edc8a2c6f4e509d86f9db9d727a0508e520ab3422e0191fb658743",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_014",
+      "name": "指鹿为马",
+      "official_icon": "icons_raw/xs_014.jpg",
+      "official_sha256": "7233cb4fef94c61006e384a0cfea8d0181acd55848b5100f99a87722919f2f5d",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_015",
+      "name": "淬毒术",
+      "official_icon": "icons_raw/xs_015.jpg",
+      "official_sha256": "90455c95c0c171424735bb97b3996150861a1541e37e356957dd9dc900adfb42",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_016",
+      "name": "冰蚕毒掌",
+      "official_icon": "icons_raw/xs_016.jpg",
+      "official_sha256": "262461645ac6a2cac840903222a50de3f046930daf67a2fc829abacaaa99858c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_017",
+      "name": "水遁",
+      "official_icon": "icons_raw/xs_017.jpg",
+      "official_sha256": "593e118bdfc802c96e3f5698c5a78ae46f033910e701ae399a53b871f38fd327",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_018",
+      "name": "经脉逆行",
+      "official_icon": "icons_raw/xs_018.jpg",
+      "official_sha256": "449505a16b2c711236b10bf42d568d4e1c9b147eb03a7c1357b86ba4de5ace20",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_019",
+      "name": "玉碎昆岗",
+      "official_icon": "icons_raw/xs_019.jpg",
+      "official_sha256": "8980904448d3247b51986a759eaaffe7c94cf6ea6c92005c5fc2be5fab0d2e1c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_020",
+      "name": "金石俱焚",
+      "official_icon": "icons_raw/xs_020.jpg",
+      "official_sha256": "a216b26e10a99391673aa733202f0854aedaf037de0b2214d79c69ddaa561370",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_021",
+      "name": "天地同寿",
+      "official_icon": "icons_raw/xs_021.jpg",
+      "official_sha256": "867ebbc2d820d487588cb69b4ea0c0b5e8596739eb619a51f083c30f2e6f9e90",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_022",
+      "name": "含笑半步颠",
+      "official_icon": "icons_raw/xs_022.jpg",
+      "official_sha256": "75bb5d3973c941e22475c477f79d31a07021eef37ccad87f2fc983d872d97101",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_023",
+      "name": "化骨绵掌",
+      "official_icon": "icons_raw/xs_023.jpg",
+      "official_sha256": "7962a8e493b7e3cefe815390feb9bbe89d4c768cc95d4a2f366e941c37556b52",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "xs_024",
+      "name": "一日丧命散",
+      "official_icon": "icons_raw/xs_024.jpg",
+      "official_sha256": "4d96dca76ca29ec29d089b046e9048ca077a722cd23fde0081bafabf7e89bf2b",
+      "ingame_variants": [],
+      "state": "capture_required"
+    }
+  ]
+}

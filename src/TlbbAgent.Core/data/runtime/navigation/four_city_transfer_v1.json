@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "assetId": "four_city_transfer_v1",
+  "purpose": "four_city_transfer_read_only_route_asset",
+  "gameVariant": "current_user_client_requires_live_calibration",
+  "runtimeAuthorized": false,
+  "safetyDefault": "noop",
+  "source": {
+    "kind": "official_reference",
+    "url": "https://tl.changyou.com/events/helper/npc.shtml",
+    "retrievedAt": "2026-07-14",
+    "caveat": "NPC names and map coordinates are reference candidates only. Every dialog option and arrival transition must be captured and replay-verified on the user's current client before input is enabled."
+  },
+  "cities": [
+    {
+      "id": "luoyang",
+      "name": "洛阳",
+      "stationCandidates": [
+        {
+          "name": "吴德昌",
+          "mapX": 235,
+          "mapY": 322,
+          "role": "驿站老板",
+          "runtimeStatus": "capture_required"
+        },
+        {
+          "name": "车传义",
+          "mapX": 218,
+          "mapY": 337,
+          "role": "驿站老板",
+          "runtimeStatus": "capture_required"
+        }
+      ]
+    },
+    {
+      "id": "suzhou",
+      "name": "苏州",
+      "stationCandidates": [
+        {
+          "name": "李乘风",
+          "mapX": 204,
+          "mapY": 256,
+          "role": "驿站老板",
+          "runtimeStatus": "capture_required"
+        },
+        {
+          "name": "车传安",
+          "mapX": 335,
+          "mapY": 250,
+          "role": "驿站老板",
+          "runtimeStatus": "capture_required"
+        }
+      ]
+    },
+    {
+      "id": "dali",
+      "name": "大理",
+      "stationCandidates": [
+        {
+          "name": "崔逢九",
+          "mapX": 253,
+          "mapY": 121,
+          "role": "驿站老板",
+          "runtimeStatus": "capture_required"
+        },
+        {
+          "name": "车传志",
+          "mapX": 258,
+          "mapY": 82,
+          "role": "驿站老板",
+          "runtimeStatus": "capture_required"
+        }
+      ]
+    },
+    {
+      "id": "loulan",
+      "name": "楼兰",
+      "stationCandidates": [
+        {
+          "name": "艾尼瓦尔",
+          "mapX": 285,
+          "mapY": 130,
+          "role": "驿站老板",
+          "runtimeStatus": "capture_required"
+        },
+        {
+          "name": "车传平",
+          "mapX": 297,
+          "mapY": 88,
+          "role": "驿站老板",
+          "runtimeStatus": "capture_required"
+        }
+      ]
+    }
+  ],
+  "directedLegs": [
+    { "from": "luoyang", "to": "suzhou", "status": "capture_required" },
+    { "from": "luoyang", "to": "dali", "status": "capture_required" },
+    { "from": "luoyang", "to": "loulan", "status": "capture_required" },
+    { "from": "suzhou", "to": "luoyang", "status": "capture_required" },
+    { "from": "suzhou", "to": "dali", "status": "capture_required" },
+    { "from": "suzhou", "to": "loulan", "status": "capture_required" },
+    { "from": "dali", "to": "luoyang", "status": "capture_required" },
+    { "from": "dali", "to": "suzhou", "status": "capture_required" },
+    { "from": "dali", "to": "loulan", "status": "capture_required" },
+    { "from": "loulan", "to": "luoyang", "status": "capture_required" },
+    { "from": "loulan", "to": "suzhou", "status": "capture_required" },
+    { "from": "loulan", "to": "dali", "status": "capture_required" }
+  ],
+  "requiredEvidencePerLeg": [
+    "source_map_name_and_coordinate_readback",
+    "npc_name_or_target_panel_ocr",
+    "dialog_window_detection",
+    "destination_option_text_and_click_box",
+    "arrival_map_name_and_stable_coordinate_readback",
+    "negative_sample_for_wrong_dialog_or_blocked_transfer"
+  ],
+  "stateMachineContract": [
+    "LocateCurrentMap",
+    "ResolveVerifiedLeg",
+    "NavigateToNpc",
+    "ConfirmNpcIdentity",
+    "OpenDialog",
+    "SelectDestination",
+    "VerifyMapChanged",
+    "VerifyCoordinatesStable"
+  ],
+  "releaseGate": {
+    "minimumIndependentSessionsPerLeg": 2,
+    "minimumClientResolutionsPerLeg": 2,
+    "allTwelveDirectedLegsRequired": true,
+    "unknownOrStaleFrameAction": "noop",
+    "currentStatus": "not_releasable"
+  }
+}

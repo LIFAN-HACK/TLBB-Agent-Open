@@ -1,0 +1,25 @@
+{
+  "keep_items": [
+    "珍兽",
+    "宝石",
+    "强化",
+    "打造图",
+    "高级",
+    "绑定",
+    "元宝",
+    "交子",
+    "任务"
+  ],
+  "sell_items": [
+    "破损",
+    "粗布",
+    "劣质",
+    "垃圾",
+    "杂物"
+  ],
+  "hard_rules": [
+    "unknown item never sells",
+    "keep policy has priority over sell policy",
+    "OCR text must be available before any sell decision"
+  ]
+}

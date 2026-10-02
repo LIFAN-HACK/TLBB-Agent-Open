@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "银皑雪原",
+    "source":  "https://tl.changyou.com/data/monster/monster29.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 银皑雪原",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "成年乖企鹅",
+                        "group":  "银皑雪原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "成年灵企鹅",
+                        "group":  "银皑雪原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "成年企鹅",
+                        "group":  "银皑雪原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "成年圣企鹅",
+                        "group":  "银皑雪原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "雪原狼",
+                        "group":  "银皑雪原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "雪原莽盖",
+                        "group":  "银皑雪原",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "银皑雪人",
+                        "group":  "银皑雪原",
+                        "allowAttack":  true
+                    }
+                ]
+}

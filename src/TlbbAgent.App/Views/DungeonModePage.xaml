@@ -1,0 +1,74 @@
+<UserControl x:Class="TlbbAgent.App.Views.DungeonModePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             FontFamily="{StaticResource AppFont}">
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled"
+                  HorizontalContentAlignment="Stretch"
+                  Padding="24,20">
+        <StackPanel MaxWidth="920" HorizontalAlignment="Stretch">
+            <TextBlock Text="{Binding Title}" Style="{StaticResource H1}" />
+
+            <Border Style="{StaticResource Card}"
+                    Margin="0,18,0,0"
+                    Padding="18,6">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="58" />
+                        <RowDefinition Height="1" />
+                        <RowDefinition Height="58" />
+                        <RowDefinition Height="1" />
+                        <RowDefinition Height="58" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="状态"
+                               Style="{StaticResource Label}"
+                               VerticalAlignment="Center" />
+                    <Border Grid.Column="1"
+                            Style="{StaticResource Badge}"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Background="{StaticResource Bg.SurfaceAltBrush}">
+                        <TextBlock Text="{Binding Status}"
+                                   Foreground="{StaticResource Text.SecondaryBrush}"
+                                   FontSize="11" />
+                    </Border>
+
+                    <Border Grid.Row="1"
+                            Grid.ColumnSpan="2"
+                            Background="{StaticResource Stroke.SubtleBrush}" />
+
+                    <TextBlock Grid.Row="2"
+                               Text="当前副本"
+                               Style="{StaticResource Label}"
+                               VerticalAlignment="Center" />
+                    <TextBlock Grid.Row="2"
+                               Grid.Column="1"
+                               Text="{Binding CurrentDungeon}"
+                               Style="{StaticResource Label}"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center" />
+
+                    <Border Grid.Row="3"
+                            Grid.ColumnSpan="2"
+                            Background="{StaticResource Stroke.SubtleBrush}" />
+
+                    <TextBlock Grid.Row="4"
+                               Text="当前阶段"
+                               Style="{StaticResource Label}"
+                               VerticalAlignment="Center" />
+                    <TextBlock Grid.Row="4"
+                               Grid.Column="1"
+                               Text="{Binding CurrentStage}"
+                               Style="{StaticResource Label}"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

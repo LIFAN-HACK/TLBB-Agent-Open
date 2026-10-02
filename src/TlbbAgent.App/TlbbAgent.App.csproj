@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>TlbbAgent.App</RootNamespace>
+    <AssemblyName>TLBB Agent</AssemblyName>
+    <AssemblyTitle>TLBB Agent</AssemblyTitle>
+    <Product>TLBB Agent</Product>
+    <Authors>TLBB Agent</Authors>
+    <Company>TLBB Agent</Company>
+    <Description>新一代的AI智能辅助系统</Description>
+    <ApplicationIcon>Assets\Brand\tlbb-agent-v2.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TlbbAgent.Contracts\TlbbAgent.Contracts.csproj" />
+    <ProjectReference Include="..\TlbbAgent.Core\TlbbAgent.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Brand\official-xtl-primary-logo.png" />
+    <Resource Include="Assets\Brand\tlbb-agent-logo-v2.png" />
+    <Resource Include="Assets\Brand\tlbb-agent-icon-source-v2.png" />
+    <Resource Include="Assets\Brand\tlbb-agent-poster.png" />
+    <Resource Include="Assets\Brand\tlbb-agent-v2.ico" />
+  </ItemGroup>
+
+  <Target Name="WriteRuntimeManifest"
+          AfterTargets="Build"
+          Condition="'$(DesignTimeBuild)' != 'true'">
+    <Exec Command="powershell -NoProfile -ExecutionPolicy Bypass -File &quot;$(MSBuildProjectDirectory)\..\..\tools\Write-RuntimeManifest.ps1&quot; -OutputDirectory &quot;$(TargetDir).&quot; -Configuration &quot;$(Configuration)&quot;" />
+  </Target>
+
+</Project>

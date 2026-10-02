@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "artifactId": "quest_log_panel_l1_v3_candidate",
+  "createdAt": "2026-07-16T00:45:00+08:00",
+  "status": "candidate_quality_gate_pass_not_runtime_authorized",
+  "task": "detect",
+  "classNames": [
+    "quest_log_panel"
+  ],
+  "input": {
+    "width": 960,
+    "height": 960,
+    "batch": 1,
+    "dynamic": false,
+    "resize": "aspect_ratio_letterbox"
+  },
+  "recommendedConfidence": 0.45,
+  "nmsIou": 0.7,
+  "files": {
+    "onnx": {
+      "path": "quest_log_panel_l1_v3.onnx",
+      "bytes": 12475321,
+      "sha256": "15AB659C94DB902ABA18A9EBE146465D4A1BAA1ACCF1223D0DD2964DD9795F4E"
+    },
+    "pt": {
+      "path": "quest_log_panel_l1_v3.pt",
+      "bytes": 6309738,
+      "sha256": "49EA217BED2CED0CEE3D2126C79E200D23B5DB98FDA4E51B198E941F08706C50"
+    }
+  },
+  "dataset": {
+    "id": "quest_log_panel_l1_v3",
+    "imageCount": 1285,
+    "trainPositive": 509,
+    "trainNegative": 722,
+    "valPositive": 6,
+    "valNegative": 14,
+    "testPositive": 14,
+    "testNegative": 20,
+    "newNpcDialogHardNegatives": 169,
+    "validationAndTestUnchangedFromV2": true,
+    "manifestSha256": "07729705A11C49298BAD94584C849DA48B9B778436132A5D7779792A5B07C67E",
+    "summarySha256": "6628D91C4C278132986A969D3B9500D0E5BAEEA7EB64550914F7F3D49E6373CF"
+  },
+  "qualityGate": {
+    "confidence": 0.45,
+    "nmsIou": 0.7,
+    "ptPositiveRecall": 1.0,
+    "ptNegativeFalsePositiveFrames": 0,
+    "ptMedianIou": 0.990054,
+    "ptP90EdgeErrorPx": 1.4998,
+    "onnxPositiveRecall": 1.0,
+    "onnxNegativeFalsePositiveFrames": 0,
+    "onnxMedianIou": 0.990028,
+    "onnxP90EdgeErrorPx": 1.5005,
+    "longBatianNativeRegressionPassed": true,
+    "crossResolutionPositiveGatePassed": false
+  },
+  "runtimeContract": "full client frame -> fixed 960-square letterbox -> L1 quest panel bbox -> temporal gate -> L2 OCR/control slots -> policy",
+  "runtimeAuthorized": false
+}

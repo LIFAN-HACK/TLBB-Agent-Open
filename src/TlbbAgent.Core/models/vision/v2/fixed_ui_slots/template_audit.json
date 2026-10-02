@@ -1,0 +1,1812 @@
+{
+  "reference_checks": [
+    {
+      "variant": "blood_sacrifice",
+      "image": "train/reference/self_pet_skill_minimap/pet_skill_panel_reference.png",
+      "score": 0.9953911304473877,
+      "xyxy": [
+        29,
+        182,
+        61,
+        214
+      ]
+    },
+    {
+      "variant": "advanced_blood_sacrifice",
+      "image": "train/reference/self_pet_skill_minimap/advanced_blood_sacrifice_tooltip.png",
+      "score": 0.9382995367050171,
+      "xyxy": [
+        395,
+        344,
+        427,
+        376
+      ]
+    },
+    {
+      "variant": "advanced_symbiosis",
+      "image": "train/reference/self_pet_skill_minimap/advanced_symbiosis_tooltip.png",
+      "score": 0.9335542917251587,
+      "xyxy": [
+        350,
+        365,
+        382,
+        397
+      ]
+    }
+  ],
+  "dataset_matches": [
+    {
+      "image": "pet_000024.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "血祭",
+      "score": 0.9953911304473877,
+      "margin": 0.7845415621995926,
+      "runner_up": "advanced_blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000025.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "血祭",
+      "score": 0.9953911304473877,
+      "margin": 0.7845415621995926,
+      "runner_up": "advanced_blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000026.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "血祭",
+      "score": 0.9953911304473877,
+      "margin": 0.7845415621995926,
+      "runner_up": "advanced_blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000006.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9947030544281006,
+      "margin": 0.7606249153614044,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000063.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9947030544281006,
+      "margin": 0.7740136086940765,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000064.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9947030544281006,
+      "margin": 0.7740136086940765,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000065.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9947030544281006,
+      "margin": 0.7740136086940765,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000045.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946802854537964,
+      "margin": 0.7687107026576996,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000046.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946802854537964,
+      "margin": 0.7711491733789444,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000047.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946802854537964,
+      "margin": 0.769981861114502,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000048.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946802854537964,
+      "margin": 0.769981861114502,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000049.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946802854537964,
+      "margin": 0.769981861114502,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000050.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946802854537964,
+      "margin": 0.769981861114502,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000010.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946596622467041,
+      "margin": 0.7751107960939407,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000011.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946596622467041,
+      "margin": 0.7751107960939407,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000012.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946596622467041,
+      "margin": 0.770074188709259,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000013.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946596622467041,
+      "margin": 0.7711476236581802,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000014.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946596622467041,
+      "margin": 0.7699732333421707,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000015.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946596622467041,
+      "margin": 0.770781010389328,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000016.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946596622467041,
+      "margin": 0.7712799608707428,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000017.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946596622467041,
+      "margin": 0.7747976034879684,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000018.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946596622467041,
+      "margin": 0.7733706086874008,
+      "runner_up": "advanced_symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "misc_000119.png",
+      "source_dataset": "99_其他杂项",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946562647819519,
+      "margin": 0.7674454599618912,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "misc_000123.png",
+      "source_dataset": "99_其他杂项",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946562647819519,
+      "margin": 0.7592650949954987,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "misc_000124.png",
+      "source_dataset": "99_其他杂项",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946562647819519,
+      "margin": 0.7592811286449432,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000035.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946412444114685,
+      "margin": 0.774358332157135,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000036.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946412444114685,
+      "margin": 0.774358332157135,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000001.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7653493285179138,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000007.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7629318088293076,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000008.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7749393284320831,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000009.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7665762454271317,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000016.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7749393284320831,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000020.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7749393284320831,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000044.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7749393284320831,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000045.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7646432667970657,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000046.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7749393284320831,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000047.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7682566195726395,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000048.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7749393284320831,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000049.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7749393284320831,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000050.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7747454047203064,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000051.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.99461829662323,
+      "margin": 0.7672179043292999,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000001.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.7659161537885666,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000002.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.7659202218055725,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000003.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.7659090310335159,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000004.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.7659115791320801,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000005.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.7658889144659042,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000006.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.765894740819931,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000007.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.7659021019935608,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000008.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.7658950984477997,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000009.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.7658950984477997,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "map_000010.png",
+      "source_dataset": "06_地图模块",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.7658986896276474,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000001.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000002.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000003.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000004.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000005.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000014.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000015.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000018.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000019.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000022.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000043.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000057.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000059.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000074.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000075.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.9946043491363525,
+      "margin": 0.774821937084198,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000029.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_symbiosis",
+      "business_class": "health_restore_skill",
+      "display_name": "高级共生",
+      "score": 0.9935910105705261,
+      "margin": 0.4007362127304077,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000030.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_symbiosis",
+      "business_class": "health_restore_skill",
+      "display_name": "高级共生",
+      "score": 0.9935910105705261,
+      "margin": 0.4007362127304077,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "pet_000031.png",
+      "source_dataset": "02_宠物",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_symbiosis",
+      "business_class": "health_restore_skill",
+      "display_name": "高级共生",
+      "score": 0.9935910105705261,
+      "margin": 0.4007362127304077,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000012.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_symbiosis",
+      "business_class": "health_restore_skill",
+      "display_name": "高级共生",
+      "score": 0.9935910105705261,
+      "margin": 0.4007362127304077,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "role_000013.png",
+      "source_dataset": "01_角色",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_symbiosis",
+      "business_class": "health_restore_skill",
+      "display_name": "高级共生",
+      "score": 0.9935910105705261,
+      "margin": 0.4007362127304077,
+      "runner_up": "symbiosis",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    },
+    {
+      "image": "skill_000009.png",
+      "source_dataset": "04_技能",
+      "resolution": "2560x1369",
+      "slot": "pet_active_slot_1",
+      "slot_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ],
+      "variant": "advanced_blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "高级血祭",
+      "score": 0.848121702671051,
+      "margin": 0.6039507389068604,
+      "runner_up": "blood_sacrifice",
+      "match_xyxy": [
+        1462,
+        1267,
+        1494,
+        1299
+      ]
+    }
+  ],
+  "dataset_match_counts": {
+    "blood_sacrifice": 3,
+    "advanced_blood_sacrifice": 64,
+    "advanced_symbiosis": 5
+  },
+  "slot_match_counts": {
+    "pet_active_slot_1": 72
+  },
+  "synthetic_slot2_check": {
+    "fixture": "train/artifacts/fixed_ui_slots/fixtures/synthetic_restore_moved_to_pet_active_slot_2.png",
+    "source_image": "pet_000024.png",
+    "synthetic": true,
+    "purpose": "Contract regression only; excluded from training and accuracy metrics.",
+    "expected_slot": "pet_active_slot_2",
+    "expected_variant": "blood_sacrifice",
+    "slot_1_result": {
+      "variant": "blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "血祭",
+      "score": 0.12455585598945618,
+      "xyxy": [
+        446,
+        44,
+        478,
+        76
+      ],
+      "margin": 0.02753518521785736,
+      "runner_up": "symbiosis"
+    },
+    "slot_2_result": {
+      "variant": "blood_sacrifice",
+      "business_class": "mana_restore_skill",
+      "display_name": "血祭",
+      "score": 0.9953911304473877,
+      "xyxy": [
+        478,
+        40,
+        510,
+        72
+      ],
+      "margin": 0.7845415621995926,
+      "runner_up": "advanced_blood_sacrifice"
+    },
+    "passed": true
+  }
+}

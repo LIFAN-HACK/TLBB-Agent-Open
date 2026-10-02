@@ -1,0 +1,461 @@
+{
+  "schema": 2,
+  "class_id": "monthly_card_panel",
+  "zh_name": "御龙帖/月卡",
+  "coordinate_space": "exact_l1_v3_crop_pixels_xyxy_half_open",
+  "crop_size": [
+    353,
+    416
+  ],
+  "reference_to_v3_offset_xy": [
+    0,
+    0
+  ],
+  "controls": [
+    {
+      "control_id": "toggle_double_exp",
+      "zh_name": "冻结/解冻双倍经验",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        8,
+        155,
+        175,
+        221
+      ],
+      "visual_bbox_norm": [
+        0.022663,
+        0.372596,
+        0.495751,
+        0.53125
+      ],
+      "safe_click_bbox_xyxy": [
+        57,
+        170,
+        168,
+        213
+      ],
+      "safe_click_bbox_norm": [
+        0.161473,
+        0.408654,
+        0.475921,
+        0.512019
+      ],
+      "click_point_xy": [
+        112,
+        191
+      ],
+      "click_point_norm": [
+        0.31728,
+        0.459135
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "double_exp_text_or_icon_state_changed"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "open_portable_pet_shop",
+      "zh_name": "随身珍兽商店",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        183,
+        155,
+        348,
+        221
+      ],
+      "visual_bbox_norm": [
+        0.518414,
+        0.372596,
+        0.985836,
+        0.53125
+      ],
+      "safe_click_bbox_xyxy": [
+        227,
+        170,
+        341,
+        213
+      ],
+      "safe_click_bbox_norm": [
+        0.643059,
+        0.408654,
+        0.966006,
+        0.512019
+      ],
+      "click_point_xy": [
+        284,
+        191
+      ],
+      "click_point_norm": [
+        0.804533,
+        0.459135
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "pet_shop_panel_present"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "open_portable_bank",
+      "zh_name": "随身银行",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        8,
+        221,
+        175,
+        271
+      ],
+      "visual_bbox_norm": [
+        0.022663,
+        0.53125,
+        0.495751,
+        0.651442
+      ],
+      "safe_click_bbox_xyxy": [
+        57,
+        228,
+        168,
+        264
+      ],
+      "safe_click_bbox_norm": [
+        0.161473,
+        0.548077,
+        0.475921,
+        0.634615
+      ],
+      "click_point_xy": [
+        112,
+        246
+      ],
+      "click_point_norm": [
+        0.31728,
+        0.591346
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "bank_panel_present"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "open_portable_pet_bank",
+      "zh_name": "随身珍兽银行",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        183,
+        221,
+        348,
+        271
+      ],
+      "visual_bbox_norm": [
+        0.518414,
+        0.53125,
+        0.985836,
+        0.651442
+      ],
+      "safe_click_bbox_xyxy": [
+        227,
+        228,
+        341,
+        264
+      ],
+      "safe_click_bbox_norm": [
+        0.643059,
+        0.548077,
+        0.966006,
+        0.634615
+      ],
+      "click_point_xy": [
+        284,
+        246
+      ],
+      "click_point_norm": [
+        0.804533,
+        0.591346
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "pet_bank_panel_present"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "repair_equipment",
+      "zh_name": "随身装备修理",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        8,
+        271,
+        175,
+        321
+      ],
+      "visual_bbox_norm": [
+        0.022663,
+        0.651442,
+        0.495751,
+        0.771635
+      ],
+      "safe_click_bbox_xyxy": [
+        57,
+        278,
+        168,
+        314
+      ],
+      "safe_click_bbox_norm": [
+        0.161473,
+        0.668269,
+        0.475921,
+        0.754808
+      ],
+      "click_point_xy": [
+        112,
+        296
+      ],
+      "click_point_norm": [
+        0.31728,
+        0.711538
+      ],
+      "risk": "resource_consuming",
+      "runtime_default": "disabled_consumes_resource",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "increase_repair_count",
+      "zh_name": "增加装备可修次数",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        183,
+        271,
+        348,
+        321
+      ],
+      "visual_bbox_norm": [
+        0.518414,
+        0.651442,
+        0.985836,
+        0.771635
+      ],
+      "safe_click_bbox_xyxy": [
+        227,
+        278,
+        341,
+        314
+      ],
+      "safe_click_bbox_norm": [
+        0.643059,
+        0.668269,
+        0.966006,
+        0.754808
+      ],
+      "click_point_xy": [
+        284,
+        296
+      ],
+      "click_point_norm": [
+        0.804533,
+        0.711538
+      ],
+      "risk": "resource_consuming",
+      "runtime_default": "disabled_consumes_resource",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "repair_martial_soul",
+      "zh_name": "随身武魂修理",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        8,
+        321,
+        175,
+        371
+      ],
+      "visual_bbox_norm": [
+        0.022663,
+        0.771635,
+        0.495751,
+        0.891827
+      ],
+      "safe_click_bbox_xyxy": [
+        57,
+        328,
+        168,
+        364
+      ],
+      "safe_click_bbox_norm": [
+        0.161473,
+        0.788462,
+        0.475921,
+        0.875
+      ],
+      "click_point_xy": [
+        112,
+        346
+      ],
+      "click_point_norm": [
+        0.31728,
+        0.831731
+      ],
+      "risk": "resource_consuming",
+      "runtime_default": "disabled_consumes_resource",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "repair_artifact",
+      "zh_name": "随身神器修理",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        183,
+        321,
+        348,
+        371
+      ],
+      "visual_bbox_norm": [
+        0.518414,
+        0.771635,
+        0.985836,
+        0.891827
+      ],
+      "safe_click_bbox_xyxy": [
+        227,
+        328,
+        341,
+        364
+      ],
+      "safe_click_bbox_norm": [
+        0.643059,
+        0.788462,
+        0.966006,
+        0.875
+      ],
+      "click_point_xy": [
+        284,
+        346
+      ],
+      "click_point_norm": [
+        0.804533,
+        0.831731
+      ],
+      "risk": "resource_consuming",
+      "runtime_default": "disabled_consumes_resource",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "close",
+      "zh_name": "关闭",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        327,
+        2,
+        351,
+        26
+      ],
+      "visual_bbox_norm": [
+        0.926346,
+        0.004808,
+        0.994334,
+        0.0625
+      ],
+      "safe_click_bbox_xyxy": [
+        332,
+        7,
+        346,
+        21
+      ],
+      "safe_click_bbox_norm": [
+        0.94051,
+        0.016827,
+        0.98017,
+        0.050481
+      ],
+      "click_point_xy": [
+        339,
+        14
+      ],
+      "click_point_norm": [
+        0.96034,
+        0.033654
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "monthly_card_panel_absent"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    }
+  ],
+  "regions": [],
+  "policy": {},
+  "annotation_status": "codex_pixel_audited_pending_user_review_not_runtime_authorized",
+  "runtime_authorized": false,
+  "provenance": {
+    "geometry_source": "train/runtime_db/ui_interactions_v2/monthly_card_panel/annotation.json",
+    "migration": "pixel-audited control geometry aligned to the exact L1 V3 crop",
+    "legacy_111_rough_boxes_imported": false
+  }
+}

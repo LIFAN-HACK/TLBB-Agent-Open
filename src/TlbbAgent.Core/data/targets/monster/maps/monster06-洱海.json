@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "洱海",
+    "source":  "https://tl.changyou.com/data/monster/monster06.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 洱海",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "赤脚野人",
+                        "group":  "洱海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "风狼",
+                        "group":  "洱海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "花斑豹",
+                        "group":  "洱海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "狼族荆棘使",
+                        "group":  "洱海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "狼族探子",
+                        "group":  "洱海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "狼族战士",
+                        "group":  "洱海",
+                        "allowAttack":  true
+                    }
+                ]
+}

@@ -1,0 +1,25 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "古墓",
+    "source":  "https://tl.changyou.com/data/monster/monster36.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 古墓",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "石人",
+                        "group":  "古墓",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "树人",
+                        "group":  "古墓",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "岩魔",
+                        "group":  "古墓",
+                        "allowAttack":  true
+                    }
+                ]
+}

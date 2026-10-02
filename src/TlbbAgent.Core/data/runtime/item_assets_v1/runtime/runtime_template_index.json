@@ -1,0 +1,624 @@
+{
+  "schema": 1,
+  "libraryId": "item_assets_v1",
+  "purpose": "read_only_never_sell_protection",
+  "runtimeSellAuthorized": false,
+  "safetyDefault": "unknown_protected",
+  "templates": [
+    {
+      "id": "item_2ae738e538:templates:01",
+      "itemName": "超级珍兽回春丹",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_2ae738e538/item_2ae738e538_01.png",
+        "sha256": "cf099a32a3e5eca16618d5cf2b335e9fd5c2fc0341602808a0203ac3db77c268",
+        "averageHash": "812C341C5C3C7880",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_2ae738e538:content_templates:01",
+      "itemName": "超级珍兽回春丹",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_2ae738e538/item_2ae738e538_01.png",
+        "sha256": "1f24ee7acb54f17b7ea3c1f296d9fd3cec866ba458dc4eaa5ea7ef61883e5d59",
+        "averageHash": "085C687E5C7CBC18",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_41fe61f8cf:templates:01",
+      "itemName": "高级共生技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_41fe61f8cf/item_41fe61f8cf_01.png",
+        "sha256": "8ec03ec66126ceaa95902389efc6bf423f9368da413349ae3dea3e8dd9aa1d39",
+        "averageHash": "FF9894848EB0FC80",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_41fe61f8cf:content_templates:01",
+      "itemName": "高级共生技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_41fe61f8cf/item_41fe61f8cf_01.png",
+        "sha256": "d8c9286b413b7402cc3edd0cb44759bd2cdd5de9e8b91d36b3c88c8901bb6a4f",
+        "averageHash": "10E018060EF6FCDC",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_4c1b446132:templates:01",
+      "itemName": "高级猛击技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_4c1b446132/item_4c1b446132_01.png",
+        "sha256": "68141d63ee615954d88398a8ebc83e6ba836366bcc8f05ddddc16711432fd1df",
+        "averageHash": "FF808ABCA09090E0",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_4c1b446132:content_templates:01",
+      "itemName": "高级猛击技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_4c1b446132/item_4c1b446132_01.png",
+        "sha256": "23e03185e275c889f4ffeef3154b75e6ba37643d0327b56da1859b5a648154b1",
+        "averageHash": "26240F5C68193070",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_567c876e0e:templates:01",
+      "itemName": "熔金粉",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_567c876e0e/item_567c876e0e_01.png",
+        "sha256": "52b57328138b476f0e1800afbbde052072a613902101a427040452875e9719df",
+        "averageHash": "FF809CFE9C82E480",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_567c876e0e:content_templates:01",
+      "itemName": "熔金粉",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_567c876e0e/item_567c876e0e_01.png",
+        "sha256": "3971c2dad7f6d39de438e2606d1b11abed11f3d5a6024226af3971e0736d2cb8",
+        "averageHash": "001C3EFFBC026000",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_70868e13f7:templates:01",
+      "itemName": "打怒技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_70868e13f7/item_70868e13f7_01.png",
+        "sha256": "cebe5e8e568917872e66c751833034eb7eb10528cf7cc220c939841c45a1cf14",
+        "averageHash": "FF9CFCD4A0BC8CA0",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_70868e13f7:content_templates:01",
+      "itemName": "打怒技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_70868e13f7/item_70868e13f7_01.png",
+        "sha256": "b7416fc6112fbaf188bf68dac06cbd6551e1e087a74b7f9db626332fed926645",
+        "averageHash": "1F3CECC4800E1C88",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_770d784bc1:templates:01",
+      "itemName": "寒冰咒技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_770d784bc1/item_770d784bc1_01.png",
+        "sha256": "a3246a71f3a9a833634e9961408ee07a738a70cc5d804e82b769f6ce5068b853",
+        "averageHash": "8142406F7F3C20A0",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_770d784bc1:content_templates:01",
+      "itemName": "寒冰咒技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_770d784bc1/item_770d784bc1_01.png",
+        "sha256": "c1e955f02ea32578abf12f620849b6e37552fc7cb1b5f1bea7dfcc1a5682da67",
+        "averageHash": "50C1C24FFF3C9002",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_876455daca:templates:01",
+      "itemName": "高级吸气技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_876455daca/item_876455daca_01.png",
+        "sha256": "27241a05189c74c12beaa6c854f33e8382e79702a2e88978d473f4fcad9880b5",
+        "averageHash": "81707E191E657282",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_876455daca:content_templates:01",
+      "itemName": "高级吸气技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_876455daca/item_876455daca_01.png",
+        "sha256": "d5e16d27cbe95668a9de38db6300af62aefaab59647dcc9cba1a685a54373a7c",
+        "averageHash": "60FA1A733D6C4632",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_89a4491d79:templates:01",
+      "itemName": "武器玄攻雕纹图样",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_89a4491d79/item_89a4491d79_01.png",
+        "sha256": "0b13808064aa0498210ba069503a99272648d026dac1dd9a50703dbc29f5e504",
+        "averageHash": "81003C3E7A3A0480",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_89a4491d79:content_templates:01",
+      "itemName": "武器玄攻雕纹图样",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_89a4491d79/item_89a4491d79_01.png",
+        "sha256": "d047824ec8db5ac2a80994bca12ac998a29d0c7a74fdee751a4bc14e5c8d9fee",
+        "averageHash": "00397D7DFA3A0604",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_934d7c6648:templates:01",
+      "itemName": "高级摔绊技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_934d7c6648/item_934d7c6648_01.png",
+        "sha256": "92bc61f8f09823e48785f8ea9449586b502e3b50564a702ef466ce5632e7b9f4",
+        "averageHash": "811C1A4C200E0F87",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_934d7c6648:content_templates:01",
+      "itemName": "高级摔绊技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_934d7c6648/item_934d7c6648_01.png",
+        "sha256": "60323610c7e07340540d82dcd14a74b9bba39b2e83b80fbbd56efdaa5400c39f",
+        "averageHash": "5F1E1E4E200E0F4F",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_ae8aa9a02e:templates:01",
+      "itemName": "反震技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_ae8aa9a02e/item_ae8aa9a02e_01.png",
+        "sha256": "0434e12bb934d715db2e738f7db8fb31d59c4ac9a798aa67c391d867846fcce7",
+        "averageHash": "8148083B5E1D4AF0",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_ae8aa9a02e:content_templates:01",
+      "itemName": "反震技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_ae8aa9a02e/item_ae8aa9a02e_01.png",
+        "sha256": "0c5da0a99bae59eb559046877b5b85d19bb0eb80b61f355cb834a810f7f0b84b",
+        "averageHash": "60DD38185A9D1A91",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_c95826eb62:templates:01",
+      "itemName": "土灵珠",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_c95826eb62/item_c95826eb62_01.png",
+        "sha256": "67f1b51a4400414f37a20555419e19e96e952572690c31972115d7473da12533",
+        "averageHash": "FF90FC98BCFE9880",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_c95826eb62:content_templates:01",
+      "itemName": "土灵珠",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_c95826eb62/item_c95826eb62_01.png",
+        "sha256": "3727f643e72189a248f3fdd6907f984157f42cb80dd8df2890ea8640436cd332",
+        "averageHash": "107C7C183C7E3C18",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_d4e5a05c58:templates:01",
+      "itemName": "高级反击技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_d4e5a05c58/item_d4e5a05c58_01.png",
+        "sha256": "53d59d286d3881f3ce3d4e57d3270ebb097dc363643216822c04ffc9e8e65b8e",
+        "averageHash": "FF89F092FB9CBE81",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_d4e5a05c58:content_templates:01",
+      "itemName": "高级反击技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_d4e5a05c58/item_d4e5a05c58_01.png",
+        "sha256": "69aea56ae0b186136f44cd839a6117e83b6d2944fe5d9cba63ed8055f4e5cd3a",
+        "averageHash": "02100633791C3E0F",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_dee1c9e8a9:templates:01",
+      "itemName": "饰品力量雕纹图样",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_dee1c9e8a9/item_dee1c9e8a9_01.png",
+        "sha256": "43b9421b186cceae13d60152ffb36c6b4d5f3b43a5ade6a1ce17a3a22c60a7c7",
+        "averageHash": "FF909EBCB8B08480",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_dee1c9e8a9:content_templates:01",
+      "itemName": "饰品力量雕纹图样",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_dee1c9e8a9/item_dee1c9e8a9_01.png",
+        "sha256": "849901d6b791fa2ddb592c257b5358458cd5d4ba8fcc0a8fb4fc61360bfa96c7",
+        "averageHash": "203F393C78730C06",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_f7e03c89bb:templates:01",
+      "itemName": "高级灵动技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/item_f7e03c89bb/item_f7e03c89bb_01.png",
+        "sha256": "145e870a9e2709299f7c7aa24b7fd2e19a18b8193b08771e6aa5753637ddf20a",
+        "averageHash": "FF8880BEB69CBE9C",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_f7e03c89bb:content_templates:01",
+      "itemName": "高级灵动技能书",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/item_f7e03c89bb/item_f7e03c89bb_01.png",
+        "sha256": "db2923054b1cd7df48f1fd78a7760393497450fe21b9de2a273e8fc42906e7e6",
+        "averageHash": "00042E7E3E1C7F3E",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "item_pet_food_variant_001:templates:01",
+      "itemName": "宠粮（样本01）",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": true,
+      "image": {
+        "path": "templates/item_pet_food_variant_001/item_pet_food_variant_001_01.png",
+        "sha256": "e4d12304180f5bf6140482471eccb806736ae9fc3aa5924b153889bb2df36d4b",
+        "averageHash": "7F02754D030F7E80",
+        "width": 32,
+        "height": 32,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_pet_food_variant_001:templates:02",
+      "itemName": "宠粮（样本01）",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": true,
+      "image": {
+        "path": "templates/item_pet_food_variant_001/item_pet_food_variant_001_02.png",
+        "sha256": "02a0454580ed165c4c0454b5efbf0bb41e58b138889d10b17f71e28100f3c668",
+        "averageHash": "7F02257D030F7E80",
+        "width": 32,
+        "height": 32,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "item_pet_food_variant_001:templates:03",
+      "itemName": "宠粮（样本01）",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": true,
+      "image": {
+        "path": "templates/item_pet_food_variant_001/item_pet_food_variant_001_03.png",
+        "sha256": "387a9613270f7d35dd582bf758f11e9399ab427e04098a200ec2402527cfc223",
+        "averageHash": "1F02607D020F7E00",
+        "width": 32,
+        "height": 32,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "skill_book_279a56b702:templates:01",
+      "itemName": "要诀：中冲剑",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/skill_book_279a56b702/skill_book_279a56b702_01.png",
+        "sha256": "9c27c8551b61a78bfdbc02f5a0c454c9b691cf3b10152dedb414ef21ad45decb",
+        "averageHash": "FFAE96888AF2E080",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "skill_book_279a56b702:content_templates:01",
+      "itemName": "要诀：中冲剑",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/skill_book_279a56b702/skill_book_279a56b702_01.png",
+        "sha256": "827b94438d3b7e1e1c0771244a3e6bb5a446e629e75e7cbee4b2bdbdfb42ac8b",
+        "averageHash": "183434192A5262F0",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "skill_book_489a31c268:templates:01",
+      "itemName": "要诀：天下无狗",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/skill_book_489a31c268/skill_book_489a31c268_01.png",
+        "sha256": "2d73148ddbc96b97204e220e15f796697491619bd337cf4b590a77edc1e48aaf",
+        "averageHash": "FFECECFC9C948E86",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "skill_book_489a31c268:content_templates:01",
+      "itemName": "要诀：天下无狗",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/skill_book_489a31c268/skill_book_489a31c268_01.png",
+        "sha256": "7cfe6197a05231d8dcb34f4fc779b192f6c887cffaf8d30abaa2daf337c5edf3",
+        "averageHash": "6CDE547418160E04",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "skill_book_6e9283c6ae:templates:01",
+      "itemName": "要诀：含笑半步癫",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/skill_book_6e9283c6ae/skill_book_6e9283c6ae_01.png",
+        "sha256": "c6d471e09b0fb18b0ea0ff55ebe382c7cb5b464484d5fa2b008fb5c53c6e2a0d",
+        "averageHash": "FF82A8B8B68A9480",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "skill_book_6e9283c6ae:content_templates:01",
+      "itemName": "要诀：含笑半步癫",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/skill_book_6e9283c6ae/skill_book_6e9283c6ae_01.png",
+        "sha256": "f7b8147d20d7b341d7b71ec9a2a6eab6d9688e53b494f2938d8441ed190ec830",
+        "averageHash": "113A5C366D2E7410",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "skill_book_99ecca0a7d:templates:01",
+      "itemName": "要诀：化骨绵掌",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/skill_book_99ecca0a7d/skill_book_99ecca0a7d_01.png",
+        "sha256": "a6993f8938fac60938de89f36c1459e9f3006e1cbd9b4ff133be20e66f4e7e73",
+        "averageHash": "8150703E765E0380",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "skill_book_99ecca0a7d:content_templates:01",
+      "itemName": "要诀：化骨绵掌",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/skill_book_99ecca0a7d/skill_book_99ecca0a7d_01.png",
+        "sha256": "35ecabaa67d4d3d7fc594ecf7bb05f5466a3d619e431608fdab5b76a609fc700",
+        "averageHash": "18D872FFF77F0700",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    },
+    {
+      "id": "skill_book_9cf1f7e03d:templates:01",
+      "itemName": "要诀：烽火连城",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "templates/skill_book_9cf1f7e03d/skill_book_9cf1f7e03d_01.png",
+        "sha256": "beeb45195335054253ff8b0467a48ba8a4f08c9b5a8db2a61712afd13fe91ea5",
+        "averageHash": "FF8899ADFE91D490",
+        "width": 68,
+        "height": 68,
+        "kind": "templates"
+      }
+    },
+    {
+      "id": "skill_book_9cf1f7e03d:content_templates:01",
+      "itemName": "要诀：烽火连城",
+      "policy": "Keep",
+      "neverSell": true,
+      "runtimeIdentityAuthorized": false,
+      "image": {
+        "path": "content_templates/skill_book_9cf1f7e03d/skill_book_9cf1f7e03d_01.png",
+        "sha256": "59a7a95680aa2ee339ff486c368d383151569d4d55a986d9b35b0a442a24b87e",
+        "averageHash": "1C18317C1FDD96F8",
+        "width": 58,
+        "height": 58,
+        "kind": "content_templates"
+      }
+    }
+  ]
+}

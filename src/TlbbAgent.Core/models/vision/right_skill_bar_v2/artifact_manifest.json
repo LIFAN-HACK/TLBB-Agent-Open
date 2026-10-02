@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "artifact_id": "right_skill_bar_l1_v2_dual_profile_20260713",
+  "status": "model_ready_pending_runtime_verification",
+  "files": [
+    {
+      "name": "right_skill_bar_v2_640.onnx",
+      "sha256": "fb59e520924e6967311a2423b3223718a1b2b16e54596c8106956f548da623d3"
+    },
+    {
+      "name": "right_skill_bar_v2_1280.onnx",
+      "sha256": "efcbd2bb235f281fa7341f8452de2929e27cb77573ec35f4346c12c9aa022dc3"
+    },
+    {
+      "name": "inference_config.json"
+    },
+    {
+      "name": "MODEL_CARD.md"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "宝藏洞",
+    "source":  "https://tl.changyou.com/data/monster/monster31.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 宝藏洞",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "盗墓小贼",
+                        "group":  "宝藏洞",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "护宝神兽",
+                        "group":  "宝藏洞",
+                        "allowAttack":  true
+                    }
+                ]
+}

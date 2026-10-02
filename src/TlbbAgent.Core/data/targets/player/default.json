@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "category": "player",
+  "enabled": false,
+  "allowUnlisted": false,
+  "retaliationRequires": [
+    "hostile_red_name",
+    "recent_damage_from_target"
+  ]
+}

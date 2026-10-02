@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "artifact_id": "buff_anchor_detect_r3_precise_reviewed_candidate",
+  "status": "candidate_passed_current_suite_feature_flag_only",
+  "files": [
+    {
+      "name": "buff_anchor_detect.onnx",
+      "sha256": "07f2f73ef15abd74225980e10719ed83f5216ccd1eaa7bb3b2308a550c332610"
+    },
+    {
+      "name": "inference_config.json"
+    },
+    {
+      "name": "runtime_contract.json"
+    },
+    {
+      "name": "INTEGRATION.md"
+    }
+  ]
+}

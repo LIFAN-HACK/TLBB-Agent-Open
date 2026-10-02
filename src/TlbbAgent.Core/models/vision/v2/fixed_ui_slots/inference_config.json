@@ -1,0 +1,43 @@
+{
+  "artifact_key": "fixed_ui_slots",
+  "engine": "opencv_template_match_and_color_meter",
+  "canonical_skill_bar_size": [
+    520,
+    142
+  ],
+  "pet_active_slots_normalized": {
+    "pet_active_slot_1": [
+      0.85,
+      0.28169014084507044,
+      0.9115384615384615,
+      0.5070422535211268
+    ],
+    "pet_active_slot_2": [
+      0.9192307692307692,
+      0.28169014084507044,
+      0.9807692307692307,
+      0.5070422535211268
+    ]
+  },
+  "pet_slot_policy": "L2 input is the L1 skill_bar crop. Scan both dedicated pet active slots in crop-normalized coordinates; never bind a restore skill to a fixed slot index.",
+  "template_search_padding": 4,
+  "template_match_threshold": 0.78,
+  "template_ambiguity_margin_min": 0.05,
+  "business_classes": {
+    "mana_restore_skill": [
+      "blood_sacrifice",
+      "advanced_blood_sacrifice"
+    ],
+    "health_restore_skill": [
+      "symbiosis",
+      "advanced_symbiosis"
+    ]
+  },
+  "player_hotkey_policy": "Only the bottom row with visible hotkeys is eligible for cooldown/release logic.",
+  "identity_policy": {
+    "matched": "score >= 0.78 and variant margin >= 0.05",
+    "unknown": "score < 0.78 or variant margin < 0.05"
+  },
+  "cd_policy": "Cooldown is decided by gray-overlay/digit features inside the matched slot, not by template score.",
+  "failure_policy": "Return unknown and do not click when identity or cooldown state is unknown."
+}

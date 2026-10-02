@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "artifact_id": "interaction_window_l1_v3_5class_20260713",
+  "status": "model_ready_pending_runtime_verification",
+  "files": [
+    {
+      "name": "interaction_window_l1_v3_5class.onnx",
+      "sha256": "9a7273fde40161ced55a82a3b56ba753f3d4dab0a642fafed40a270616fbc7a0"
+    },
+    {
+      "name": "inference_contract.json"
+    },
+    {
+      "name": "release_gate.json"
+    },
+    {
+      "name": "model_card.md"
+    }
+  ]
+}

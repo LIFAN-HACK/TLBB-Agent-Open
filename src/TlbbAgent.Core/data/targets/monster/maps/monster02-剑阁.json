@@ -1,0 +1,35 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "剑阁",
+    "source":  "https://tl.changyou.com/data/monster/monster02.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 剑阁",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "白茅草人",
+                        "group":  "剑阁",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "鬼面侏儒",
+                        "group":  "剑阁",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "蜀道白猿",
+                        "group":  "剑阁",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "蜀道黑猿",
+                        "group":  "剑阁",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "榆木傀儡",
+                        "group":  "剑阁",
+                        "allowAttack":  true
+                    }
+                ]
+}

@@ -1,0 +1,599 @@
+{
+  "artifact_key": "tlbb_l2_ui_control_templates_v1",
+  "input_contract": "L1-Aux panel crop only",
+  "templates": {
+    "material_panel": {
+      "manufacture_all": {
+        "path": "templates/material_panel__manufacture_all.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_065057_355_99_其他杂项_2576x1408_000128.png",
+        "source_panel_bbox": [
+          1091,
+          308,
+          1422,
+          746
+        ],
+        "control_bbox": [
+          7,
+          399,
+          99,
+          434
+        ]
+      },
+      "quantity_decrease": {
+        "path": "templates/material_panel__quantity_decrease.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_065057_355_99_其他杂项_2576x1408_000128.png",
+        "source_panel_bbox": [
+          1091,
+          308,
+          1422,
+          746
+        ],
+        "control_bbox": [
+          119,
+          399,
+          142,
+          434
+        ]
+      },
+      "quantity_value": {
+        "path": "templates/material_panel__quantity_value.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_065057_355_99_其他杂项_2576x1408_000128.png",
+        "source_panel_bbox": [
+          1091,
+          308,
+          1422,
+          746
+        ],
+        "control_bbox": [
+          146,
+          399,
+          195,
+          434
+        ]
+      },
+      "quantity_increase": {
+        "path": "templates/material_panel__quantity_increase.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_065057_355_99_其他杂项_2576x1408_000128.png",
+        "source_panel_bbox": [
+          1091,
+          308,
+          1422,
+          746
+        ],
+        "control_bbox": [
+          199,
+          399,
+          222,
+          434
+        ]
+      },
+      "manufacture": {
+        "path": "templates/material_panel__manufacture.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_065057_355_99_其他杂项_2576x1408_000128.png",
+        "source_panel_bbox": [
+          1091,
+          308,
+          1422,
+          746
+        ],
+        "control_bbox": [
+          228,
+          399,
+          278,
+          434
+        ]
+      },
+      "close": {
+        "path": "templates/material_panel__close.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_065057_355_99_其他杂项_2576x1408_000128.png",
+        "source_panel_bbox": [
+          1091,
+          308,
+          1422,
+          746
+        ],
+        "control_bbox": [
+          281,
+          399,
+          324,
+          434
+        ]
+      }
+    },
+    "monthly_card_panel": {
+      "open_portable_pet_shop": {
+        "path": "templates/monthly_card_panel__open_portable_pet_shop.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014121_698_09_背包_2560x1369_000038.png",
+        "source_panel_bbox": [
+          1105,
+          454,
+          1458,
+          870
+        ],
+        "control_bbox": [
+          184,
+          175,
+          346,
+          225
+        ]
+      },
+      "open_portable_bank": {
+        "path": "templates/monthly_card_panel__open_portable_bank.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014121_698_09_背包_2560x1369_000038.png",
+        "source_panel_bbox": [
+          1105,
+          454,
+          1458,
+          870
+        ],
+        "control_bbox": [
+          7,
+          225,
+          173,
+          275
+        ]
+      },
+      "open_portable_pet_bank": {
+        "path": "templates/monthly_card_panel__open_portable_pet_bank.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014121_698_09_背包_2560x1369_000038.png",
+        "source_panel_bbox": [
+          1105,
+          454,
+          1458,
+          870
+        ],
+        "control_bbox": [
+          184,
+          225,
+          346,
+          275
+        ]
+      },
+      "repair_equipment": {
+        "path": "templates/monthly_card_panel__repair_equipment.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014121_698_09_背包_2560x1369_000038.png",
+        "source_panel_bbox": [
+          1105,
+          454,
+          1458,
+          870
+        ],
+        "control_bbox": [
+          7,
+          275,
+          173,
+          324
+        ]
+      },
+      "repair_weapon": {
+        "path": "templates/monthly_card_panel__repair_weapon.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014121_698_09_背包_2560x1369_000038.png",
+        "source_panel_bbox": [
+          1105,
+          454,
+          1458,
+          870
+        ],
+        "control_bbox": [
+          7,
+          324,
+          173,
+          374
+        ]
+      },
+      "repair_artifact": {
+        "path": "templates/monthly_card_panel__repair_artifact.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014121_698_09_背包_2560x1369_000038.png",
+        "source_panel_bbox": [
+          1105,
+          454,
+          1458,
+          870
+        ],
+        "control_bbox": [
+          184,
+          324,
+          346,
+          374
+        ]
+      },
+      "close": {
+        "path": "templates/monthly_card_panel__close.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014121_698_09_背包_2560x1369_000038.png",
+        "source_panel_bbox": [
+          1105,
+          454,
+          1458,
+          870
+        ],
+        "control_bbox": [
+          325,
+          0,
+          353,
+          42
+        ]
+      }
+    },
+    "shop_panel": {
+      "sell": {
+        "path": "templates/shop_panel__sell.png",
+        "threshold": 0.7,
+        "source_image": "datasets\\09_背包\\images\\20260710_011552_763_09_背包_2560x1369_000001.png",
+        "source_panel_bbox": [
+          1104,
+          167,
+          1453,
+          577
+        ],
+        "control_bbox": [
+          265,
+          299,
+          342,
+          336
+        ]
+      },
+      "batch_buy": {
+        "path": "templates/shop_panel__batch_buy.png",
+        "threshold": 0.7,
+        "source_image": "datasets\\09_背包\\images\\20260710_011552_763_09_背包_2560x1369_000001.png",
+        "source_panel_bbox": [
+          1104,
+          167,
+          1453,
+          577
+        ],
+        "control_bbox": [
+          244,
+          336,
+          342,
+          373
+        ]
+      },
+      "close": {
+        "path": "templates/shop_panel__close.png",
+        "threshold": 0.7,
+        "source_image": "datasets\\09_背包\\images\\20260710_011552_763_09_背包_2560x1369_000001.png",
+        "source_panel_bbox": [
+          1104,
+          167,
+          1453,
+          577
+        ],
+        "control_bbox": [
+          321,
+          0,
+          349,
+          41
+        ]
+      }
+    },
+    "bag_panel": {
+      "organize": {
+        "path": "templates/bag_panel__organize.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014132_905_09_背包_2560x1369_000042.png",
+        "source_panel_bbox": [
+          1710,
+          723,
+          2072,
+          1164
+        ],
+        "control_bbox": [
+          101,
+          287,
+          163,
+          326
+        ]
+      },
+      "lock": {
+        "path": "templates/bag_panel__lock.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014132_905_09_背包_2560x1369_000042.png",
+        "source_panel_bbox": [
+          1710,
+          723,
+          2072,
+          1164
+        ],
+        "control_bbox": [
+          203,
+          287,
+          261,
+          326
+        ]
+      },
+      "split": {
+        "path": "templates/bag_panel__split.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014132_905_09_背包_2560x1369_000042.png",
+        "source_panel_bbox": [
+          1710,
+          723,
+          2072,
+          1164
+        ],
+        "control_bbox": [
+          297,
+          287,
+          355,
+          326
+        ]
+      },
+      "close": {
+        "path": "templates/bag_panel__close.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\09_背包\\images\\20260710_014132_905_09_背包_2560x1369_000042.png",
+        "source_panel_bbox": [
+          1710,
+          723,
+          2072,
+          1164
+        ],
+        "control_bbox": [
+          333,
+          0,
+          362,
+          44
+        ]
+      }
+    },
+    "bank_panel": {
+      "organize": {
+        "path": "templates/bank_panel__organize.png",
+        "threshold": 0.7,
+        "source_image": "datasets\\09_背包\\images\\20260710_014259_397_09_背包_2560x1369_000067.png",
+        "source_panel_bbox": [
+          854,
+          274,
+          1693,
+          716
+        ],
+        "control_bbox": [
+          705,
+          398,
+          755,
+          438
+        ]
+      },
+      "deposit": {
+        "path": "templates/bank_panel__deposit.png",
+        "threshold": 0.7,
+        "source_image": "datasets\\09_背包\\images\\20260710_014259_397_09_背包_2560x1369_000067.png",
+        "source_panel_bbox": [
+          854,
+          274,
+          1693,
+          716
+        ],
+        "control_bbox": [
+          763,
+          398,
+          797,
+          438
+        ]
+      },
+      "withdraw": {
+        "path": "templates/bank_panel__withdraw.png",
+        "threshold": 0.7,
+        "source_image": "datasets\\09_背包\\images\\20260710_014259_397_09_背包_2560x1369_000067.png",
+        "source_panel_bbox": [
+          854,
+          274,
+          1693,
+          716
+        ],
+        "control_bbox": [
+          805,
+          398,
+          839,
+          438
+        ]
+      },
+      "close": {
+        "path": "templates/bank_panel__close.png",
+        "threshold": 0.7,
+        "source_image": "datasets\\09_背包\\images\\20260710_014259_397_09_背包_2560x1369_000067.png",
+        "source_panel_bbox": [
+          854,
+          274,
+          1693,
+          716
+        ],
+        "control_bbox": [
+          805,
+          0,
+          839,
+          44
+        ]
+      }
+    },
+    "death_dialog": {
+      "revive": {
+        "path": "templates/death_dialog__revive.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_082050_363_99_其他杂项_2576x1408_000174.png",
+        "source_panel_bbox": [
+          1135,
+          314,
+          1390,
+          433
+        ],
+        "control_bbox": [
+          140,
+          83,
+          194,
+          117
+        ]
+      },
+      "exit": {
+        "path": "templates/death_dialog__exit.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_082050_363_99_其他杂项_2576x1408_000174.png",
+        "source_panel_bbox": [
+          1135,
+          314,
+          1390,
+          433
+        ],
+        "control_bbox": [
+          199,
+          83,
+          250,
+          117
+        ]
+      }
+    },
+    "npc_destination_panel": {
+      "accept": {
+        "path": "templates/npc_destination_panel__accept.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_082151_223_99_其他杂项_2576x1408_000185.png",
+        "source_panel_bbox": [
+          9,
+          201,
+          278,
+          573
+        ],
+        "control_bbox": [
+          5,
+          335,
+          59,
+          368
+        ]
+      },
+      "continue": {
+        "path": "templates/npc_destination_panel__continue.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_082151_223_99_其他杂项_2576x1408_000185.png",
+        "source_panel_bbox": [
+          9,
+          201,
+          278,
+          573
+        ],
+        "control_bbox": [
+          62,
+          335,
+          116,
+          368
+        ]
+      },
+      "goodbye": {
+        "path": "templates/npc_destination_panel__goodbye.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_082151_223_99_其他杂项_2576x1408_000185.png",
+        "source_panel_bbox": [
+          9,
+          201,
+          278,
+          573
+        ],
+        "control_bbox": [
+          210,
+          335,
+          264,
+          368
+        ]
+      }
+    },
+    "auto_nav_panel": {
+      "move": {
+        "path": "templates/auto_nav_panel__move.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_082155_762_99_其他杂项_2576x1408_000186.png",
+        "source_panel_bbox": [
+          2360,
+          300,
+          2576,
+          519
+        ],
+        "control_bbox": [
+          158,
+          180,
+          214,
+          219
+        ]
+      },
+      "close": {
+        "path": "templates/auto_nav_panel__close.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\99_其他杂项\\images\\20260710_082155_762_99_其他杂项_2576x1408_000186.png",
+        "source_panel_bbox": [
+          2360,
+          300,
+          2576,
+          519
+        ],
+        "control_bbox": [
+          194,
+          0,
+          216,
+          39
+        ]
+      }
+    },
+    "confirm_dialog": {
+      "confirm": {
+        "path": "templates/confirm_dialog__confirm.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\14_常用NPC模块\\images\\20260710_015322_527_14_常用NPC模块_2560x1369_000009.png",
+        "source_panel_bbox": [
+          1155,
+          571,
+          1408,
+          798
+        ],
+        "control_bbox": [
+          159,
+          177,
+          207,
+          222
+        ]
+      },
+      "cancel": {
+        "path": "templates/confirm_dialog__cancel.png",
+        "threshold": 0.76,
+        "source_image": "datasets\\14_常用NPC模块\\images\\20260710_015322_527_14_常用NPC模块_2560x1369_000009.png",
+        "source_panel_bbox": [
+          1155,
+          571,
+          1408,
+          798
+        ],
+        "control_bbox": [
+          207,
+          177,
+          250,
+          222
+        ]
+      }
+    }
+  },
+  "template_confirmable_classes": [
+    "auto_nav_panel",
+    "bag_panel",
+    "bank_panel",
+    "death_dialog",
+    "material_panel",
+    "monthly_card_panel",
+    "shop_panel"
+  ],
+  "ocr_only_classes": [
+    "confirm_dialog",
+    "npc_destination_panel"
+  ],
+  "shop_policy": "The sell button template never authorizes an item. allow_sell from the external item policy is still mandatory."
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "status": "model_ready_pending_backend_integration",
+  "task": "detect",
+  "hashes": {
+    "onnx_sha256": "9a7273fde40161ced55a82a3b56ba753f3d4dab0a642fafed40a270616fbc7a0"
+  },
+  "input": {
+    "source": "full_game_client_rgb",
+    "letterbox": true,
+    "imgsz": 960,
+    "dynamic_shape": true
+  },
+  "postprocess": {
+    "confidence_threshold": 0.75,
+    "nms_iou_threshold": 0.7,
+    "max_detections": 10,
+    "coordinate_space": "original_game_client_pixels"
+  },
+  "classes": {
+    "0": "bag_panel",
+    "1": "shop_panel",
+    "2": "monthly_card_panel",
+    "3": "bank_panel",
+    "4": "material_panel"
+  },
+  "temporal_gate": {
+    "minimum_stable_frames": 2,
+    "invalid_result": "unknown_noop"
+  },
+  "l2_contract": {
+    "input": "crop_inside_confirmed_l1_bbox",
+    "direct_click_from_l1_bbox": false,
+    "requires_pixel_reviewed_safe_click_bbox": true
+  }
+}

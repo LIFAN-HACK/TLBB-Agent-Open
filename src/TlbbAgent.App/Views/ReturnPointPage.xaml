@@ -1,0 +1,569 @@
+<UserControl x:Class="TlbbAgent.App.Views.ReturnPointPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             FontFamily="{StaticResource AppFont}">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="24,20">
+        <StackPanel MaxWidth="980" HorizontalAlignment="Left">
+            <DockPanel>
+                <Border DockPanel.Dock="Right" Style="{StaticResource Badge}" VerticalAlignment="Center"
+                        Background="{Binding Descriptor.Status, Converter={StaticResource StatusBg}}">
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="7" Height="7" VerticalAlignment="Center" Fill="{Binding Descriptor.Status, Converter={StaticResource StatusBrush}}" />
+                        <TextBlock Text="{Binding Descriptor.Status, Converter={StaticResource StatusText}}" FontSize="11" Margin="6,0,0,0" Foreground="{StaticResource Text.SecondaryBrush}" />
+                    </StackPanel>
+                </Border>
+                <StackPanel>
+                    <TextBlock Text="{Binding Title}" Style="{StaticResource H1}" />
+                    <TextBlock Text="{Binding Subtitle}" Style="{StaticResource Label}" Margin="0,4,0,0" TextWrapping="Wrap" />
+                </StackPanel>
+            </DockPanel>
+
+            <Border Style="{StaticResource Card}" Margin="0,18,0,0" Visibility="{Binding HasController, Converter={StaticResource BoolToVis}}">
+                <StackPanel>
+                    <TextBlock Text="状态机" Style="{StaticResource Caption}" />
+                    <StackPanel Orientation="Horizontal" Margin="0,6,0,0">
+                        <Ellipse Width="9" Height="9" VerticalAlignment="Center" Fill="{Binding RunState, Converter={StaticResource RunStateBrush}}" />
+                        <TextBlock Text="{Binding RunState, Converter={StaticResource RunStateText}}" Margin="8,0,0,0" VerticalAlignment="Center" Style="{StaticResource Label}" />
+                        <Border CornerRadius="6" Background="{StaticResource Bg.WindowBrush}" Padding="8,3" Margin="12,0,0,0">
+                            <TextBlock Text="{Binding CurrentStateName}" FontFamily="Consolas" FontSize="12" Foreground="{StaticResource Accent.CyanBrush}" />
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <DockPanel>
+                        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                    <Button Content="载入" Style="{StaticResource GhostButton}" Width="64" Height="30" Margin="0,0,8,0" Command="{Binding ImportLegacyHorseRoutesCommand}" />
+                            <Button Content="保存" Style="{StaticResource PrimaryButton}" Width="64" Height="30" Margin="0,0,8,0" Command="{Binding SaveCommand}" />
+                            <Button Content="加载" Style="{StaticResource GhostButton}" Width="64" Height="30" Command="{Binding LoadCommand}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="返点策略" Style="{StaticResource H2}" />
+                            <TextBlock Text="{Binding PointSummary}" Style="{StaticResource Caption}" Margin="0,3,0,0" />
+                        </StackPanel>
+                    </DockPanel>
+
+                    <Border Style="{StaticResource PanelCard}" Padding="12" Margin="0,14,0,0">
+                        <DockPanel LastChildFill="True">
+                            <CheckBox DockPanel.Dock="Right" Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableReturnPoint}" />
+                            <StackPanel>
+                                <TextBlock Text="启用返点能力" Style="{StaticResource H2}" />
+                                <TextBlock Text="关闭后，挂机循环不会执行返点、死亡返回或卡点判定。" Style="{StaticResource Caption}" Margin="0,3,0,0" TextWrapping="Wrap" />
+                            </StackPanel>
+                        </DockPanel>
+                    </Border>
+
+                    <WrapPanel Margin="0,14,0,0">
+                        <StackPanel Margin="0,0,28,12">
+                            <TextBlock Text="定点返点" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableFixedFarmReturn}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,28,12">
+                            <TextBlock Text="土灵返点" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableEarthSpiritReturn}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,28,12">
+                            <TextBlock Text="死亡返点" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableDeathReturn}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,28,12">
+                            <TextBlock Text="卡点恢复" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableStuckRecovery}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,28,12">
+                            <TextBlock Text="卡点超时 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="100" Text="{Binding StuckTimeoutMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,12">
+                            <TextBlock Text="重试次数" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="80" Text="{Binding ReturnRetryLimit}" />
+                        </StackPanel>
+                        <StackPanel Margin="28,0,0,12">
+                            <TextBlock Text="检查间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="100" Text="{Binding CheckIntervalMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="12,0,0,12">
+                            <TextBlock Text="到达距离" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="80" Text="{Binding ArrivalDistance}" />
+                        </StackPanel>
+                        <StackPanel Margin="12,0,0,12">
+                            <TextBlock Text="回点等待 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="100" Text="{Binding ReturnTravelWaitMs}" />
+                        </StackPanel>
+                    </WrapPanel>
+
+                    <TextBlock Text="{Binding ImportStatus}" Style="{StaticResource Caption}" Margin="0,4,0,0" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <DockPanel>
+                        <Button DockPanel.Dock="Right" Content="导入 JSON" Style="{StaticResource PrimaryButton}" Width="92" Height="30"
+                                Command="{Binding ImportRecordedNavigationCommand}" />
+                        <StackPanel>
+                            <TextBlock Text="录制寻路样本" Style="{StaticResource H2}" />
+                            <TextBlock Text="{Binding RecordedNavigationSummary}" Style="{StaticResource Caption}" Margin="0,3,0,0" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding RecordedNavigationGateStatus}" Style="{StaticResource Caption}" Margin="0,3,0,0" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding RecordedNavigationDestinationSummary}" Style="{StaticResource Caption}" Margin="0,3,0,0" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding RecordedNavigationEvidenceSummary}" Style="{StaticResource Caption}" Margin="0,3,0,0" TextWrapping="Wrap" />
+                                    <TextBlock Text="导入已验收样本；前置热键用于打开地图。" Style="{StaticResource Caption}" Margin="0,3,0,0" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </DockPanel>
+
+                    <WrapPanel Margin="0,14,0,0">
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Text="写入槽位" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="146" ItemsSource="{Binding ReturnNavigationSlots}" SelectedItem="{Binding RecordImportSlot}">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Converter={StaticResource ReturnNavigationSlotText}}" />
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+                            </ComboBox>
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Text="点位名称" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="150" Text="{Binding RecordImportPointLabel, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Text="前置热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="150" Text="{Binding RecordImportPreHotkeys, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Text="前置延迟 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="96" Text="{Binding RecordImportPreHotkeyDelayMs, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Text="目标 X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="72" Text="{Binding RecordNavigationTargetX, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Text="目标 Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="72" Text="{Binding RecordNavigationTargetY, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,8">
+                            <TextBlock Text="录制 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="92" Text="{Binding RecordNavigationDurationMs, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="确认地图" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding RecordImportConfirmMap}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="生成点位" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding RecordImportAddReturnPoint}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="覆盖已有" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding RecordImportForceOverwrite}" />
+                        </StackPanel>
+                        <TextBlock Text="{Binding RecordImportStatus}" Style="{StaticResource Caption}" Margin="0,22,0,0" TextWrapping="Wrap" />
+                    </WrapPanel>
+
+                    <Border Background="{StaticResource Bg.SurfaceAltBrush}" CornerRadius="7" Padding="12" Margin="0,10,0,0">
+                        <StackPanel>
+                            <DockPanel>
+                                <Button DockPanel.Dock="Right" Content="复制命令" Style="{StaticResource GhostButton}" Width="82" Height="30"
+                                        Command="{Binding CopyRecordNavigationCommandCommand}" />
+                                <Button DockPanel.Dock="Right" Content="复制完整流程" Style="{StaticResource PrimaryButton}" Width="112" Height="30" Margin="0,0,8,0"
+                                        Command="{Binding CopyRecordNavigationWorkflowCommand}" />
+                                <StackPanel>
+                                    <TextBlock Text="采集命令" Style="{StaticResource H2}" />
+                                    <TextBlock Text="执行后在场景地图点击一次；只有输出 PASS 才能导入。" Style="{StaticResource Caption}" Margin="0,3,0,0" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </DockPanel>
+                            <TextBox Margin="0,10,0,0" MinHeight="54" IsReadOnly="True" TextWrapping="Wrap"
+                                     Text="{Binding RecordNavigationCommandText, Mode=OneWay}" />
+                            <TextBlock Text="完整流程" Style="{StaticResource Caption}" Margin="0,12,0,4" />
+                            <TextBox MinHeight="150" IsReadOnly="True" TextWrapping="Wrap"
+                                     VerticalScrollBarVisibility="Auto"
+                                     Text="{Binding RecordNavigationWorkflowText, Mode=OneWay}" />
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="{StaticResource Bg.SurfaceAltBrush}" CornerRadius="7" Padding="12" Margin="0,10,0,0">
+                        <StackPanel>
+                            <DockPanel>
+                                <Button DockPanel.Dock="Right" Content="刷新门禁" Style="{StaticResource PrimaryButton}" Width="92" Height="30"
+                                        Command="{Binding RefreshReturnReadinessCommand}" />
+                                <StackPanel>
+                                    <TextBlock Text="回点门禁" Style="{StaticResource H2}" />
+                                    <TextBlock Text="检查地图、坐标与回点条件。" Style="{StaticResource Caption}" Margin="0,3,0,0" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </DockPanel>
+                            <TextBlock Text="{Binding ReturnReadinessStatus}" Style="{StaticResource H2}" Margin="0,10,0,0" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding ReturnReadinessNextAction}" Style="{StaticResource Caption}" Margin="0,5,0,0" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding ReturnReadinessScene}" Style="{StaticResource Caption}" Margin="0,5,0,0" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding ReturnReadinessSlots}" Style="{StaticResource Caption}" Margin="0,5,0,0" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="地图 / 坐标识别区" Style="{StaticResource H2}" />
+                    <TextBlock Text="地图识别不稳定时，可手动确认当前地图，避免跨地图误回点。" Style="{StaticResource Caption}" Margin="0,4,0,12" TextWrapping="Wrap" />
+
+                    <Border Background="{StaticResource Bg.SurfaceAltBrush}" CornerRadius="7" Padding="12" Margin="0,0,0,12">
+                        <StackPanel>
+                            <DockPanel>
+                                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Margin="12,0,0,0">
+                                    <Button Content="套用单地图" Style="{StaticResource GhostButton}" Width="92" Height="30" Margin="0,0,8,0"
+                                            Command="{Binding UseSingleConfiguredMapCommand}" />
+                                    <Button Content="清空确认" Style="{StaticResource GhostButton}" Width="82" Height="30"
+                                            Command="{Binding ClearConfirmedMapCommand}" />
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBlock Text="当前地图确认" Style="{StaticResource H2}" />
+                                    <TextBlock Text="{Binding ConfirmedMapStatus}" Style="{StaticResource Caption}" Margin="0,4,0,0" TextWrapping="Wrap" />
+                                    <TextBlock Text="{Binding ConfirmedMapCandidateSummary}" Style="{StaticResource Caption}" Margin="0,2,0,0" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </DockPanel>
+
+                            <WrapPanel Margin="0,12,0,0">
+                                <StackPanel Margin="0,0,12,8">
+                                    <TextBlock Text="手动填写" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="180" Text="{Binding ConfirmedMapName, UpdateSourceTrigger=PropertyChanged}" />
+                                </StackPanel>
+                                <ItemsControl ItemsSource="{Binding ConfirmedMapCandidates}" Margin="0,18,0,0">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <WrapPanel />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Button Content="{Binding}" Style="{StaticResource GhostButton}" MinWidth="62" Height="30" Margin="0,0,8,8"
+                                                    Command="{Binding DataContext.ConfirmMapCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                    CommandParameter="{Binding}" />
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="地图名区域" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <WrapPanel>
+                                <StackPanel Margin="0,0,8,8">
+                                    <TextBlock Text="X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="64" Text="{Binding MapRegionX}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,8,8">
+                                    <TextBlock Text="Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="64" Text="{Binding MapRegionY}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,8,8">
+                                    <TextBlock Text="宽" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="64" Text="{Binding MapRegionWidth}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,8">
+                                    <TextBlock Text="高" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="64" Text="{Binding MapRegionHeight}" />
+                                </StackPanel>
+                            </WrapPanel>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="坐标区域" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <WrapPanel>
+                                <StackPanel Margin="0,0,8,8">
+                                    <TextBlock Text="X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="64" Text="{Binding CoordinateRegionX}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,8,8">
+                                    <TextBlock Text="Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="64" Text="{Binding CoordinateRegionY}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,8,8">
+                                    <TextBlock Text="宽" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="64" Text="{Binding CoordinateRegionWidth}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,8">
+                                    <TextBlock Text="高" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="64" Text="{Binding CoordinateRegionHeight}" />
+                                </StackPanel>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="死亡识别" Style="{StaticResource H2}" />
+                    <TextBlock Text="死亡后优先执行返回动作。" Style="{StaticResource Caption}" Margin="0,4,0,12" TextWrapping="Wrap" />
+                    <WrapPanel>
+                        <StackPanel Margin="0,0,8,8">
+                            <TextBlock Text="X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="64" Text="{Binding DeathRegionX}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,8,8">
+                            <TextBlock Text="Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="64" Text="{Binding DeathRegionY}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,8,8">
+                            <TextBlock Text="宽" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="64" Text="{Binding DeathRegionWidth}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="高" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="64" Text="{Binding DeathRegionHeight}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,8">
+                            <TextBlock Text="关键词" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="420" Text="{Binding DeathKeywords}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="返点导航动作" Style="{StaticResource H2}" />
+                    <TextBlock Text="超过距离时执行。" Style="{StaticResource Caption}" Margin="0,4,0,12" TextWrapping="Wrap" />
+                    <WrapPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="动作模式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="190" ItemsSource="{Binding ReturnNavigationModes}" SelectedItem="{Binding ReturnNavigationMode}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="88" Text="{Binding ReturnNavigationHotkey}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="热键后延迟 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="104" Text="{Binding ReturnNavigationDelayMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="点击 X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding ReturnNavigationClickX}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="点击 Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding ReturnNavigationClickY}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="动作间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="104" Text="{Binding ReturnNavigationActionIntervalMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,8">
+                            <TextBlock Text="发送方式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="126" ItemsSource="{Binding DispatchModes}" SelectedItem="{Binding ReturnNavigationDispatchMode}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="土灵返点动作" Style="{StaticResource H2}" />
+                    <TextBlock Text="启用后优先执行。" Style="{StaticResource Caption}" Margin="0,4,0,12" TextWrapping="Wrap" />
+                    <WrapPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="动作模式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="190" ItemsSource="{Binding ReturnNavigationModes}" SelectedItem="{Binding EarthSpiritMode}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="88" Text="{Binding EarthSpiritHotkey}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="热键后延迟 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="104" Text="{Binding EarthSpiritDelayMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="点击 X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding EarthSpiritClickX}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="点击 Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding EarthSpiritClickY}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="动作间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="104" Text="{Binding EarthSpiritActionIntervalMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,8">
+                            <TextBlock Text="发送方式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="126" ItemsSource="{Binding DispatchModes}" SelectedItem="{Binding EarthSpiritDispatchMode}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="死亡返回动作" Style="{StaticResource H2}" />
+                    <TextBlock Text="检测到死亡提示后执行。" Style="{StaticResource Caption}" Margin="0,4,0,12" TextWrapping="Wrap" />
+                    <WrapPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="动作模式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="190" ItemsSource="{Binding ReturnNavigationModes}" SelectedItem="{Binding DeathReturnMode}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="88" Text="{Binding DeathReturnHotkey}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="热键后延迟 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="104" Text="{Binding DeathReturnDelayMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="点击 X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding DeathReturnClickX}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="点击 Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding DeathReturnClickY}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="动作间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="104" Text="{Binding DeathReturnActionIntervalMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,8">
+                            <TextBlock Text="发送方式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="126" ItemsSource="{Binding DispatchModes}" SelectedItem="{Binding DeathReturnDispatchMode}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="卡点恢复动作" Style="{StaticResource H2}" />
+                    <TextBlock Text="坐标长时间不变化时执行。" Style="{StaticResource Caption}" Margin="0,4,0,12" TextWrapping="Wrap" />
+                    <WrapPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="恢复模式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="190" ItemsSource="{Binding ReturnNavigationModes}" SelectedItem="{Binding StuckRecoveryMode}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="88" Text="{Binding StuckRecoveryHotkey}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="热键后延迟 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="104" Text="{Binding StuckRecoveryDelayMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="点击 X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding StuckRecoveryClickX}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="点击 Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding StuckRecoveryClickY}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="动作间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="104" Text="{Binding StuckRecoveryActionIntervalMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,8">
+                            <TextBlock Text="发送方式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="126" ItemsSource="{Binding DispatchModes}" SelectedItem="{Binding StuckRecoveryDispatchMode}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="手动录入坐标" Style="{StaticResource H2}" Margin="0,0,0,12" />
+                    <WrapPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="地图" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="120" Text="{Binding NewMapName}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding NewX}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="70" Text="{Binding NewY}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="标签" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="120" Text="{Binding NewLabel}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="类型" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="126" ItemsSource="{Binding PointKinds}" SelectedItem="{Binding NewKind}" />
+                        </StackPanel>
+                        <Button Content="只读识别" Style="{StaticResource GhostButton}" Width="88" Height="32" Margin="0,18,8,0" Command="{Binding PreviewCurrentPointCommand}" />
+                        <Button Content="采集并添加" Style="{StaticResource GhostButton}" Width="104" Height="32" Margin="0,18,8,0" Command="{Binding CaptureCurrentPointCommand}" />
+                        <Button Content="添加坐标" Style="{StaticResource PrimaryButton}" Width="86" Height="32" Margin="0,18,0,0" Command="{Binding AddPointCommand}" />
+                    </WrapPanel>
+                    <TextBlock Text="{Binding PreviewStatus}" Style="{StaticResource Caption}" Margin="0,6,0,0" TextWrapping="Wrap" />
+                    <TextBlock Text="{Binding CaptureStatus}" Style="{StaticResource Caption}" Margin="0,6,0,0" TextWrapping="Wrap" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,24">
+                <StackPanel>
+                    <DockPanel Margin="0,0,0,10">
+                        <Button DockPanel.Dock="Right" Content="清空" Style="{StaticResource GhostButton}" Width="64" Height="30" Command="{Binding ClearPointsCommand}" />
+                        <TextBlock Text="坐标列表" Style="{StaticResource H2}" />
+                    </DockPanel>
+
+                    <Grid Margin="0,0,0,6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="92" />
+                            <ColumnDefinition Width="64" />
+                            <ColumnDefinition Width="64" />
+                            <ColumnDefinition Width="120" />
+                            <ColumnDefinition Width="120" />
+                            <ColumnDefinition Width="52" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="地图" Style="{StaticResource Caption}" />
+                        <TextBlock Grid.Column="1" Text="X" Style="{StaticResource Caption}" />
+                        <TextBlock Grid.Column="2" Text="Y" Style="{StaticResource Caption}" />
+                        <TextBlock Grid.Column="3" Text="标签" Style="{StaticResource Caption}" />
+                        <TextBlock Grid.Column="4" Text="类型" Style="{StaticResource Caption}" />
+                        <TextBlock Grid.Column="5" Text="操作" Style="{StaticResource Caption}" />
+                    </Grid>
+                    <Border Height="1" Background="{StaticResource StrokeBrush}" />
+
+                    <ItemsControl ItemsSource="{Binding Points}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="0,8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="92" />
+                                        <ColumnDefinition Width="64" />
+                                        <ColumnDefinition Width="64" />
+                                        <ColumnDefinition Width="120" />
+                                        <ColumnDefinition Width="120" />
+                                        <ColumnDefinition Width="52" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox Grid.Column="0" Margin="0,0,8,0" Text="{Binding MapName}" />
+                                    <TextBox Grid.Column="1" Margin="0,0,8,0" Text="{Binding X}" />
+                                    <TextBox Grid.Column="2" Margin="0,0,8,0" Text="{Binding Y}" />
+                                    <TextBox Grid.Column="3" Margin="0,0,8,0" Text="{Binding Label}" />
+                                    <ComboBox Grid.Column="4" Margin="0,0,8,0"
+                                              ItemsSource="{Binding DataContext.PointKinds, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                              SelectedItem="{Binding Kind}" />
+                                    <Button Grid.Column="5" Content="删" Style="{StaticResource GhostButton}" Height="30" Width="36"
+                                            Command="{Binding DataContext.RemovePointCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                            CommandParameter="{Binding}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "长白山",
+    "source":  "https://tl.changyou.com/data/monster/monster17.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 长白山",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "冰封傀儡",
+                        "group":  "长白山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "东北虎",
+                        "group":  "长白山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "黑熊",
+                        "group":  "长白山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "獠牙雪人",
+                        "group":  "长白山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山神",
+                        "group":  "长白山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "雪人",
+                        "group":  "长白山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "雪山猎人",
+                        "group":  "长白山",
+                        "allowAttack":  true
+                    }
+                ]
+}

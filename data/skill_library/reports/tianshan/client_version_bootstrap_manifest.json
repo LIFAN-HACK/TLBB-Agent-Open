@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "sect": "天山",
+  "purpose": "global_skill_library_bootstrap_for_client_version",
+  "safety_policy": "candidate_only_until_reviewed_ingame_templates_exist",
+  "capture_requirements": {
+    "scope": "one-time shared asset production; never per player or per slot arrangement",
+    "client_version": "0.08.1808 or record the actual tested version",
+    "states": [
+      "ready_without_cd_overlay",
+      "cooling_with_gray_or_digit_overlay"
+    ],
+    "minimum_ready_samples_per_visible_skill": 2,
+    "minimum_cooling_samples_per_visible_skill": 2,
+    "resolutions": [
+      "native",
+      "0.75_scale",
+      "0.50_scale"
+    ],
+    "crop_source": "L1 skill_bar crop; never use a hand-entered full-screen absolute ROI"
+  },
+  "skills": [
+    {
+      "skill_id": "ts_001",
+      "name": "雁南飞",
+      "official_icon": "icons_raw/ts_001.jpg",
+      "official_sha256": "3f929712d9c2e0568dcf096b3a5546b31a2b279cd9cb63646efae000d57b736c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_002",
+      "name": "鹰击长空",
+      "official_icon": "icons_raw/ts_002.jpg",
+      "official_sha256": "ff0d2a7348b9f64cc9038571ad94f4bd3b08b68cb99b21081c59ee0632d86687",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_003",
+      "name": "冰肌玉骨",
+      "official_icon": "icons_raw/ts_003.jpg",
+      "official_sha256": "df4d68356860239415c84c1791f09f6c6c44639f9671d0e3974e05f528a623f5",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_004",
+      "name": "凤舞九天",
+      "official_icon": "icons_raw/ts_004.jpg",
+      "official_sha256": "65fe56b6eda942791106a69b5f6ae360d88f0a153746f6ea7e3f483ddba341ed",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_005",
+      "name": "白驹过隙",
+      "official_icon": "icons_raw/ts_005.jpg",
+      "official_sha256": "05a5e4ee327d9224985fdb805f15b231588cfa71046d11da757521823baa0192",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_006",
+      "name": "铁锁横江",
+      "official_icon": "icons_raw/ts_006.jpg",
+      "official_sha256": "158b21d60b8d495847201bef3a79bd16ec0a0b95741b64b728e510f84570a662",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_007",
+      "name": "十面埋伏",
+      "official_icon": "icons_raw/ts_007.jpg",
+      "official_sha256": "b83ae5c19f47cdc38cb720c35892ad78354332a3f28c5d29ac4686d4d23d7f53",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_008",
+      "name": "金蝉脱壳",
+      "official_icon": "icons_raw/ts_008.jpg",
+      "official_sha256": "afd2c39a10cf3cbe6ab0a247556ee719784246a2fc71813b0ca99dec1b8c80e9",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_009",
+      "name": "移花接木",
+      "official_icon": "icons_raw/ts_009.jpg",
+      "official_sha256": "e19d3f98cc9b1e19cb3a433fc8b918fc01b06236686e787a0c2a3c5b6008e990",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_010",
+      "name": "兰花点穴手",
+      "official_icon": "icons_raw/ts_010.jpg",
+      "official_sha256": "04c9632f2fb56721b44b3614768b01042ad2771c874ab91335ac682535d070a2",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_011",
+      "name": "柳暗花明",
+      "official_icon": "icons_raw/ts_011.jpg",
+      "official_sha256": "c1fed2a0cc3d612b92a4450e2f242d0dfefa52a16c14310c638c04b85c675337",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_012",
+      "name": "凝霜甲",
+      "official_icon": "icons_raw/ts_012.jpg",
+      "official_sha256": "9499afb96c28acc844c072e89d9098160bdd3cb71a0da04deb9446bc31af7322",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_013",
+      "name": "雪花六出",
+      "official_icon": "icons_raw/ts_013.jpg",
+      "official_sha256": "80e1f2a60967c4c980937273eca691ebf5abe4d2ba4b6ac399050cb31d54c48f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_014",
+      "name": "融雪式",
+      "official_icon": "icons_raw/ts_014.jpg",
+      "official_sha256": "2b78fb152e87ff96071848e288c146a8b22f43d87c6dca3ed7eb85ac7a04a5a4",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_015",
+      "name": "踏雪无痕",
+      "official_icon": "icons_raw/ts_015.jpg",
+      "official_sha256": "619fea51ad1be3a499b0acad57cfda4a5f901c3e1ba0fe9d0d98cb648ac82086",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_016",
+      "name": "疏影扇",
+      "official_icon": "icons_raw/ts_016.jpg",
+      "official_sha256": "19c78ae1624f129a3370dbb3f605a3328abebad259632458331adf0ea7c7bac6",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_017",
+      "name": "梅花三弄",
+      "official_icon": "icons_raw/ts_017.jpg",
+      "official_sha256": "151f7f3af1804086c3ca466de2faba4fb67b7213373236c81d0405589112999b",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_018",
+      "name": "折梅式",
+      "official_icon": "icons_raw/ts_018.jpg",
+      "official_sha256": "3cc580a33d034891e15dcb0c986ff27f9c498072f2ad8371c515d70ccd09dcec",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_019",
+      "name": "寒梅怒放",
+      "official_icon": "icons_raw/ts_019.jpg",
+      "official_sha256": "633d54dbfd10f840882a25a7f3f46b38029657552ad15590130df94119b86c95",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_020",
+      "name": "阳歌天钧",
+      "official_icon": "icons_raw/ts_020.jpg",
+      "official_sha256": "08f2f7a89e45ece234ce5ac207ea8dce89054c3ab34e9a031333eca2126fc559",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_021",
+      "name": "阳春白雪",
+      "official_icon": "icons_raw/ts_021.jpg",
+      "official_sha256": "cf33ad752a599a1648b7301cc076d58aa32bbe93e0d6bba33a0fa61666aee17e",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_022",
+      "name": "阳关三叠",
+      "official_icon": "icons_raw/ts_022.jpg",
+      "official_sha256": "74f13cd124709d9950193d455a1c0da8a055dd9d92caa443ed7359b6fb890658",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_023",
+      "name": "天地明灭",
+      "official_icon": "icons_raw/ts_023.jpg",
+      "official_sha256": "b4259dbab728e22f4363f1b9a8bc24e5a78fd21c51255f1482d2f44cc1b4c9c2",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_024",
+      "name": "同生共死",
+      "official_icon": "icons_raw/ts_024.jpg",
+      "official_sha256": "55e3678aaffc24ebb15103488d684285ce2690c0c67237454badaa37b313e167",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "ts_025",
+      "name": "冰凝霜华",
+      "official_icon": "icons_raw/ts_025.jpg",
+      "official_sha256": "cbcdf61ee9b0b77c2eb440438203e501e8ce2f9215cfc5ce041e05921941a17d",
+      "ingame_variants": [],
+      "state": "capture_required"
+    }
+  ]
+}

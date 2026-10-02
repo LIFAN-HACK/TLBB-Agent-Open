@@ -1,0 +1,138 @@
+using Microsoft.Extensions.DependencyInjection;
+using TlbbAgent.Contracts;
+using TlbbAgent.Core.Automation;
+using TlbbAgent.Core.Perception;
+
+namespace TlbbAgent.Core;
+
+public static class DependencyInjection
+{
+    public static IServiceCollection AddTlbbCore(this IServiceCollection services)
+    {
+        services.AddSingleton<IAppInitService, AppInitService>();
+        services.AddSingleton<IRuntimeWarmupService, RuntimeWarmupService>();
+        services.AddSingleton<IUserSessionService, UnavailableUserSessionService>();
+        services.AddSingleton<ILogService, RuntimeLogService>();
+        services.AddSingleton<ICombatLoopTelemetryService, CombatLoopTelemetryService>();
+        services.AddSingleton<IWindowBindingService, WindowBindingService>();
+        services.AddSingleton<IWindowCaptureService, WindowCaptureService>();
+        services.AddSingleton<ILatestFrameService, LatestFrameService>();
+        services.AddSingleton<ITemplateOcrService, DisabledLegacyTemplateOcrService>();
+        services.AddSingleton<ISkillCooldownRecognitionService, SkillCooldownRecognitionService>();
+        services.AddSingleton<ITargetProtectionSampleService, TargetProtectionSampleService>();
+        services.AddSingleton<ITargetSafetyService, TargetSafetyService>();
+        services.AddSingleton<ITargetPolicyCatalogService, TargetPolicyCatalogService>();
+        services.AddSingleton<ICombatRecognitionService, VisionCombatRecognitionAdapter>();
+        services.AddSingleton<IModelArtifactRegistry, ModelArtifactRegistry>();
+        services.AddSingleton<ILayoutDetectService, OnnxLayoutDetectService>();
+        services.AddSingleton<IRightSkillBarDetectService, RightSkillBarDetectService>();
+        services.AddSingleton<IBuffAnchorDetectService, BuffAnchorDetectService>();
+        services.AddSingleton<IBuffStateFusionService, BuffStateFusionService>();
+        services.AddSingleton<IInteractionWindowDetectService, InteractionWindowDetectService>();
+        services.AddSingleton<IInteractionControlCatalogService, InteractionControlCatalogService>();
+        services.AddSingleton<IInteractionReadOnlyPlanService, InteractionReadOnlyPlanService>();
+        services.AddSingleton<IBackgroundInputCapabilityService, BackgroundInputCapabilityService>();
+        services.AddSingleton<IGameHotkeyProfileService, GameHotkeyProfileService>();
+        services.AddSingleton<ISystemFeedbackRegionDetectService, SystemFeedbackRegionDetectService>();
+        services.AddSingleton<ISystemFeedbackAsyncPipeline, SystemFeedbackAsyncPipeline>();
+        services.AddSingleton<ITargetHpSlotService, TargetHpSlotService>();
+        services.AddSingleton<IOpenTextRecognizer, RapidOcrOpenTextRecognizer>();
+        services.AddSingleton<VisionV2SlotService>();
+        services.AddSingleton<IVisionV2SlotService>(provider => provider.GetRequiredService<VisionV2SlotService>());
+        services.AddSingleton<IVisionActionPlanner>(provider => provider.GetRequiredService<VisionV2SlotService>());
+        services.AddSingleton<IVisionActionExecutor, VisionActionExecutor>();
+        services.AddSingleton<IVisualActionConfirmationService, VisualActionConfirmationService>();
+        services.AddSingleton<IVisionRemoteResponseSafetyGate, VisionRemoteResponseSafetyGate>();
+        services.AddSingleton<ITargetIdentityService, TemplateTargetIdentityService>();
+        services.AddSingleton<ITargetJudgementService, TargetJudgementService>();
+        services.AddSingleton<IMinimapTemporalFusionService, MinimapTemporalFusionService>();
+        services.AddSingleton<MapNamePolicyService>();
+        services.AddSingleton<IPerceptionHub, PerceptionHub>();
+        services.AddSingleton<ICombatEnvironmentGateService, CombatEnvironmentGateService>();
+        services.AddSingleton<VisionCombatBackend>();
+        services.AddSingleton<InternalPluginCombatBackend>();
+        services.AddSingleton<ICombatBackendSelector, CombatBackendSelector>();
+        services.AddSingleton<IGameBuiltInHangSwitchService, GameBuiltInHangSwitchService>();
+        services.AddSingleton<IMapNameSampleRecognitionService, MapNameSampleRecognitionService>();
+        services.AddSingleton<INavigationRecognitionService, NavigationRecognitionService>();
+        services.AddSingleton<IFourCityTransferRouteService, FourCityTransferRouteService>();
+        services.AddSingleton<ISceneStateService, SceneStateService>();
+        services.AddSingleton<IDeathRecognitionService, DeathRecognitionService>();
+        services.AddSingleton<IReturnNavigationService, ReturnNavigationService>();
+        services.AddSingleton<IReturnNavigationRecordImportService, ReturnNavigationRecordImportService>();
+        services.AddSingleton<IHorseBanditRecognitionService, HorseBanditRecognitionService>();
+        services.AddSingleton<IInputService, InputService>();
+        services.AddSingleton<IStateMachineEngine, StateMachineEngine>();
+        services.AddSingleton<IRoleSessionManager, RoleSessionManager>();
+        services.AddSingleton<IRoleIdentityService, RoleIdentityService>();
+        services.AddSingleton<IProfileService, ProfileConfigService>();
+        services.AddSingleton<IGlobalConfigService, GlobalConfigService>();
+        services.AddSingleton<IMainlineReadinessService, MainlineReadinessService>();
+        services.AddSingleton<IShoutConfigService, ShoutConfigService>();
+        services.AddSingleton<IShoutChannelSelector, UnavailableShoutChannelSelector>();
+        services.AddSingleton<IShoutQueueRuntimeService, ShoutQueueRuntimeService>();
+        services.AddSingleton<IAutoLoginConfigService, AutoLoginConfigService>();
+        services.AddSingleton<IAppProfileService, AppProfileService>();
+        services.AddSingleton<IResolutionProfileService, ResolutionProfileService>();
+        services.AddSingleton<IReturnPointService, ReturnPointService>();
+        services.AddSingleton<IReturnPointCaptureService, ReturnPointCaptureService>();
+        // Legacy return-point runtime retired; hang must not be suspended until rebuild.
+        services.AddSingleton<IReturnPointRuntimeService, DisabledReturnPointRuntimeService>();
+        services.AddSingleton<IReturnPointReadinessService, ReturnPointReadinessService>();
+        services.AddSingleton<IReadOnlyGameProcessProbe, ReadOnlyGameProcessProbe>();
+        services.AddSingleton<IRuntimeStateProvider, ReadOnlyRuntimeStateProvider>();
+        services.AddSingleton<IRuntimeSnapshotService, RuntimeSnapshotService>();
+        services.AddSingleton<IHorseBanditConfigService, HorseBanditConfigService>();
+        services.AddSingleton<INpcGrabConfigService, NpcGrabConfigService>();
+        services.AddSingleton<IAutoRebelConfigService, AutoRebelConfigService>();
+        services.AddSingleton<IAutoMonkConfigService, AutoMonkConfigService>();
+        services.AddSingleton<IAutoReconnectConfigService, AutoReconnectConfigService>();
+        services.AddSingleton<IClientProcessService, ClientProcessService>();
+        services.AddSingleton<IDungeonConfigService, DungeonConfigService>();
+        services.AddSingleton<ILifeCollectConfigService, LifeCollectConfigService>();
+        services.AddSingleton<ITradeConfigService, TradeConfigService>();
+        services.AddSingleton<IMaterialCraftConfigService, MaterialCraftConfigService>();
+        services.AddSingleton<IMaterialCraftEntryLocator, MaterialCraftEntryLocator>();
+        services.AddSingleton<IMaterialRecipeListReader, OpenTextMaterialRecipeListReader>();
+        services.AddSingleton<ISchoolTaskConfigService, SchoolTaskConfigService>();
+        services.AddSingleton<ITreasureMapConfigService, TreasureMapConfigService>();
+        services.AddSingleton<IGuildContributionConfigService, GuildContributionConfigService>();
+        services.AddSingleton<IUtilityConfigService, UtilityConfigService>();
+        services.AddSingleton<IInventoryRecognitionService, InventoryRecognitionService>();
+        services.AddSingleton<IItemPolicyService, ItemPolicyService>();
+        services.AddSingleton<IBagItemTemplateMatchService, BagItemTemplateMatchService>();
+        services.AddSingleton<IBagCleanupService, BagCleanupService>();
+        services.AddSingleton<IBagCleanupReportService, BagCleanupReportService>();
+        services.AddSingleton<IQuestionBankService, QuestionBankService>();
+        services.AddSingleton<ILegacyDataAdapter, LegacyDataAdapter>();
+        services.AddSingleton<IRuntimeDataService, RuntimeDataService>();
+        services.AddSingleton<ICaptchaSolver, Captcha.YunmaCaptchaSolver>();
+
+        services.AddSingleton<INpcTargetingService, NpcTargetingService>();
+        services.AddSingleton<INpcActionService, NpcActionService>();
+        services.AddSingleton<ISmallNpcFastGrabService, SmallNpcFastGrabService>();
+
+        services.AddSingleton<INormalHangController, NormalHangController>();
+        services.AddSingleton<IReturnPointController, ReturnPointController>();
+        services.AddSingleton<IHorseBanditModeController, HorseBanditModeController>();
+        services.AddSingleton<IAutoRebelController, AutoRebelController>();
+        services.AddSingleton<IAutoMonkController, AutoMonkController>();
+        services.AddSingleton<IDungeonController, DungeonController>();
+        services.AddSingleton<INpcGrabController, NpcGrabController>();
+        services.AddSingleton<ILifeCollectController, LifeCollectController>();
+        services.AddSingleton<ITradeController, TradeController>();
+        services.AddSingleton<IMaterialCraftController, MaterialCraftController>();
+        services.AddSingleton<ISchoolTaskController, SchoolTaskController>();
+        services.AddSingleton<ITreasureMapController, TreasureMapController>();
+        services.AddSingleton<IGuildContributionController, GuildContributionController>();
+        services.AddSingleton<IUtilityController, UtilityController>();
+        services.AddSingleton<IShoutController, ShoutController>();
+        services.AddSingleton<IAutoLoginController, AutoLoginController>();
+        services.AddSingleton<IAutoReconnectController, AutoReconnectController>();
+        services.AddSingleton<IWindowAutomationControllerFactory, WindowAutomationControllerFactory>();
+        services.AddSingleton<IAutomationRegistry, AutomationRegistry>();
+
+        services.AddSingleton<IModuleCatalog, ModuleCatalog>();
+        return services;
+    }
+}

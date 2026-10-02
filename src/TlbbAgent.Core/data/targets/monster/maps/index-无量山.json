@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "无量山",
+    "source":  "https://tl.changyou.com/data/monster/index.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 无量山",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "布尔善",
+                        "group":  "无量山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "大黄蜂",
+                        "group":  "无量山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "大铁网",
+                        "group":  "无量山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "高山白猿",
+                        "group":  "无量山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "剪径小贼",
+                        "group":  "无量山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "芦苇草人",
+                        "group":  "无量山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山蛛",
+                        "group":  "无量山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "闪电豹",
+                        "group":  "无量山",
+                        "allowAttack":  true
+                    }
+                ]
+}

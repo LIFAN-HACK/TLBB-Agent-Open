@@ -1,0 +1,525 @@
+{
+  "schema": 2,
+  "class_id": "bank_panel",
+  "zh_name": "钱庄/随身银行",
+  "coordinate_space": "exact_l1_v3_crop_pixels_xyxy_half_open",
+  "crop_size": [
+    839,
+    442
+  ],
+  "reference_to_v3_offset_xy": [
+    0,
+    0
+  ],
+  "controls": [
+    {
+      "control_id": "expand_storage",
+      "zh_name": "扩展仓库",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        26,
+        364,
+        62,
+        400
+      ],
+      "visual_bbox_norm": [
+        0.030989,
+        0.823529,
+        0.073897,
+        0.904977
+      ],
+      "safe_click_bbox_xyxy": [
+        33,
+        371,
+        55,
+        393
+      ],
+      "safe_click_bbox_norm": [
+        0.039333,
+        0.839367,
+        0.065554,
+        0.88914
+      ],
+      "click_point_xy": [
+        44,
+        382
+      ],
+      "click_point_norm": [
+        0.052443,
+        0.864253
+      ],
+      "risk": "financial",
+      "runtime_default": "disabled_financial_action",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "secondary_password",
+      "zh_name": "密码设置",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        12,
+        404,
+        97,
+        429
+      ],
+      "visual_bbox_norm": [
+        0.014303,
+        0.914027,
+        0.115614,
+        0.970588
+      ],
+      "safe_click_bbox_xyxy": [
+        19,
+        409,
+        90,
+        424
+      ],
+      "safe_click_bbox_norm": [
+        0.022646,
+        0.925339,
+        0.107271,
+        0.959276
+      ],
+      "click_point_xy": [
+        54,
+        416
+      ],
+      "click_point_norm": [
+        0.064362,
+        0.941176
+      ],
+      "risk": "normal",
+      "runtime_default": "disabled_not_in_current_task",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "organize",
+      "zh_name": "整理",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        710,
+        404,
+        750,
+        429
+      ],
+      "visual_bbox_norm": [
+        0.846246,
+        0.914027,
+        0.893921,
+        0.970588
+      ],
+      "safe_click_bbox_xyxy": [
+        716,
+        409,
+        744,
+        424
+      ],
+      "safe_click_bbox_norm": [
+        0.853397,
+        0.925339,
+        0.88677,
+        0.959276
+      ],
+      "click_point_xy": [
+        730,
+        416
+      ],
+      "click_point_norm": [
+        0.870083,
+        0.941176
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "deposit",
+      "zh_name": "存钱",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        753,
+        404,
+        794,
+        429
+      ],
+      "visual_bbox_norm": [
+        0.897497,
+        0.914027,
+        0.946365,
+        0.970588
+      ],
+      "safe_click_bbox_xyxy": [
+        759,
+        409,
+        788,
+        424
+      ],
+      "safe_click_bbox_norm": [
+        0.904648,
+        0.925339,
+        0.939213,
+        0.959276
+      ],
+      "click_point_xy": [
+        773,
+        416
+      ],
+      "click_point_norm": [
+        0.921335,
+        0.941176
+      ],
+      "risk": "financial",
+      "runtime_default": "disabled_financial_action",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "withdraw",
+      "zh_name": "取钱",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        796,
+        404,
+        837,
+        429
+      ],
+      "visual_bbox_norm": [
+        0.948749,
+        0.914027,
+        0.997616,
+        0.970588
+      ],
+      "safe_click_bbox_xyxy": [
+        802,
+        409,
+        831,
+        424
+      ],
+      "safe_click_bbox_norm": [
+        0.9559,
+        0.925339,
+        0.990465,
+        0.959276
+      ],
+      "click_point_xy": [
+        816,
+        416
+      ],
+      "click_point_norm": [
+        0.972586,
+        0.941176
+      ],
+      "risk": "financial",
+      "runtime_default": "disabled_financial_action",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "close",
+      "zh_name": "关闭",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        808,
+        2,
+        836,
+        28
+      ],
+      "visual_bbox_norm": [
+        0.963051,
+        0.004525,
+        0.996424,
+        0.063348
+      ],
+      "safe_click_bbox_xyxy": [
+        814,
+        7,
+        831,
+        23
+      ],
+      "safe_click_bbox_norm": [
+        0.970203,
+        0.015837,
+        0.990465,
+        0.052036
+      ],
+      "click_point_xy": [
+        822,
+        15
+      ],
+      "click_point_norm": [
+        0.979738,
+        0.033937
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "bank_panel_absent"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "bag_storage_cells",
+      "zh_name": "随身背包格",
+      "kind": "explicit_grid",
+      "cell_size_px": [
+        34,
+        34
+      ],
+      "cell_gesture_default": "inspect_only",
+      "x_starts_px": [
+        27,
+        65,
+        103,
+        141,
+        179,
+        227,
+        265,
+        303,
+        341,
+        379
+      ],
+      "x_starts_norm": [
+        0.032181,
+        0.077473,
+        0.122765,
+        0.168057,
+        0.213349,
+        0.27056,
+        0.315852,
+        0.361144,
+        0.406436,
+        0.451728
+      ],
+      "y_starts_px": [
+        49,
+        87,
+        125,
+        163,
+        209,
+        247,
+        285,
+        323
+      ],
+      "y_starts_norm": [
+        0.11086,
+        0.196833,
+        0.282805,
+        0.368778,
+        0.472851,
+        0.558824,
+        0.644796,
+        0.730769
+      ],
+      "safe_cell_inset_px": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "cell_click_point_policy": "center_after_identity_and_policy_confirmation"
+    },
+    {
+      "region_id": "bank_storage_cells",
+      "zh_name": "仓库格",
+      "kind": "explicit_grid",
+      "cell_size_px": [
+        34,
+        34
+      ],
+      "disabled_cells_zero_based": [
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "cell_gesture_default": "inspect_only",
+      "x_starts_px": [
+        427,
+        465,
+        503,
+        541,
+        579,
+        627,
+        665,
+        703,
+        741,
+        779
+      ],
+      "x_starts_norm": [
+        0.508939,
+        0.554231,
+        0.599523,
+        0.644815,
+        0.690107,
+        0.747318,
+        0.79261,
+        0.837902,
+        0.883194,
+        0.928486
+      ],
+      "y_starts_px": [
+        49,
+        87,
+        125,
+        163,
+        209,
+        247,
+        285,
+        323
+      ],
+      "y_starts_norm": [
+        0.11086,
+        0.196833,
+        0.282805,
+        0.368778,
+        0.472851,
+        0.558824,
+        0.644796,
+        0.730769
+      ],
+      "safe_cell_inset_px": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "cell_click_point_policy": "center_after_identity_and_policy_confirmation"
+    }
+  ],
+  "policy": {
+    "item_move": "unknown和never_sell物品不做批量移动；锁定格不可点击。"
+  },
+  "annotation_status": "codex_pixel_audited_pending_user_review_not_runtime_authorized",
+  "runtime_authorized": false,
+  "provenance": {
+    "geometry_source": "train/runtime_db/ui_interactions_v2/bank_panel/annotation.json",
+    "migration": "pixel-audited control geometry aligned to the exact L1 V3 crop",
+    "legacy_111_rough_boxes_imported": false
+  }
+}

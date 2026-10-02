@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "塔里木",
+    "source":  "https://tl.changyou.com/data/monster/monster30.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 塔里木",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "沙尘",
+                        "group":  "塔里木",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "沙漠鬣狗",
+                        "group":  "塔里木",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "沙漠巫师",
+                        "group":  "塔里木",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "沙漠野人",
+                        "group":  "塔里木",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "沙漠战士",
+                        "group":  "塔里木",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "食腐鸟",
+                        "group":  "塔里木",
+                        "allowAttack":  true
+                    }
+                ]
+}

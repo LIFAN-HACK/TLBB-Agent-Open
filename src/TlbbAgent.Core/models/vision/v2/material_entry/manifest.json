@@ -1,0 +1,21 @@
+{
+  "artifact_key": "material_entry_compat_ncc_v1",
+  "status": "compatibility_fallback_pending_independent_session_validation",
+  "template": "material_skill_idle.bmp",
+  "sha256": "3F5E55BB50A9236F29A40ADC1E20A3EE4F08F3A85ED15B1FCF19811163783035",
+  "source": "<LEGACY_DATA_ROOT>\\生活王1.4.0\\A窗口\\图_pic\\材料加工.bmp",
+  "weak_label_evidence": {
+    "frames": 46,
+    "client_size": "2576x1408",
+    "coordinate": [2531, 578, 30, 30],
+    "minimum_ncc": 0.999989,
+    "session_independence": false
+  },
+  "runtime_policy": {
+    "search_scope": "right_skill_bar_only",
+    "minimum_score": 0.92,
+    "minimum_uniqueness_margin": 0.03,
+    "post_click_panel_confirmation_required": true,
+    "model_replacement_interface": "IMaterialCraftEntryLocator"
+  }
+}

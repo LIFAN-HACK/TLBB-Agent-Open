@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "雁南",
+    "source":  "https://tl.changyou.com/data/monster/monster07.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 雁南",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "灰熊",
+                        "group":  "雁南",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "金钱豹",
+                        "group":  "雁南",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨喽啰",
+                        "group":  "雁南",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨亲兵",
+                        "group":  "雁南",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨探子",
+                        "group":  "雁南",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "深水怪兽",
+                        "group":  "雁南",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "西北狼",
+                        "group":  "雁南",
+                        "allowAttack":  true
+                    }
+                ]
+}

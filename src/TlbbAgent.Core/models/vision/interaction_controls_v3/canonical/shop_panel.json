@@ -1,0 +1,708 @@
+{
+  "schema": 2,
+  "class_id": "shop_panel",
+  "zh_name": "商店",
+  "coordinate_space": "exact_l1_v3_crop_pixels_xyxy_half_open",
+  "crop_size": [
+    349,
+    410
+  ],
+  "reference_to_v3_offset_xy": [
+    0,
+    0
+  ],
+  "controls": [
+    {
+      "control_id": "previous_page",
+      "zh_name": "前一页",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        89,
+        314,
+        133,
+        335
+      ],
+      "visual_bbox_norm": [
+        0.255014,
+        0.765854,
+        0.381089,
+        0.817073
+      ],
+      "safe_click_bbox_xyxy": [
+        95,
+        319,
+        127,
+        330
+      ],
+      "safe_click_bbox_norm": [
+        0.272206,
+        0.778049,
+        0.363897,
+        0.804878
+      ],
+      "click_point_xy": [
+        111,
+        324
+      ],
+      "click_point_norm": [
+        0.318052,
+        0.790244
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "next_page",
+      "zh_name": "后一页",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        199,
+        314,
+        245,
+        335
+      ],
+      "visual_bbox_norm": [
+        0.570201,
+        0.765854,
+        0.702006,
+        0.817073
+      ],
+      "safe_click_bbox_xyxy": [
+        205,
+        319,
+        239,
+        330
+      ],
+      "safe_click_bbox_norm": [
+        0.587393,
+        0.778049,
+        0.684814,
+        0.804878
+      ],
+      "click_point_xy": [
+        222,
+        324
+      ],
+      "click_point_norm": [
+        0.636103,
+        0.790244
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "sell_mode",
+      "zh_name": "出售模式",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        272,
+        305,
+        336,
+        325
+      ],
+      "visual_bbox_norm": [
+        0.77937,
+        0.743902,
+        0.962751,
+        0.792683
+      ],
+      "safe_click_bbox_xyxy": [
+        279,
+        309,
+        329,
+        321
+      ],
+      "safe_click_bbox_norm": [
+        0.799427,
+        0.753659,
+        0.942693,
+        0.782927
+      ],
+      "click_point_xy": [
+        304,
+        315
+      ],
+      "click_point_norm": [
+        0.87106,
+        0.768293
+      ],
+      "risk": "normal",
+      "runtime_default": "identify_only_prefer_bag_right_click",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "batch_buy",
+      "zh_name": "批量购买",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        272,
+        327,
+        336,
+        347
+      ],
+      "visual_bbox_norm": [
+        0.77937,
+        0.797561,
+        0.962751,
+        0.846341
+      ],
+      "safe_click_bbox_xyxy": [
+        279,
+        331,
+        329,
+        343
+      ],
+      "safe_click_bbox_norm": [
+        0.799427,
+        0.807317,
+        0.942693,
+        0.836585
+      ],
+      "click_point_xy": [
+        304,
+        337
+      ],
+      "click_point_norm": [
+        0.87106,
+        0.821951
+      ],
+      "risk": "financial",
+      "runtime_default": "disabled_financial_action",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "category_slot_01",
+      "zh_name": "商品分类槽1",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        17,
+        352,
+        54,
+        392
+      ],
+      "visual_bbox_norm": [
+        0.048711,
+        0.858537,
+        0.154728,
+        0.956098
+      ],
+      "safe_click_bbox_xyxy": [
+        22,
+        357,
+        49,
+        387
+      ],
+      "safe_click_bbox_norm": [
+        0.063037,
+        0.870732,
+        0.140401,
+        0.943902
+      ],
+      "click_point_xy": [
+        35,
+        372
+      ],
+      "click_point_norm": [
+        0.100287,
+        0.907317
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "category_slot_02",
+      "zh_name": "商品分类槽2",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        64,
+        352,
+        101,
+        392
+      ],
+      "visual_bbox_norm": [
+        0.183381,
+        0.858537,
+        0.289398,
+        0.956098
+      ],
+      "safe_click_bbox_xyxy": [
+        69,
+        357,
+        96,
+        387
+      ],
+      "safe_click_bbox_norm": [
+        0.197708,
+        0.870732,
+        0.275072,
+        0.943902
+      ],
+      "click_point_xy": [
+        82,
+        372
+      ],
+      "click_point_norm": [
+        0.234957,
+        0.907317
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "category_slot_03",
+      "zh_name": "商品分类槽3",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        109,
+        352,
+        146,
+        392
+      ],
+      "visual_bbox_norm": [
+        0.312321,
+        0.858537,
+        0.418338,
+        0.956098
+      ],
+      "safe_click_bbox_xyxy": [
+        114,
+        357,
+        141,
+        387
+      ],
+      "safe_click_bbox_norm": [
+        0.326648,
+        0.870732,
+        0.404011,
+        0.943902
+      ],
+      "click_point_xy": [
+        127,
+        372
+      ],
+      "click_point_norm": [
+        0.363897,
+        0.907317
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "category_slot_04",
+      "zh_name": "商品分类槽4",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        155,
+        352,
+        192,
+        392
+      ],
+      "visual_bbox_norm": [
+        0.444126,
+        0.858537,
+        0.550143,
+        0.956098
+      ],
+      "safe_click_bbox_xyxy": [
+        160,
+        357,
+        187,
+        387
+      ],
+      "safe_click_bbox_norm": [
+        0.458453,
+        0.870732,
+        0.535817,
+        0.943902
+      ],
+      "click_point_xy": [
+        173,
+        372
+      ],
+      "click_point_norm": [
+        0.495702,
+        0.907317
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "category_slot_05",
+      "zh_name": "商品分类槽5",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        200,
+        352,
+        237,
+        392
+      ],
+      "visual_bbox_norm": [
+        0.573066,
+        0.858537,
+        0.679083,
+        0.956098
+      ],
+      "safe_click_bbox_xyxy": [
+        205,
+        357,
+        232,
+        387
+      ],
+      "safe_click_bbox_norm": [
+        0.587393,
+        0.870732,
+        0.664756,
+        0.943902
+      ],
+      "click_point_xy": [
+        218,
+        372
+      ],
+      "click_point_norm": [
+        0.624642,
+        0.907317
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "category_slot_06",
+      "zh_name": "商品分类槽6",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        245,
+        352,
+        282,
+        392
+      ],
+      "visual_bbox_norm": [
+        0.702006,
+        0.858537,
+        0.808023,
+        0.956098
+      ],
+      "safe_click_bbox_xyxy": [
+        250,
+        357,
+        277,
+        387
+      ],
+      "safe_click_bbox_norm": [
+        0.716332,
+        0.870732,
+        0.793696,
+        0.943902
+      ],
+      "click_point_xy": [
+        263,
+        372
+      ],
+      "click_point_norm": [
+        0.753582,
+        0.907317
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "category_slot_07",
+      "zh_name": "商品分类槽7",
+      "kind": "tab",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        290,
+        352,
+        327,
+        392
+      ],
+      "visual_bbox_norm": [
+        0.830946,
+        0.858537,
+        0.936963,
+        0.956098
+      ],
+      "safe_click_bbox_xyxy": [
+        295,
+        357,
+        322,
+        387
+      ],
+      "safe_click_bbox_norm": [
+        0.845272,
+        0.870732,
+        0.922636,
+        0.943902
+      ],
+      "click_point_xy": [
+        308,
+        372
+      ],
+      "click_point_norm": [
+        0.882521,
+        0.907317
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "close",
+      "zh_name": "关闭",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        325,
+        2,
+        347,
+        29
+      ],
+      "visual_bbox_norm": [
+        0.931232,
+        0.004878,
+        0.994269,
+        0.070732
+      ],
+      "safe_click_bbox_xyxy": [
+        330,
+        7,
+        343,
+        24
+      ],
+      "safe_click_bbox_norm": [
+        0.945559,
+        0.017073,
+        0.982808,
+        0.058537
+      ],
+      "click_point_xy": [
+        336,
+        15
+      ],
+      "click_point_norm": [
+        0.962751,
+        0.036585
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "shop_panel_absent"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "page_value",
+      "zh_name": "当前页码",
+      "kind": "read_only_ocr",
+      "failure_policy": "low_confidence_or_ambiguous_returns_unknown_noop",
+      "bbox_xyxy": [
+        139,
+        314,
+        190,
+        335
+      ],
+      "bbox_norm": [
+        0.398281,
+        0.765854,
+        0.544413,
+        0.817073
+      ]
+    },
+    {
+      "region_id": "shop_products",
+      "zh_name": "商店商品列表",
+      "kind": "regular_grid",
+      "rows": 6,
+      "columns": 2,
+      "cell_pitch_px": [
+        164,
+        38
+      ],
+      "cell_gesture_default": "inspect_only",
+      "purchase_gesture": "left_click_confirmed",
+      "failure_policy": "unknown_product_or_price_noop",
+      "bbox_xyxy": [
+        15,
+        72,
+        336,
+        296
+      ],
+      "bbox_norm": [
+        0.04298,
+        0.17561,
+        0.962751,
+        0.721951
+      ],
+      "safe_cell_inset_px": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "cell_click_point_policy": "center_after_identity_and_policy_confirmation"
+    },
+    {
+      "region_id": "shop_category_icon_crops",
+      "zh_name": "商店分类完整图标槽",
+      "kind": "explicit_grid",
+      "cell_size_px": [
+        37,
+        40
+      ],
+      "cell_gesture_default": "identify_only",
+      "identity_policy": "按槽位索引保存；图标身份未确认时只返回unknown，不推断分类名称。",
+      "x_starts_px": [
+        17,
+        64,
+        109,
+        155,
+        200,
+        245,
+        290
+      ],
+      "x_starts_norm": [
+        0.048711,
+        0.183381,
+        0.312321,
+        0.444126,
+        0.573066,
+        0.702006,
+        0.830946
+      ],
+      "y_starts_px": [
+        352
+      ],
+      "y_starts_norm": [
+        0.858537
+      ],
+      "safe_cell_inset_px": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "cell_click_point_policy": "center_after_identity_and_policy_confirmation"
+    }
+  ],
+  "policy": {
+    "sell": "只确认商店已打开；卖出动作默认由背包格右键执行，出售按钮不授予物品出售权限。"
+  },
+  "annotation_status": "codex_pixel_audited_pending_user_review_not_runtime_authorized",
+  "runtime_authorized": false,
+  "provenance": {
+    "geometry_source": "train/runtime_db/ui_interactions_v2/shop_panel/annotation.json",
+    "migration": "pixel-audited control geometry aligned to the exact L1 V3 crop",
+    "legacy_111_rough_boxes_imported": false
+  }
+}

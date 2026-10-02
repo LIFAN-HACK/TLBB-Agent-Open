@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>TlbbAgent.Server.Modules.Audit</RootNamespace>
+    <AssemblyName>TlbbAgent.Server.Modules.Audit</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="..\TlbbAgent.Server.SharedKernel\TlbbAgent.Server.SharedKernel.csproj" />
+  </ItemGroup>
+</Project>

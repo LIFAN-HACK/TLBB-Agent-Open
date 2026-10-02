@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "model_role": "l1_auxiliary_coordinate_detector",
+  "classes": {
+    "0": "right_skill_bar"
+  },
+  "models": {
+    "640": {
+      "file": "right_skill_bar_v2_640.onnx",
+      "input_size": 640,
+      "sha256": "fb59e520924e6967311a2423b3223718a1b2b16e54596c8106956f548da623d3"
+    },
+    "1280": {
+      "file": "right_skill_bar_v2_1280.onnx",
+      "input_size": 1280,
+      "sha256": "efcbd2bb235f281fa7341f8452de2929e27cb77573ec35f4346c12c9aa022dc3"
+    }
+  },
+  "preprocess": {
+    "layout": "NCHW",
+    "color": "RGB",
+    "dtype": "float32",
+    "normalization": "divide_by_255",
+    "resize": "YOLO letterbox",
+    "padding_value": 114
+  },
+  "postprocess": {
+    "candidate_confidence_threshold": 0.001,
+    "business_confidence_threshold": 0.25,
+    "nms_iou_threshold": 0.70,
+    "max_detections_per_profile": 20,
+    "source_width_px": [52, 105],
+    "source_height_px": [245, 440],
+    "source_right_margin_px": [-6, 65]
+  },
+  "slot_geometry": {
+    "columns": 2,
+    "rows": 10,
+    "slot_width": 32,
+    "slot_height": 32,
+    "column_pitch": 44,
+    "row_pitch": 35,
+    "full_grid_width": 76,
+    "full_grid_height": 347,
+    "anchor_search": {
+      "x_radius": 6,
+      "y_up": 6,
+      "y_down": 24,
+      "expanded_y_down": 80,
+      "expanded_when_model_height_gt": 370
+    }
+  },
+  "failure_policy": "no legal geometry returns unavailable/unknown and never authorizes input"
+}

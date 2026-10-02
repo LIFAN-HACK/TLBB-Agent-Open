@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "status": "codex_pixel_audited_pending_user_review_not_runtime_authorized",
+  "runtime_authorized": false,
+  "sample_count": 25,
+  "class_count": 5,
+  "samples_per_class": {
+    "bag_panel": 5,
+    "shop_panel": 5,
+    "monthly_card_panel": 5,
+    "bank_panel": 5,
+    "material_panel": 5
+  },
+  "controls_per_class": {
+    "bag_panel": 11,
+    "shop_panel": 12,
+    "monthly_card_panel": 9,
+    "bank_panel": 6,
+    "material_panel": 8
+  },
+  "regions_per_class": {
+    "bag_panel": 1,
+    "shop_panel": 3,
+    "monthly_card_panel": 0,
+    "bank_panel": 2,
+    "material_panel": 4
+  },
+  "validation_error_count": 0,
+  "validation_errors": [],
+  "contact_sheets": [
+    "contact_sheets/bag_panel.jpg",
+    "contact_sheets/shop_panel.jpg",
+    "contact_sheets/monthly_card_panel.jpg",
+    "contact_sheets/bank_panel.jpg",
+    "contact_sheets/material_panel.jpg"
+  ],
+  "coordinate_contract": "integer xyxy half-open coordinates inside exact L1 V3 crop",
+  "click_contract": "runtime may only use safe_click_bbox/click_point after stable L1 and stable control confirmation",
+  "bag_reference_offset_xy": [
+    0,
+    14
+  ],
+  "legacy_111_rough_boxes_imported": false
+}

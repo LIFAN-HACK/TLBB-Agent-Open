@@ -1,0 +1,17 @@
+﻿{
+  "artifact_key": "l1_layout",
+  "model_type": "yolov8n-detect",
+  "format": "onnx",
+  "input_size": 640,
+  "classes": ["target_panel", "target_hp_bar", "target_name"],
+  "conf_threshold": 0.35,
+  "nms_iou_threshold": 0.70,
+  "source_run": "train/runs/target_p0_yolov8n_abs",
+  "dataset_package": "train/packages/target_p0_yolo_reviewed",
+  "intended_use": "L1 layout detection only. Use target_hp_bar as ROI for L2 bar meter; do not use this model as target_kind or player classifier.",
+  "limitations": [
+    "Labels are reviewed fixed-geometry target panel/hp/name boxes.",
+    "target_kind/player/boss classification is not trained in this artifact.",
+    "hp_state is not predicted by this detector; it requires L2 bar/color logic or a separate classifier."
+  ]
+}

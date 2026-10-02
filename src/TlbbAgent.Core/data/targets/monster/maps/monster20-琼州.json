@@ -1,0 +1,70 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "琼州",
+    "source":  "https://tl.changyou.com/data/monster/monster20.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 琼州",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "丛林蜂",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "鳄鱼帮杀手",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "鳄鱼帮堂主",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "鳄鱼帮勇士",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "黑苗战士",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "黑沼豹",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "南海盗神",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "裘老七",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "嗜血鳄鱼",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "藤甲勇士",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "藤甲贼",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "土地",
+                        "group":  "琼州",
+                        "allowAttack":  true
+                    }
+                ]
+}

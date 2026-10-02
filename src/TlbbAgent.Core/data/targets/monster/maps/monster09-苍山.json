@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "苍山",
+    "source":  "https://tl.changyou.com/data/monster/monster09.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 苍山",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "狼族神汉",
+                        "group":  "苍山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "狼族头人",
+                        "group":  "苍山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "狼族土司",
+                        "group":  "苍山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "狼族勇士",
+                        "group":  "苍山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山神",
+                        "group":  "苍山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "蓑衣野人",
+                        "group":  "苍山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "雪狼",
+                        "group":  "苍山",
+                        "allowAttack":  true
+                    }
+                ]
+}

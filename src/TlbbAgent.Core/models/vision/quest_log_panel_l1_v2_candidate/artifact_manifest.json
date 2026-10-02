@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "artifactId": "quest_log_panel_l1_v2_candidate",
+  "createdAt": "2026-07-15T13:20:00+08:00",
+  "status": "candidate_quality_gate_pass_not_runtime_authorized",
+  "task": "detect",
+  "classNames": [
+    "quest_log_panel"
+  ],
+  "input": {
+    "width": 960,
+    "height": 960,
+    "batch": 1,
+    "dynamic": false
+  },
+  "recommendedConfidence": 0.45,
+  "nmsIou": 0.7,
+  "files": {
+    "onnx": {
+      "path": "quest_log_panel_l1_v2.onnx",
+      "bytes": 12475321,
+      "sha256": "70c4fb14b695c5e94b9dc22c9188333683f1620069ac803b85e79506a8990d07"
+    },
+    "pt": {
+      "path": "quest_log_panel_l1_v2.pt",
+      "bytes": 6312490,
+      "sha256": "cab050bd9b9b71e8fa29914733bccc7e4fabc87677c5a0614b434bbe2fb0dcb2"
+    }
+  },
+  "dataset": {
+    "id": "quest_log_panel_l1_v2",
+    "imageCount": 1116,
+    "trainPositive": 509,
+    "trainNegative": 553,
+    "valPositive": 6,
+    "valNegative": 14,
+    "testPositive": 14,
+    "testNegative": 20,
+    "nativeUniqueSha256": 156,
+    "crossSplitHashLeakCount": 0,
+    "hardPanelCrossSplitSourceLeakCount": 0,
+    "manifestSha256": "3ea73bedcee2bec7fcc082a4a7d25688013dd518f9edc8b69d72a7f3dccb11d0",
+    "summarySha256": "02c518f9e3838f7100c50402d38a70b3f0b2415488cebfd7e62223de3c438ac0"
+  },
+  "qualityGate": {
+    "ptPositiveRecall": 1.0,
+    "ptNegativeFalsePositiveRate": 0.0,
+    "ptMedianIou": 0.974236,
+    "onnxPositiveRecall": 1.0,
+    "onnxNegativeFalsePositiveRate": 0.0,
+    "onnxMedianIou": 0.966049,
+    "materialPanelRegressionPassed": true,
+    "crossResolutionPositiveGatePassed": false
+  },
+  "runtimeContract": "full client frame -> L1 quest panel bbox -> temporal gate -> L2 OCR/control slots -> policy",
+  "runtimeAuthorized": false
+}

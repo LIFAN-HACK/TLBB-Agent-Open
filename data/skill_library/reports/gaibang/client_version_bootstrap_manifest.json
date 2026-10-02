@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "sect": "丐帮",
+  "purpose": "global_skill_library_bootstrap_for_client_version",
+  "safety_policy": "candidate_only_until_reviewed_ingame_templates_exist",
+  "capture_requirements": {
+    "scope": "one-time shared asset production; never per player or per slot arrangement",
+    "client_version": "0.08.1808 or record the actual tested version",
+    "states": [
+      "ready_without_cd_overlay",
+      "cooling_with_gray_or_digit_overlay"
+    ],
+    "minimum_ready_samples_per_visible_skill": 2,
+    "minimum_cooling_samples_per_visible_skill": 2,
+    "resolutions": [
+      "native",
+      "0.75_scale",
+      "0.50_scale"
+    ],
+    "crop_source": "L1 skill_bar crop; never use a hand-entered full-screen absolute ROI"
+  },
+  "skills": [
+    {
+      "skill_id": "gb_001",
+      "name": "蟠龙击",
+      "official_icon": "icons_raw/gb_001.jpg",
+      "official_sha256": "8c4bc4c7afe3e39c22345bf0dcd43716ff2d9546320cf153ad9d81d6f91117f0",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_002",
+      "name": "千里横行",
+      "official_icon": "icons_raw/gb_002.jpg",
+      "official_sha256": "0140015cc895685800b23567d59c030bded91dfbe94d0c52028fdadbfc9ecb9f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_003",
+      "name": "如影随形",
+      "official_icon": "icons_raw/gb_003.jpg",
+      "official_sha256": "02fb85ebdd586a02967dcd9f247ff749c35ff37b18d69da7c45a149f5bcbc14a",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_004",
+      "name": "冲阵斩将",
+      "official_icon": "icons_raw/gb_004.jpg",
+      "official_sha256": "15afd76fdc9f24823cd002b951b4abf71258f887e9255ba3401c0ac73aa39583",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_005",
+      "name": "八步赶蟾",
+      "official_icon": "icons_raw/gb_005.jpg",
+      "official_sha256": "2c2b69fc75556dde4b28660be0b6ac2643e5d14b38a4057379ca9f6146d5c493",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_006",
+      "name": "雪泥鸿爪",
+      "official_icon": "icons_raw/gb_006.jpg",
+      "official_sha256": "888c284cab26ca1f0cb255f173fabc8c3bfb9d7a574fccd515fa9a3cbf265f16",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_007",
+      "name": "粘衣十八跌",
+      "official_icon": "icons_raw/gb_007.jpg",
+      "official_sha256": "4011da34c31b29b6ab0b19266175b2281949b2d8af8f79c9d2420bc24e42b58a",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_008",
+      "name": "飞龙在天",
+      "official_icon": "icons_raw/gb_008.jpg",
+      "official_sha256": "72198add221b3d128b7d3d433405e6606a496329389e0323a434c21d04cbd9d8",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_009",
+      "name": "潜龙勿用",
+      "official_icon": "icons_raw/gb_009.jpg",
+      "official_sha256": "18d7aef494dd9b80d1bf658490a1fb95c38dedc975dbbe96ce186a20badd29d4",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_010",
+      "name": "见龙在田",
+      "official_icon": "icons_raw/gb_010.jpg",
+      "official_sha256": "fec812beec5c328d66398a2a56ab7f7a593f91b3e87c336df2c174a152c41bcb",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_011",
+      "name": "将军令",
+      "official_icon": "icons_raw/gb_011.jpg",
+      "official_sha256": "5da7e35ff46228f3bff635485f0a0594f52c57461268f2943e8f4be77aa95656",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_012",
+      "name": "青龙出水",
+      "official_icon": "icons_raw/gb_012.jpg",
+      "official_sha256": "94e0ea773310663dac25084f200316049610be75b4f6a7ac0dfe95ad10a12fe6",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_013",
+      "name": "擒龙式",
+      "official_icon": "icons_raw/gb_013.jpg",
+      "official_sha256": "cc95481eae885a5d60cdcff5650cd37f7d93ebb70d7fedd1a6ef456199c159bc",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_014",
+      "name": "沛然有雨",
+      "official_icon": "icons_raw/gb_014.jpg",
+      "official_sha256": "c0f8ae3aae90d6af3ebc20f892d6f42b538fa17a562d9d1d72f90dd7987c8dec",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_015",
+      "name": "破虏令",
+      "official_icon": "icons_raw/gb_015.jpg",
+      "official_sha256": "45207b8c8747c3ac93aef0dab19581a48ec74b49dd49ce94db2c3fc5720bd447",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_016",
+      "name": "震惊百里",
+      "official_icon": "icons_raw/gb_016.jpg",
+      "official_sha256": "d82c4d4e50fd787829e2c4cd7f8b965d19f848bd93345f5536b3025fc8c22701",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_017",
+      "name": "控鹤式",
+      "official_icon": "icons_raw/gb_017.jpg",
+      "official_sha256": "182d5d739e872c9921ac03dbb0479964ac0aa42e6eb9d27d97c1c8dcdef79da2",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_018",
+      "name": "履霜冰至",
+      "official_icon": "icons_raw/gb_018.jpg",
+      "official_sha256": "7b72bf5aefe0ce46cbd8b724134a1fbb4c40889b2723a5c3e17a60d768bbfc36",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_019",
+      "name": "亢龙有悔",
+      "official_icon": "icons_raw/gb_019.jpg",
+      "official_sha256": "6f2afd91a87994cf8368a8921d36d59e1a6f472c49e757e4c875650f487e4ba8",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_020",
+      "name": "神龙摆尾",
+      "official_icon": "icons_raw/gb_020.jpg",
+      "official_sha256": "b394cf97eeb8915d68ce2c25b34df93a45eb54280b5d6be10d88d9e36c1dd522",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_021",
+      "name": "龙战于野",
+      "official_icon": "icons_raw/gb_021.jpg",
+      "official_sha256": "71c9a6dba838907093188ac285014e01967f7ad960d70ac6cbd390a47d411e75",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_022",
+      "name": "天下无狗",
+      "official_icon": "icons_raw/gb_022.jpg",
+      "official_sha256": "2cf6f29317c89db3c88f990f772a0fe30c5dfdd766b1f8ab7f0a310c1bd55ca8",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_023",
+      "name": "棒打狗头",
+      "official_icon": "icons_raw/gb_023.jpg",
+      "official_sha256": "40aea6af38c31bec701fc352b4c70ad69271f1eb813f4fa7bff869ddfcfd834c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "gb_024",
+      "name": "横扫乾坤",
+      "official_icon": "icons_raw/gb_024.jpg",
+      "official_sha256": "9c0dd66a0dbe082cb92405c86c21de26cbae06a8401516a37659c7847c576775",
+      "ingame_variants": [],
+      "state": "capture_required"
+    }
+  ]
+}

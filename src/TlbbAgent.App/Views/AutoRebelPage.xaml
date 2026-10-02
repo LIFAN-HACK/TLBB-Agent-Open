@@ -1,0 +1,215 @@
+<UserControl x:Class="TlbbAgent.App.Views.AutoRebelPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:TlbbAgent.App.Controls"
+             FontFamily="{StaticResource AppFont}">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="24,20">
+        <StackPanel MaxWidth="980" HorizontalAlignment="Left">
+            <DockPanel>
+                <Border DockPanel.Dock="Right" Style="{StaticResource Badge}" VerticalAlignment="Center"
+                        Background="{Binding Descriptor.Status, Converter={StaticResource StatusBg}}">
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="7" Height="7" VerticalAlignment="Center" Fill="{Binding Descriptor.Status, Converter={StaticResource StatusBrush}}" />
+                        <TextBlock Text="{Binding Descriptor.Status, Converter={StaticResource StatusText}}" FontSize="11" Margin="6,0,0,0" Foreground="{StaticResource Text.SecondaryBrush}" />
+                    </StackPanel>
+                </Border>
+                <StackPanel>
+                    <TextBlock Text="{Binding Title}" Style="{StaticResource H1}" />
+                    <TextBlock Text="{Binding Subtitle}" Style="{StaticResource Label}" Margin="0,4,0,0" TextWrapping="Wrap" />
+                </StackPanel>
+            </DockPanel>
+
+            <Border Style="{StaticResource Card}" Margin="0,18,0,0" Visibility="{Binding HasController, Converter={StaticResource BoolToVis}}">
+                <StackPanel>
+                    <TextBlock Text="运行" Style="{StaticResource Caption}" />
+                    <StackPanel Orientation="Horizontal" Margin="0,6,0,0">
+                        <Ellipse Width="9" Height="9" VerticalAlignment="Center" Fill="{Binding RunState, Converter={StaticResource RunStateBrush}}" />
+                        <TextBlock Text="{Binding RunState, Converter={StaticResource RunStateText}}" Margin="8,0,0,0" VerticalAlignment="Center" Style="{StaticResource Label}" />
+                        <Border CornerRadius="6" Background="{StaticResource Bg.WindowBrush}" Padding="8,3" Margin="12,0,0,0">
+                            <TextBlock Text="{Binding CurrentStateName}" FontFamily="Consolas" FontSize="12" Foreground="{StaticResource Accent.CyanBrush}" />
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <DockPanel>
+                        <Border DockPanel.Dock="Right" Style="{StaticResource Badge}" Background="{Binding IsReady, Converter={StaticResource BoolToStableBg}}">
+                            <TextBlock Text="{Binding ReadySummary}" FontSize="10.5" Foreground="{StaticResource Text.SecondaryBrush}" />
+                        </Border>
+                        <TextBlock Text="摘要" Style="{StaticResource H2}" />
+                    </DockPanel>
+                    <UniformGrid Columns="2" Margin="0,12,0,0">
+                        <StackPanel Margin="0,0,14,10">
+                            <TextBlock Text="路线" Style="{StaticResource Caption}" />
+                            <TextBlock Text="{Binding RouteSummary}" Style="{StaticResource Label}" TextWrapping="Wrap" Margin="0,4,0,0" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,10">
+                            <TextBlock Text="目标" Style="{StaticResource Caption}" />
+                            <TextBlock Text="{Binding TargetSummary}" Style="{StaticResource Label}" TextWrapping="Wrap" Margin="0,4,0,0" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,14,10">
+                            <TextBlock Text="动作" Style="{StaticResource Caption}" />
+                            <TextBlock Text="{Binding ActionSummary}" Style="{StaticResource Label}" TextWrapping="Wrap" Margin="0,4,0,0" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,10">
+                            <TextBlock Text="导航" Style="{StaticResource Caption}" />
+                            <TextBlock Text="{Binding RouteActionSummary}" Style="{StaticResource Label}" TextWrapping="Wrap" Margin="0,4,0,0" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,14,0">
+                            <TextBlock Text="恢复" Style="{StaticResource Caption}" />
+                            <TextBlock Text="{Binding RecoverySummary}" Style="{StaticResource Label}" TextWrapping="Wrap" Margin="0,4,0,0" />
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="识别区" Style="{StaticResource Caption}" />
+                            <TextBlock Text="{Binding RecognitionSummary}" Style="{StaticResource Label}" TextWrapping="Wrap" Margin="0,4,0,0" />
+                        </StackPanel>
+                    </UniformGrid>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <DockPanel>
+                        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                            <Button Content="载入" Style="{StaticResource GhostButton}" Width="64" Height="30" Margin="0,0,8,0" Command="{Binding ImportRoutesCommand}" />
+                            <Button Content="保存" Style="{StaticResource PrimaryButton}" Width="64" Height="30" Margin="0,0,8,0" Command="{Binding SaveCommand}" />
+                            <Button Content="加载" Style="{StaticResource GhostButton}" Width="64" Height="30" Command="{Binding LoadCommand}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="设置" Style="{StaticResource H2}" />
+                            <TextBlock Text="{Binding RouteSummary}" Style="{StaticResource Caption}" Margin="0,3,0,0" />
+                        </StackPanel>
+                    </DockPanel>
+                    <TextBlock Text="{Binding OperationStatus}" Style="{StaticResource Caption}" Margin="0,12,0,0" />
+
+                    <WrapPanel Margin="0,14,0,0">
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="配置名" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="150" Text="{Binding ProfileName, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="搜索键" Style="{StaticResource Caption}" Margin="0,0,0,4" /><controls:HotkeyRecorder Width="116" Height="34" Hotkey="{Binding SearchHotkey, Mode=TwoWay}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="攻击键" Style="{StaticResource Caption}" Margin="0,0,0,4" /><controls:HotkeyRecorder Width="116" Height="34" Hotkey="{Binding AttackHotkey, Mode=TwoWay}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="扫描间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="96" Text="{Binding ScanIntervalMs, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="战斗检测 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="96" Text="{Binding BattleCheckIntervalMs, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="到达距离" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="76" Text="{Binding ArrivalDistance, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,0,10"><TextBlock Text="路线重试" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="76" Text="{Binding RouteRetryLimit, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                    </WrapPanel>
+
+                    <WrapPanel Margin="0,2,0,0">
+                        <StackPanel Margin="0,0,18,10"><TextBlock Text="队伍检查" Style="{StaticResource Caption}" Margin="0,0,0,6" /><CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableTeamCheck}" /></StackPanel>
+                        <StackPanel Margin="0,0,18,10"><TextBlock Text="路线执行" Style="{StaticResource Caption}" Margin="0,0,0,6" /><CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableRouteNavigation}" /></StackPanel>
+                        <StackPanel Margin="0,0,18,10"><TextBlock Text="进战检测" Style="{StaticResource Caption}" Margin="0,0,0,6" /><CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableBattleDetection}" /></StackPanel>
+                        <StackPanel Margin="0,0,18,10"><TextBlock Text="异常恢复" Style="{StaticResource Caption}" Margin="0,0,0,6" /><CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableRecovery}" /></StackPanel>
+                    </WrapPanel>
+
+                    <TextBlock Text="目标关键词" Style="{StaticResource Caption}" Margin="0,8,0,4" />
+                    <TextBox Width="640" Text="{Binding TargetKeywords, UpdateSourceTrigger=PropertyChanged}" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <DockPanel>
+                        <Button DockPanel.Dock="Right" Content="清空" Width="64" Height="30" Style="{StaticResource GhostButton}" Command="{Binding ClearPointsCommand}" />
+                        <TextBlock Text="路线坐标" Style="{StaticResource H2}" />
+                    </DockPanel>
+                    <WrapPanel Margin="0,12,0,12">
+                        <StackPanel Margin="0,0,12,8"><TextBlock Text="地图" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="120" Text="{Binding NewMapName, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,8"><TextBlock Text="X" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="72" Text="{Binding NewX, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,8"><TextBlock Text="Y" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="72" Text="{Binding NewY, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <Button Content="添加坐标" Style="{StaticResource GhostButton}" Width="90" Height="32" Margin="0,18,0,0" Command="{Binding AddPointCommand}" />
+                    </WrapPanel>
+
+                    <ItemsControl ItemsSource="{Binding Points}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border CornerRadius="8" Background="{StaticResource Bg.SurfaceAltBrush}" BorderBrush="{StaticResource StrokeBrush}" BorderThickness="1" Padding="10" Margin="0,0,0,8">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="120" />
+                                            <ColumnDefinition Width="86" />
+                                            <ColumnDefinition Width="86" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="72" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox Grid.Column="0" Text="{Binding MapName, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,8,0" />
+                                        <TextBox Grid.Column="1" Text="{Binding X, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,8,0" />
+                                        <TextBox Grid.Column="2" Text="{Binding Y, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,8,0" />
+                                        <TextBox Grid.Column="3" Text="{Binding Label, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,8,0" />
+                                        <Button Grid.Column="4" Content="删除" Style="{StaticResource GhostButton}" Command="{Binding DataContext.RemovePointCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" CommandParameter="{Binding}" />
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <TextBlock Text="仅预览前 200 点。" Style="{StaticResource Caption}" Margin="0,4,0,0" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="路线动作" Style="{StaticResource H2}" />
+                    <WrapPanel Margin="0,12,0,0">
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="模式" Style="{StaticResource Caption}" Margin="0,0,0,4" /><ComboBox Width="170" ItemsSource="{Binding NavigationModes}" SelectedItem="{Binding RouteNavigationMode}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="热键" Style="{StaticResource Caption}" Margin="0,0,0,4" /><controls:HotkeyRecorder Width="116" Height="34" Hotkey="{Binding RouteNavigationHotkey, Mode=TwoWay}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="点击 X" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="76" Text="{Binding RouteNavigationClickX, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="点击 Y" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="76" Text="{Binding RouteNavigationClickY, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="86" Text="{Binding RouteNavigationActionIntervalMs, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,0,10"><TextBlock Text="发送" Style="{StaticResource Caption}" Margin="0,0,0,4" /><ComboBox Width="130" ItemsSource="{Binding DispatchModes}" SelectedItem="{Binding RouteNavigationDispatchMode}" /></StackPanel>
+                    </WrapPanel>
+
+                    <TextBlock Text="恢复动作" Style="{StaticResource H2}" Margin="0,10,0,0" />
+                    <WrapPanel Margin="0,12,0,0">
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="模式" Style="{StaticResource Caption}" Margin="0,0,0,4" /><ComboBox Width="170" ItemsSource="{Binding NavigationModes}" SelectedItem="{Binding RecoveryNavigationMode}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="热键" Style="{StaticResource Caption}" Margin="0,0,0,4" /><controls:HotkeyRecorder Width="116" Height="34" Hotkey="{Binding RecoveryNavigationHotkey, Mode=TwoWay}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="点击 X" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="76" Text="{Binding RecoveryNavigationClickX, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="点击 Y" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="76" Text="{Binding RecoveryNavigationClickY, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,12,10"><TextBlock Text="间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" /><TextBox Width="86" Text="{Binding RecoveryNavigationActionIntervalMs, UpdateSourceTrigger=PropertyChanged}" /></StackPanel>
+                        <StackPanel Margin="0,0,0,10"><TextBlock Text="发送" Style="{StaticResource Caption}" Margin="0,0,0,4" /><ComboBox Width="130" ItemsSource="{Binding DispatchModes}" SelectedItem="{Binding RecoveryNavigationDispatchMode}" /></StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,24">
+                <StackPanel>
+                    <TextBlock Text="识别区" Style="{StaticResource H2}" />
+                    <Grid Margin="0,12,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="地图名称" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <WrapPanel>
+                                <TextBox Width="58" Text="{Binding MapRegionX}" Margin="0,0,8,8" />
+                                <TextBox Width="58" Text="{Binding MapRegionY}" Margin="0,0,8,8" />
+                                <TextBox Width="58" Text="{Binding MapRegionWidth}" Margin="0,0,8,8" />
+                                <TextBox Width="58" Text="{Binding MapRegionHeight}" Margin="0,0,0,8" />
+                            </WrapPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="坐标文本" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <WrapPanel>
+                                <TextBox Width="58" Text="{Binding CoordRegionX}" Margin="0,0,8,8" />
+                                <TextBox Width="58" Text="{Binding CoordRegionY}" Margin="0,0,8,8" />
+                                <TextBox Width="58" Text="{Binding CoordRegionWidth}" Margin="0,0,8,8" />
+                                <TextBox Width="58" Text="{Binding CoordRegionHeight}" Margin="0,0,0,8" />
+                            </WrapPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Column="4">
+                            <TextBlock Text="目标名称" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <WrapPanel>
+                                <TextBox Width="58" Text="{Binding TargetNameRegionX}" Margin="0,0,8,8" />
+                                <TextBox Width="58" Text="{Binding TargetNameRegionY}" Margin="0,0,8,8" />
+                                <TextBox Width="58" Text="{Binding TargetNameRegionWidth}" Margin="0,0,8,8" />
+                                <TextBox Width="58" Text="{Binding TargetNameRegionHeight}" Margin="0,0,0,8" />
+                            </WrapPanel>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

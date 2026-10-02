@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "artifactId": "system_feedback_region_l1_v2",
+  "status": "release_gate_pass_pending_backend_integration",
+  "task": "detect",
+  "classNames": [
+    "system_feedback_region"
+  ],
+  "input": {
+    "width": 960,
+    "height": 960,
+    "batch": 1,
+    "dynamic": false
+  },
+  "recommendedConfidence": 0.4,
+  "files": {
+    "onnx": {
+      "path": "system_feedback_region_l1_v2.onnx",
+      "sha256": "56fb1054252da8583be9b34ea136363a2a0d5809e9add4f7c48235b7d3768bae"
+    },
+    "pt": {
+      "path": "system_feedback_region_l1_v2.pt",
+      "sha256": "977e0b5c513cc829182a0dd355db9ab860a6598fe82c4a66f9239797993495b3"
+    }
+  },
+  "dataset": {
+    "id": "system_feedback_region_l1_v2",
+    "manifestSha256": "e2c8579ddff40186b99a02d2c1639ef081d7220ba50893efda72d45b19b7aba0",
+    "trainPositive": 560,
+    "trainNegative": 320,
+    "valPositive": 40,
+    "valNegative": 20,
+    "testPositive": 50,
+    "testNegative": 30,
+    "independentExternalTest": 3
+  },
+  "releaseGate": {
+    "pt": true,
+    "onnx": true,
+    "positiveRecall": 1.0,
+    "negativeFalsePositiveRate": 0.0,
+    "externalPositiveRecall": 1.0,
+    "medianIou": 0.894454
+  },
+  "postprocess": {
+    "centerXToleranceNormalized": 0.11,
+    "centerYMinNormalized": 0.015,
+    "centerYMaxNormalized": 0.27,
+    "mergeHorizontalGapNormalized": 0.08,
+    "mergeVerticalGapNormalized": 0.025,
+    "mergeCenterXDistanceNormalized": 0.12
+  },
+  "runtimeContract": "L1 -> central lane filter -> adjacent box union -> OpenTextSlot.Toast -> semantic classifier -> temporal state machine",
+  "runtimeAuthorized": false
+}

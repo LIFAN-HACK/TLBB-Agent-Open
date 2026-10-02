@@ -1,0 +1,62 @@
+<UserControl x:Class="TlbbAgent.App.Views.QuizAssistantPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             FontFamily="{StaticResource AppFont}">
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled"
+                  HorizontalContentAlignment="Stretch"
+                  Padding="24,20">
+        <StackPanel MaxWidth="760" HorizontalAlignment="Stretch">
+            <TextBlock Text="{Binding Title}" Style="{StaticResource H1}" />
+
+            <Border Style="{StaticResource Card}" Margin="0,18,0,0" Padding="18,6">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="58" />
+                        <RowDefinition Height="1" />
+                        <RowDefinition Height="58" />
+                        <RowDefinition Height="1" />
+                        <RowDefinition Height="58" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="服务状态" Style="{StaticResource Label}" VerticalAlignment="Center" />
+                    <Border Grid.Column="1"
+                            Style="{StaticResource Badge}"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Background="{StaticResource Bg.SurfaceAltBrush}">
+                        <TextBlock Text="{Binding Status}"
+                                   FontSize="11"
+                                   Foreground="{StaticResource Text.SecondaryBrush}" />
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.ColumnSpan="2" Background="{StaticResource Stroke.SubtleBrush}" />
+
+                    <TextBlock Grid.Row="2" Text="剩余次数" Style="{StaticResource Label}" VerticalAlignment="Center" />
+                    <TextBlock Grid.Row="2"
+                               Grid.Column="1"
+                               Text="{Binding RemainingUses}"
+                               Style="{StaticResource Label}"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center" />
+
+                    <Border Grid.Row="3" Grid.ColumnSpan="2" Background="{StaticResource Stroke.SubtleBrush}" />
+
+                    <TextBlock Grid.Row="4" Text="自动答题" Style="{StaticResource Label}" VerticalAlignment="Center" />
+                    <CheckBox Grid.Row="4"
+                              Grid.Column="1"
+                              Style="{StaticResource ToggleSwitch}"
+                              IsChecked="{Binding IsEnabled, Mode=OneWay}"
+                              IsEnabled="{Binding IsBackendReady}"
+                              HorizontalAlignment="Right"
+                              VerticalAlignment="Center"
+                              AutomationProperties.Name="自动答题开关" />
+                </Grid>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

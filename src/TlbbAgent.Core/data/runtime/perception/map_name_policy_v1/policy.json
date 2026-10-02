@@ -1,0 +1,71 @@
+{
+  "artifactKey": "map_name_policy_v1",
+  "version": 1,
+  "runtimeAuthorized": false,
+  "purpose": "Normalize map-name OpenText candidates before any routing decision.",
+  "inputContract": {
+    "rawText": "string",
+    "ocrConfidence": "number in [0,1]",
+    "source": "sample_match | open_text | unknown",
+    "windowId": "string",
+    "observedAt": "ISO-8601 timestamp"
+  },
+  "outputContract": {
+    "rawText": "string",
+    "normalizedText": "string",
+    "canonicalMapName": "string or empty",
+    "candidateAccepted": "boolean",
+    "stable": "boolean",
+    "confidence": "number in [0,1]",
+    "reason": "exact | reviewed_alias | unknown | unstable",
+    "historyWindow": "last 3 independent frames"
+  },
+  "thresholds": {
+    "sampleMatchMinimum": 0.7,
+    "openTextExactMinimum": 0.72,
+    "reviewedAliasMinimum": 0.72,
+    "stableVotesRequired": 2,
+    "stableWindowSize": 3
+  },
+  "knownMapNames": [
+    "苏州",
+    "洛阳",
+    "大理",
+    "楼兰",
+    "昆仑山",
+    "南海",
+    "玉溪",
+    "水果湖",
+    "昆仑福地",
+    "南诏",
+    "雁南",
+    "长白山",
+    "冰原",
+    "洱海",
+    "楼兰藏宝洞",
+    "缥缈峰",
+    "太湖"
+  ],
+  "reviewedAliases": {
+    "洛阳司": {
+      "canonical": "洛阳",
+      "reason": "The gold frame immediately right of 阳 was observed as a false third glyph on the 2026-07-15 live frame.",
+      "evidence": "artifacts\\live-navigation-stability\\20260715-180117\\sample-01-map-x4.png"
+    }
+  },
+  "rules": [
+    "Normalize Unicode and keep only CJK ideographs, ASCII letters and digits.",
+    "Prefer an accepted sample_match result when its score is at least 0.70.",
+    "Accept OpenText only for an exact known name or an explicitly reviewed alias.",
+    "Do not use prefix containment to collapse a longer valid map such as 楼兰藏宝洞 into 楼兰.",
+    "Do not invent generic one-character correction. Unreviewed near matches remain unknown.",
+    "Expose a stable canonical name only after at least 2 matching votes in the last 3 independent frames.",
+    "Unknown or unstable output must not reach a routing state machine as a confirmed map."
+  ],
+  "provenance": {
+    "acceptedSampleRoot": "data\\samples\\map-names",
+    "liveRegressionFrame": "artifacts\\live-navigation-stability\\20260715-180117\\sample-01-client.png",
+    "liveRegressionCropX4": "artifacts\\live-navigation-stability\\20260715-180117\\sample-01-map-x4.png",
+    "observedOpenTextSequence": ["洛阳司", "洛阳司", "洛阳司", "洛阳"]
+  }
+}

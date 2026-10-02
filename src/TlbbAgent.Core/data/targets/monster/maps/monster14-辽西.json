@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "辽西",
+    "source":  "https://tl.changyou.com/data/monster/monster14.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 辽西",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "白狼王",
+                        "group":  "辽西",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "大黑蜂",
+                        "group":  "辽西",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "黑衣马匪",
+                        "group":  "辽西",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "红衣马匪",
+                        "group":  "辽西",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "轻甲莽盖",
+                        "group":  "辽西",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "一品堂刺客",
+                        "group":  "辽西",
+                        "allowAttack":  true
+                    }
+                ]
+}

@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "sect": "武当",
+  "purpose": "global_skill_library_bootstrap_for_client_version",
+  "safety_policy": "candidate_only_until_reviewed_ingame_templates_exist",
+  "capture_requirements": {
+    "scope": "one-time shared asset production; never per player or per slot arrangement",
+    "client_version": "0.08.1808 or record the actual tested version",
+    "states": [
+      "ready_without_cd_overlay",
+      "cooling_with_gray_or_digit_overlay"
+    ],
+    "minimum_ready_samples_per_visible_skill": 2,
+    "minimum_cooling_samples_per_visible_skill": 2,
+    "resolutions": [
+      "native",
+      "0.75_scale",
+      "0.50_scale"
+    ],
+    "crop_source": "L1 skill_bar crop; never use a hand-entered full-screen absolute ROI"
+  },
+  "skills": [
+    {
+      "skill_id": "wd_001",
+      "name": "八卦掌",
+      "official_icon": "icons_raw/wd_001.jpg",
+      "official_sha256": "75901c036d4c89932268e901b32ef4ff6b1134e3f8137afb8fc39c7b2defe37e",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_002",
+      "name": "真武七截阵",
+      "official_icon": "icons_raw/wd_002.jpg",
+      "official_sha256": "aaf96bcdf526e8568303c181dac766b5433d773ae833c4d4b1b02b6329c85548",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_003",
+      "name": "犀牛望月",
+      "official_icon": "icons_raw/wd_003.jpg",
+      "official_sha256": "7819f81a7cce34ba385fe715ca7e53b5dba28dfd400ce4c0abfa37bc4b5c881f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_004",
+      "name": "两仪剑",
+      "official_icon": "icons_raw/wd_004.jpg",
+      "official_sha256": "b36ce9451869cf3cf5f990d462dfedddf7a8c9767320a25a18de3b21c7a837a1",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_005",
+      "name": "三环套月",
+      "official_icon": "icons_raw/wd_005.jpg",
+      "official_sha256": "b4705da84866709025b1c8325c15662594a88a92f86f4d145c56dc4cbe058d7b",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_006",
+      "name": "揽雀尾",
+      "official_icon": "icons_raw/wd_006.jpg",
+      "official_sha256": "8997abcc829cabd13c15dca0dc9d682a42a91a604fa3ea1ed37b8d7f0b3a5b22",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_007",
+      "name": "天罡北斗阵",
+      "official_icon": "icons_raw/wd_007.jpg",
+      "official_sha256": "3249bcfcf548e0e69216b7d864a12e2c97124280bdda290b3c7ce1ee1de1f60f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_008",
+      "name": "天马飞瀑",
+      "official_icon": "icons_raw/wd_008.jpg",
+      "official_sha256": "6fa1e25188d4b4caf8ff49fb7fc3f506985c9f8ac3d1f20637b647fa4294e8bb",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_009",
+      "name": "如封似闭",
+      "official_icon": "icons_raw/wd_009.jpg",
+      "official_sha256": "b90fa1c4e0482f634cff400608a472ce7882fe039c8475bf1a4ebadd5d119fb7",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_010",
+      "name": "梯云纵",
+      "official_icon": "icons_raw/wd_010.jpg",
+      "official_sha256": "d9201b9a4d056b16428496a3c0f9cb5bdb232531f70854524a847e3694ba2c06",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_011",
+      "name": "虎抱头",
+      "official_icon": "icons_raw/wd_011.jpg",
+      "official_sha256": "bc6aac1b5e9ab91fd6a26963358c0005722901e8d7db049d658bec651bb53f50",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_012",
+      "name": "仙人指路",
+      "official_icon": "icons_raw/wd_012.jpg",
+      "official_sha256": "54a9490ea3f12776b937b4474741fbd6cd2623b02fdd921f19fa2030fa4896e4",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_013",
+      "name": "挑帘式",
+      "official_icon": "icons_raw/wd_013.jpg",
+      "official_sha256": "9b9cdea69f85379ca39db011d672b8592914586ed0e5ee7cd1d1ecd9dd021af2",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_014",
+      "name": "流星赶月",
+      "official_icon": "icons_raw/wd_014.jpg",
+      "official_sha256": "3b410fde652a52eac548713f972e03f92d2044149cfeb9c56ff8b4d2dad240ff",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_015",
+      "name": "懒扎衣",
+      "official_icon": "icons_raw/wd_015.jpg",
+      "official_sha256": "1ff1d50bd78c8a43626c088039b0a8339c8b292fc215ca0b67f907b4e948fcd8",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_016",
+      "name": "玉女穿梭",
+      "official_icon": "icons_raw/wd_016.jpg",
+      "official_sha256": "59dd2b5575d0de614a88f2d53efff80dac503b0fa96a417736ab29426ef7d7ff",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_017",
+      "name": "斜飞式",
+      "official_icon": "icons_raw/wd_017.jpg",
+      "official_sha256": "f1dc926091bcdf51561a8275d72f75269a2d57cf83da7d38127b2938cebe8966",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_018",
+      "name": "白鹤亮翅",
+      "official_icon": "icons_raw/wd_018.jpg",
+      "official_sha256": "c3130c374c3bfbeb7e0b424095310a82fd626b9344ae72708c4fb7001228bb76",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_019",
+      "name": "太渊十三剑",
+      "official_icon": "icons_raw/wd_019.jpg",
+      "official_sha256": "e9e461b770e28e34d265db8d3e56e0b585be0c4ee91ca80c4261a5ab4bf4b52a",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_020",
+      "name": "无懈可击",
+      "official_icon": "icons_raw/wd_020.jpg",
+      "official_sha256": "72f4d21220b5e391bc3a24105aee8b4d585eb6fba6167f8e92f99b378243ded4",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_021",
+      "name": "游刃有余",
+      "official_icon": "icons_raw/wd_021.jpg",
+      "official_sha256": "67464e60ddc66a213b5dba3ca9306be4fabf08640be2a6efc362173982d9bfb0",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_022",
+      "name": "仙风道骨",
+      "official_icon": "icons_raw/wd_022.jpg",
+      "official_sha256": "10bf7f795a911212d1f83a1af1f2d1af2d39800978b4d744e59dc160a4c161ed",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_023",
+      "name": "天外飞仙",
+      "official_icon": "icons_raw/wd_023.jpg",
+      "official_sha256": "94f5034456735a467cb19fbdd907d4f478c8b3da7aec54a18d4ef0675b76d565",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "wd_024",
+      "name": "七星聚首",
+      "official_icon": "icons_raw/wd_024.jpg",
+      "official_sha256": "44797c7b2b18fcb3c0213c9b36f7872e4229f5838daa6bc84658eafc50ef5da1",
+      "ingame_variants": [],
+      "state": "capture_required"
+    }
+  ]
+}

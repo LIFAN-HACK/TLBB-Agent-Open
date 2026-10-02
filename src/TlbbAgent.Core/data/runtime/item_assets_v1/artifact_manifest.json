@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "library_id": "item_assets_v1",
+  "catalog_sha256": "af5af35d03bae10f041b86c1f559ed4bc66db809c3677ddebb2205e8d2405dae",
+  "release_gate_sha256": "fe7f467088f7f74b559de4f4aba8595f4b41c2133c5167941d294aef1d30d998",
+  "item_count": 20,
+  "template_count": 22,
+  "runtime_template_count": 41,
+  "runtime_template_index_sha256": "f3f5e70532ef598c6b4c0f202f8a7f06930248a6e6428a9adbde134ddb227b3b",
+  "yuanbao_never_sell_count": 5,
+  "yuanbao_never_sell_sha256": "e7d560e271554c59bddb38e4f5e64e8e10b613c5169ed2b02d9b0247d48f14dc",
+  "runtime_sell_authorized": false,
+  "safety_default": "unknown_protected_never_sell"
+}

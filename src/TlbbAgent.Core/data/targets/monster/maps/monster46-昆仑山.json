@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "昆仑山",
+    "source":  "https://tl.changyou.com/data/monster/monster46.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 昆仑山",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "彩云仙",
+                        "group":  "昆仑山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "开明兽",
+                        "group":  "昆仑山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "灵鹤",
+                        "group":  "昆仑山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "灵剑士",
+                        "group":  "昆仑山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "仙鹿",
+                        "group":  "昆仑山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "小道童",
+                        "group":  "昆仑山",
+                        "allowAttack":  true
+                    }
+                ]
+}

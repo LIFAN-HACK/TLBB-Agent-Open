@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "苗疆",
+    "source":  "https://tl.changyou.com/data/monster/monster22.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 苗疆",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "阿鼻修罗",
+                        "group":  "苗疆",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "厄修罗",
+                        "group":  "苗疆",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "河妖",
+                        "group":  "苗疆",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "苗越刺客",
+                        "group":  "苗疆",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "万劫修罗",
+                        "group":  "苗疆",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "永夜修罗",
+                        "group":  "苗疆",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "沼泽鳄鱼",
+                        "group":  "苗疆",
+                        "allowAttack":  true
+                    }
+                ]
+}

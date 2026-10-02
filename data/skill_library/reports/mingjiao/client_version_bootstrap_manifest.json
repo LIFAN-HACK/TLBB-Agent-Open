@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "sect": "明教",
+  "purpose": "global_skill_library_bootstrap_for_client_version",
+  "safety_policy": "candidate_only_until_reviewed_ingame_templates_exist",
+  "capture_requirements": {
+    "scope": "one-time shared asset production; never per player or per slot arrangement",
+    "client_version": "0.08.1808 or record the actual tested version",
+    "states": [
+      "ready_without_cd_overlay",
+      "cooling_with_gray_or_digit_overlay"
+    ],
+    "minimum_ready_samples_per_visible_skill": 2,
+    "minimum_cooling_samples_per_visible_skill": 2,
+    "resolutions": [
+      "native",
+      "0.75_scale",
+      "0.50_scale"
+    ],
+    "crop_source": "L1 skill_bar crop; never use a hand-entered full-screen absolute ROI"
+  },
+  "skills": [
+    {
+      "skill_id": "mj_001",
+      "name": "摧心掌",
+      "official_icon": "icons_raw/mj_001.jpg",
+      "official_sha256": "91042003fa2abcd9c777684e3c7d1cc27ff5f34e27e831d3f01cfe791c1c3999",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_002",
+      "name": "血战八方",
+      "official_icon": "icons_raw/mj_002.jpg",
+      "official_sha256": "b3dc2defcbdb8712b4e91968dde43ae877f2af89e80540179280c4ac0f290acd",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_003",
+      "name": "葵花神力",
+      "official_icon": "icons_raw/mj_003.jpg",
+      "official_sha256": "f5cf39e60011ef44c78757ca3cf30a0bdb5bddcbe18c9c3dcfef81a2343bfe44",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_004",
+      "name": "炎龙无双",
+      "official_icon": "icons_raw/mj_004.jpg",
+      "official_sha256": "a6329b02e835529663cbdb20631620674ab0840e8286aa5c309b6803d9c055da",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_005",
+      "name": "葵花逐日",
+      "official_icon": "icons_raw/mj_005.jpg",
+      "official_sha256": "274ca3d1c07fa7c11eefdd44b8c34c1a46a37207281e1f98b6a594f52835a293",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_006",
+      "name": "葵花点穴手",
+      "official_icon": "icons_raw/mj_006.jpg",
+      "official_sha256": "ea654efe481c4f56bb30c1cd9f0f734233aee753c75ac8d5ea9f3ae5f32e8f32",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_007",
+      "name": "葵花向阳",
+      "official_icon": "icons_raw/mj_007.jpg",
+      "official_sha256": "416363d4479e84dafd28df91a103cec75ae7250cb8f6bb1987bb403ca8a5f5c9",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_008",
+      "name": "怒发冲冠",
+      "official_icon": "icons_raw/mj_008.jpg",
+      "official_sha256": "22248fce425521aa3fb20318c355a8eb9aad08d50777d288340f1f67dc0df2aa",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_009",
+      "name": "李代桃僵",
+      "official_icon": "icons_raw/mj_009.jpg",
+      "official_sha256": "281ee8877bcff4ebcd78c2ed86539a20f0187ac477ee8e405001f20bd75ffa73",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_010",
+      "name": "斗转星移",
+      "official_icon": "icons_raw/mj_010.jpg",
+      "official_sha256": "7bc49b8dbd48ce88838fd450d0c4b0fb8f09484880dbef7e63faf0c4f4a2ea10",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_011",
+      "name": "激流甲",
+      "official_icon": "icons_raw/mj_011.jpg",
+      "official_sha256": "c987823dbcffdfee850f559eccaa71cc2725e27e5d0381f87c06f30c1e5a371a",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_012",
+      "name": "水淹七军",
+      "official_icon": "icons_raw/mj_012.jpg",
+      "official_sha256": "2cebe000fa776914ba2f4d0feb6d0e3ed4c1d6f3b0bcd256b9b336f5dc5e5318",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_013",
+      "name": "水神下凡",
+      "official_icon": "icons_raw/mj_013.jpg",
+      "official_sha256": "6f3744e02243bfe2a0ce2f42cf250911bc6ef62107496355bc9c776a3a0a189e",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_014",
+      "name": "长生水",
+      "official_icon": "icons_raw/mj_014.jpg",
+      "official_sha256": "9cc8cb017c218a6ed84e82f5df52bcdad1d47cf2b2390143bbdc004dd2751d0c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_015",
+      "name": "烈焰刀",
+      "official_icon": "icons_raw/mj_015.jpg",
+      "official_sha256": "1c5713a0d92bb55bd815aba8018e6633a3a82b8c91e31ba8c3914943f0a4cfb3",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_016",
+      "name": "火烧赤壁",
+      "official_icon": "icons_raw/mj_016.jpg",
+      "official_sha256": "5426d3a313478937001b74528145cb77fe7d4866d7a1adb6e358e35325ef1b4f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_017",
+      "name": "火神下凡",
+      "official_icon": "icons_raw/mj_017.jpg",
+      "official_sha256": "e711d229d8be460b3346239df784065a2ca675a1d62a965b279e586e985e0f7c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_018",
+      "name": "地狱火",
+      "official_icon": "icons_raw/mj_018.jpg",
+      "official_sha256": "fddb410dfe2243bfc2cd1a2c16dbe9254d8b5f5dc3127e1161c92e07aa517a72",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_019",
+      "name": "火焰连环斩",
+      "official_icon": "icons_raw/mj_019.jpg",
+      "official_sha256": "8369b2d84b77b59aa812c8eede70f14809486359fe326f42e1bd93d6be98093a",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_020",
+      "name": "坐地求全",
+      "official_icon": "icons_raw/mj_020.jpg",
+      "official_sha256": "782db8984a945c2f35be81a4da11faab88dc3fcdabd8be21005e30a23bbbea77",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_021",
+      "name": "无中生有",
+      "official_icon": "icons_raw/mj_021.jpg",
+      "official_sha256": "92fd2fd51f16dbfa3bf141ec4e16a4b67db97eed40f73f2cda7fcec4a0cee92d",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_022",
+      "name": "纯阳无极",
+      "official_icon": "icons_raw/mj_022.jpg",
+      "official_sha256": "4f29d3d7ef29ce6fc20dabff6497addc5c230031a85d8437e60deadc2b50518a",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_023",
+      "name": "烽火连城",
+      "official_icon": "icons_raw/mj_023.jpg",
+      "official_sha256": "dbb1fd02d93edc391b3e06f76dd18a6e7da4e98d72a759ff86987c9148eb17cd",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "mj_024",
+      "name": "怒火连斩",
+      "official_icon": "icons_raw/mj_024.jpg",
+      "official_sha256": "338a6be7585651f5f77a5201c6972b327be2d858fe6c64e83d895ba68944ffc4",
+      "ingame_variants": [],
+      "state": "capture_required"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "source_type": "official_and_reference_skill_pages",
+  "primary_sources": [
+    {
+      "sect": "少林",
+      "url": "https://tlbbgl.changyou.com/data/equip/slzd.shtml",
+      "status": "official_usable"
+    },
+    {
+      "sect": "明教",
+      "url": "https://tlbbgl.changyou.com/data/equip/mjzd.shtml",
+      "status": "official_usable"
+    },
+    {
+      "sect": "天龙",
+      "url": "https://tl.changyou.com/data/equip/tlzd.shtml",
+      "status": "official_usable"
+    },
+    {
+      "sect": "天山",
+      "url": "https://tlbbgl.changyou.com/data/equip/tszd.shtml",
+      "status": "official_usable"
+    },
+    {
+      "sect": "丐帮",
+      "url": "https://tlbbgl.changyou.com/data/equip/gbzd.shtml",
+      "status": "official_usable"
+    },
+    {
+      "sect": "武当",
+      "url": "https://tlbbgl.changyou.com/data/equip/wdzd.shtml",
+      "status": "official_usable"
+    },
+    {
+      "sect": "逍遥",
+      "url": "https://tlbbgl.changyou.com/data/equip/xyzd.shtml",
+      "status": "official_usable"
+    },
+    {
+      "sect": "峨嵋",
+      "url": "https://tlbbgl.changyou.com/data/equip/emzd.shtml",
+      "status": "official_usable"
+    },
+    {
+      "sect": "星宿",
+      "url": "https://tlbbgl.changyou.com/data/equip/xszd.shtml",
+      "status": "official_usable"
+    },
+    {
+      "sect": "慕容",
+      "url": "https://tlbbgl.changyou.com/data/equip/mrsjzd.shtml",
+      "status": "official_usable"
+    }
+  ],
+  "reference_sources": [
+    {
+      "name": "玩家整理13门派技能表",
+      "url": "https://www.wdooc.com/tt/tlbbmaster/skills.html",
+      "status": "reference_cross_check_only"
+    }
+  ],
+  "intended_use": [
+    "OpenText skill name correction dictionary",
+    "skill policy keyword mapping",
+    "manual icon collection checklist"
+  ],
+  "not_intended_use": [
+    "direct replacement for in-game skill icon screenshots",
+    "CD state recognition",
+    "L1 UI box detection"
+  ]
+}

@@ -1,0 +1,70 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TlbbAgent.Server.Api", "src\TlbbAgent.Server.Api\TlbbAgent.Server.Api.csproj", "{D69E76B1-816A-49EC-B98F-8E80C0F2A001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TlbbAgent.Server.SharedKernel", "src\TlbbAgent.Server.SharedKernel\TlbbAgent.Server.SharedKernel.csproj", "{D69E76B1-816A-49EC-B98F-8E80C0F2A002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TlbbAgent.Server.Modules.Identity", "src\TlbbAgent.Server.Modules.Identity\TlbbAgent.Server.Modules.Identity.csproj", "{D69E76B1-816A-49EC-B98F-8E80C0F2A003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TlbbAgent.Server.Modules.Billing", "src\TlbbAgent.Server.Modules.Billing\TlbbAgent.Server.Modules.Billing.csproj", "{D69E76B1-816A-49EC-B98F-8E80C0F2A004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TlbbAgent.Server.Modules.Entitlement", "src\TlbbAgent.Server.Modules.Entitlement\TlbbAgent.Server.Modules.Entitlement.csproj", "{D69E76B1-816A-49EC-B98F-8E80C0F2A005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TlbbAgent.Server.Modules.Licensing", "src\TlbbAgent.Server.Modules.Licensing\TlbbAgent.Server.Modules.Licensing.csproj", "{D69E76B1-816A-49EC-B98F-8E80C0F2A006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TlbbAgent.Server.Modules.Release", "src\TlbbAgent.Server.Modules.Release\TlbbAgent.Server.Modules.Release.csproj", "{D69E76B1-816A-49EC-B98F-8E80C0F2A007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TlbbAgent.Server.Modules.Audit", "src\TlbbAgent.Server.Modules.Audit\TlbbAgent.Server.Modules.Audit.csproj", "{D69E76B1-816A-49EC-B98F-8E80C0F2A008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TlbbAgent.Server.IntegrationTests", "tests\TlbbAgent.Server.IntegrationTests\TlbbAgent.Server.IntegrationTests.csproj", "{D69E76B1-816A-49EC-B98F-8E80C0F2A009}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E76B1-816A-49EC-B98F-8E80C0F2A009}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

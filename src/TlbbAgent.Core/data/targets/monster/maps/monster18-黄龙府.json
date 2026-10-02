@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "黄龙府",
+    "source":  "https://tl.changyou.com/data/monster/monster18.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 黄龙府",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "巴伦莽盖",
+                        "group":  "黄龙府",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "大黑熊",
+                        "group":  "黄龙府",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "河妖",
+                        "group":  "黄龙府",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "霍斯",
+                        "group":  "黄龙府",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "木云雪人",
+                        "group":  "黄龙府",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "雪山狼",
+                        "group":  "黄龙府",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "雪山莽盖",
+                        "group":  "黄龙府",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "重甲莽盖",
+                        "group":  "黄龙府",
+                        "allowAttack":  true
+                    }
+                ]
+}

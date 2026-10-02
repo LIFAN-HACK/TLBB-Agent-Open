@@ -1,0 +1,80 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "南诏",
+    "source":  "https://tl.changyou.com/data/monster/monster21.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 南诏",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "阿鼻修罗",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "丛林蜂",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "厄修罗",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "黑苗战士",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "黑沼豹",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "苗越刺客",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "藤甲勇士",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "藤甲贼",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "图巴鲁",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "土地",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "万劫修罗",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "兀突骨",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "永夜修罗",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "沼泽鳄鱼",
+                        "group":  "南诏",
+                        "allowAttack":  true
+                    }
+                ]
+}

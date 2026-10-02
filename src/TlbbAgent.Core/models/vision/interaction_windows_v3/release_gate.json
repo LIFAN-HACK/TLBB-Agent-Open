@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "status": "passed_current_offline_suite_pending_backend_integration",
+  "model": {
+    "onnx": "interaction_window_l1_v3_5class.onnx",
+    "onnx_sha256": "9a7273fde40161ced55a82a3b56ba753f3d4dab0a642fafed40a270616fbc7a0",
+    "pt": "interaction_window_l1_v3_5class.pt",
+    "pt_sha256": "cca724058cc43394c8c4e95c8d9b8b87129cef2889a1a306f45fb2c5e76f6997"
+  },
+  "training": {
+    "best_epoch": 15,
+    "epochs_run": 37,
+    "image_count": 568,
+    "hard_negative_count": 9
+  },
+  "positive_native_gate": {
+    "confidence_threshold": 0.75,
+    "image_count": 54,
+    "instance_count": 104,
+    "true_positive": 104,
+    "false_positive": 0,
+    "false_negative": 0,
+    "report": "train/reports/interaction_window_l1_v3_5class_eval/interaction_window_l1_v3_onnx_conf075/summary.json"
+  },
+  "negative_native_gate": {
+    "confidence_threshold": 0.75,
+    "image_count": 50,
+    "false_positive": 0,
+    "report": "train/reports/interaction_window_l1_v3_5class_eval/interaction_window_l1_v3_negative_gate_onnx_conf075/summary.json"
+  },
+  "onnx_pt_parity": {
+    "image_count": 54,
+    "same_match_counts": true,
+    "max_bbox_delta_px": 0.018,
+    "max_confidence_delta": 0.000273
+  },
+  "runtime_authorized": false
+}

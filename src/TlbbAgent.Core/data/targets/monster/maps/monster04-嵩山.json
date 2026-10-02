@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "嵩山",
+    "source":  "https://tl.changyou.com/data/monster/monster04.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 嵩山",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "白额虎",
+                        "group":  "嵩山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "恶猿",
+                        "group":  "嵩山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "卢崖铜人",
+                        "group":  "嵩山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "遗弃木人",
+                        "group":  "嵩山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "遗弃铜人",
+                        "group":  "嵩山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "颍水狼",
+                        "group":  "嵩山",
+                        "allowAttack":  true
+                    }
+                ]
+}

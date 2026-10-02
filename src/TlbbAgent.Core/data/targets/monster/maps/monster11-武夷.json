@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "武夷",
+    "source":  "https://tl.changyou.com/data/monster/monster11.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 武夷",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "白花蜘蛛",
+                        "group":  "武夷",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山神",
+                        "group":  "武夷",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山越刀客",
+                        "group":  "武夷",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山越盗匪",
+                        "group":  "武夷",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山越游魂",
+                        "group":  "武夷",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "山越战士",
+                        "group":  "武夷",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "深谷白猿",
+                        "group":  "武夷",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "树甲哨兵",
+                        "group":  "武夷",
+                        "allowAttack":  true
+                    }
+                ]
+}

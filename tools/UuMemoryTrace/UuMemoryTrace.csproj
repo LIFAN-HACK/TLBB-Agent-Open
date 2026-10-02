@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x86</PlatformTarget>
+    <AssemblyName>UuMemoryTrace</AssemblyName>
+    <RootNamespace>UuMemoryTrace</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Description>Read-only Game.exe memory observer for UU offset discovery (no inject, no write).</Description>
+  </PropertyGroup>
+</Project>

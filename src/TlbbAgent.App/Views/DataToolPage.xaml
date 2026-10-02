@@ -1,0 +1,532 @@
+<UserControl x:Class="TlbbAgent.App.Views.DataToolPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             FontFamily="{StaticResource AppFont}">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="24,20">
+        <StackPanel MaxWidth="980" HorizontalAlignment="Left">
+            <TextBlock Text="{Binding Title}" Style="{StaticResource H1}" />
+            <TextBlock Text="{Binding Subtitle}" Style="{StaticResource Label}" Margin="0,4,0,0" TextWrapping="Wrap" />
+
+            <Border Style="{StaticResource Card}" Margin="0,18,0,0">
+                <DockPanel>
+                    <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                        <Button Content="目标采集器"
+                                Style="{StaticResource PrimaryButton}"
+                                Width="104"
+                                Height="32"
+                                Margin="0,0,8,0"
+                                Command="{Binding OpenTargetSamplerCommand}" />
+                        <Button Content="刷新索引"
+                                Style="{StaticResource GhostButton}"
+                                Width="88"
+                                Height="32"
+                                Command="{Binding RefreshDataIndexCommand}" />
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="运行数据" Style="{StaticResource H2}" />
+                        <TextBlock Text="{Binding DataIndexStatus}" Style="{StaticResource Label}" Margin="0,4,0,0" />
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                            <Border Style="{StaticResource Badge}" Background="#1F238B45" Margin="0,0,8,0">
+                                <TextBlock FontSize="10.5" Foreground="#8DE7B3">
+                                    <Run Text="可用 " />
+                                    <Run Text="{Binding DataIndexAvailableCount}" />
+                                </TextBlock>
+                            </Border>
+                            <Border Style="{StaticResource Badge}" Background="#22222A35" Margin="0,0,8,0">
+                                <TextBlock FontSize="10.5" Foreground="{StaticResource Text.SecondaryBrush}">
+                                    <Run Text="总数 " />
+                                    <Run Text="{Binding DataIndexItemCount}" />
+                                </TextBlock>
+                            </Border>
+                            <Border Style="{StaticResource Badge}" Background="#1FFBBF24" Margin="0,0,8,0">
+                                <TextBlock FontSize="10.5" Foreground="{StaticResource WarnBrush}">
+                                    <Run Text="跳过 " />
+                                    <Run Text="{Binding DataIndexSkippedCount}" />
+                                </TextBlock>
+                            </Border>
+                            <Border Style="{StaticResource Badge}" Background="#1FEF4444" Margin="0,0,8,0">
+                                <TextBlock FontSize="10.5" Foreground="{StaticResource DangerBrush}">
+                                    <Run Text="缺失 " />
+                                    <Run Text="{Binding DataIndexMissingCount}" />
+                                </TextBlock>
+                            </Border>
+                            <Border Style="{StaticResource Badge}" Background="#22222A35">
+                                <TextBlock FontSize="10.5" Foreground="{StaticResource Text.SecondaryBrush}">
+                                    <Run Text="更新 " />
+                                    <Run Text="{Binding DataIndexUpdatedAt}" />
+                                </TextBlock>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </DockPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <DockPanel>
+                    <Button DockPanel.Dock="Right"
+                            Content="刷新门禁"
+                            Style="{StaticResource GhostButton}"
+                            Width="88"
+                            Height="32"
+                            IsEnabled="{Binding IsRefreshingGates, Converter={StaticResource InvBool}}"
+                            Command="{Binding RefreshStabilityGatesCommand}" />
+                    <StackPanel>
+                        <TextBlock Text="稳定门禁" Style="{StaticResource H2}" />
+                        <TextBlock Text="{Binding GateStatus}" Style="{StaticResource Label}" Margin="0,4,0,0" />
+                        <UniformGrid Columns="2" Margin="0,12,0,0">
+                            <Border Background="#10141C" BorderBrush="#253041" BorderThickness="1" CornerRadius="8" Padding="12" Margin="0,0,8,8">
+                                <StackPanel>
+                                    <TextBlock Text="总体阶段" Style="{StaticResource Caption}" />
+                                    <TextBlock Text="{Binding StablePhaseGateStatus}" FontWeight="SemiBold" Margin="0,5,0,0" />
+                                    <TextBlock Text="{Binding StablePhaseGateDetail}" Style="{StaticResource Label}" Margin="0,6,0,0" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </Border>
+                            <Border Background="#10141C" BorderBrush="#253041" BorderThickness="1" CornerRadius="8" Padding="12" Margin="8,0,0,8">
+                                <StackPanel>
+                                    <TextBlock Text="目标样本" Style="{StaticResource Caption}" />
+                                    <TextBlock Text="{Binding TargetSampleGateStatus}" FontWeight="SemiBold" Margin="0,5,0,0" />
+                                    <TextBlock Text="{Binding TargetSampleGateDetail}" Style="{StaticResource Label}" Margin="0,6,0,0" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </Border>
+                            <Border Background="#10141C" BorderBrush="#253041" BorderThickness="1" CornerRadius="8" Padding="12" Margin="0,8,8,0">
+                                <StackPanel>
+                                    <TextBlock Text="回点门禁" Style="{StaticResource Caption}" />
+                                    <TextBlock Text="{Binding ReturnPointGateStatus}" FontWeight="SemiBold" Margin="0,5,0,0" />
+                                    <TextBlock Text="{Binding ReturnPointGateDetail}" Style="{StaticResource Label}" Margin="0,6,0,0" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </Border>
+                            <Border Background="#10141C" BorderBrush="#253041" BorderThickness="1" CornerRadius="8" Padding="12" Margin="8,8,0,0">
+                                <StackPanel>
+                                    <TextBlock Text="宠物出战" Style="{StaticResource Caption}" />
+                                    <TextBlock Text="{Binding PetDeployGateStatus}" FontWeight="SemiBold" Margin="0,5,0,0" />
+                                    <TextBlock Text="{Binding PetDeployGateDetail}" Style="{StaticResource Label}" Margin="0,6,0,0" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </Border>
+                        </UniformGrid>
+                    </StackPanel>
+                </DockPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,18,0,0">
+                <DockPanel>
+                    <Button DockPanel.Dock="Right"
+                            Content="加载字库"
+                            Style="{StaticResource PrimaryButton}"
+                            Width="132"
+                            Height="32"
+                            Command="{Binding LoadImportedDictionariesCommand}" />
+                    <StackPanel>
+                        <TextBlock Text="字库状态" Style="{StaticResource H2}" />
+                        <TextBlock Text="{Binding OcrStatus}" Style="{StaticResource Label}" Margin="0,4,0,0" />
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                            <Border Style="{StaticResource Badge}" Background="#22222A35" Margin="0,0,8,0">
+                                <TextBlock FontSize="10.5" Foreground="{StaticResource Text.SecondaryBrush}">
+                                    <Run Text="扫描文件 " />
+                                    <Run Text="{Binding DictionaryFileCount}" />
+                                </TextBlock>
+                            </Border>
+                            <Border Style="{StaticResource Badge}" Background="#22222A35" Margin="0,0,8,0">
+                                <TextBlock FontSize="10.5" Foreground="{StaticResource Text.SecondaryBrush}">
+                                    <Run Text="字库组 " />
+                                    <Run Text="{Binding LoadedSourceCount}" />
+                                </TextBlock>
+                            </Border>
+                            <Border Style="{StaticResource Badge}" Background="#1F4C82F7" Margin="0,0,8,0">
+                                <TextBlock FontSize="10.5" Foreground="{StaticResource Accent.HiBrush}">
+                                    <Run Text="字形 " />
+                                    <Run Text="{Binding LoadedGlyphCount}" />
+                                </TextBlock>
+                            </Border>
+                            <Border Style="{StaticResource Badge}" Background="#1F238B45">
+                                <TextBlock FontSize="10.5" Foreground="#8DE7B3">
+                                    <Run Text="可识别 " />
+                                    <Run Text="{Binding RenderableGlyphCount}" />
+                                </TextBlock>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </DockPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <DockPanel>
+                        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                            <Button Content="客户区"
+                                    Style="{StaticResource GhostButton}"
+                                    Width="76"
+                                    Height="32"
+                                    Margin="0,0,8,0"
+                                    IsEnabled="{Binding HasBoundWindow}"
+                                    Command="{Binding RefreshClientPreviewCommand}" />
+                            <Button Content="预览区域"
+                                    Style="{StaticResource GhostButton}"
+                                    Width="86"
+                                    Height="32"
+                                    Margin="0,0,8,0"
+                                    IsEnabled="{Binding HasBoundWindow}"
+                                    Command="{Binding RefreshSelectedRegionPreviewCommand}" />
+                            <Button Content="保存当前尺寸"
+                                    Style="{StaticResource GhostButton}"
+                                    Width="96"
+                                    Height="32"
+                                    Margin="0,0,8,0"
+                                    IsEnabled="{Binding HasBoundWindow}"
+                                    Command="{Binding SaveCurrentResolutionCombatProfileCommand}" />
+                            <Button Content="刷新识别"
+                                    Style="{StaticResource PrimaryButton}"
+                                    Width="86"
+                                    Height="32"
+                                    IsEnabled="{Binding HasBoundWindow}"
+                                    Command="{Binding RefreshCombatRecognitionCommand}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="战斗识别" Style="{StaticResource H2}" />
+                            <TextBlock Text="{Binding CombatOcrStatus}" Style="{StaticResource Label}" Margin="0,4,0,0" />
+                            <TextBlock Text="{Binding ResolutionProfileStatus}" Style="{StaticResource Caption}" Margin="0,4,0,0" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </DockPanel>
+
+                    <TextBlock Text="客户区预览" Style="{StaticResource Caption}" Margin="0,14,0,8" />
+                    <Border Height="292" Background="#06080D" BorderBrush="#253041" BorderThickness="1" CornerRadius="8" Padding="8">
+                        <Grid ClipToBounds="True">
+                            <Viewbox Stretch="Uniform">
+                                <Canvas Width="{Binding ClientPreviewWidth}" Height="{Binding ClientPreviewHeight}">
+                                    <Image Source="{Binding ClientPreview}"
+                                           Width="{Binding ClientPreviewWidth}"
+                                           Height="{Binding ClientPreviewHeight}"
+                                           Stretch="Fill"
+                                           RenderOptions.BitmapScalingMode="NearestNeighbor" />
+                                    <ItemsControl ItemsSource="{Binding CombatRegions}">
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <Canvas />
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+                                        <ItemsControl.ItemContainerStyle>
+                                            <Style TargetType="ContentPresenter">
+                                                <Setter Property="Canvas.Left" Value="{Binding OverlayX}" />
+                                                <Setter Property="Canvas.Top" Value="{Binding OverlayY}" />
+                                            </Style>
+                                        </ItemsControl.ItemContainerStyle>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border Width="{Binding OverlayWidth}"
+                                                        Height="{Binding OverlayHeight}"
+                                                        BorderBrush="{StaticResource Accent.CyanBrush}"
+                                                        BorderThickness="2"
+                                                        Background="#1A22D3EE">
+                                                    <TextBlock Text="{Binding Name}"
+                                                               FontSize="10"
+                                                               Foreground="White"
+                                                               Background="#AA0D1015"
+                                                               Padding="3,1"
+                                                               HorizontalAlignment="Left"
+                                                               VerticalAlignment="Top" />
+                                                </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                    <ItemsControl ItemsSource="{Binding NavigationRegions}">
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <Canvas />
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+                                        <ItemsControl.ItemContainerStyle>
+                                            <Style TargetType="ContentPresenter">
+                                                <Setter Property="Canvas.Left" Value="{Binding OverlayX}" />
+                                                <Setter Property="Canvas.Top" Value="{Binding OverlayY}" />
+                                            </Style>
+                                        </ItemsControl.ItemContainerStyle>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border Width="{Binding OverlayWidth}"
+                                                        Height="{Binding OverlayHeight}"
+                                                        BorderBrush="{StaticResource WarnBrush}"
+                                                        BorderThickness="2"
+                                                        Background="#20FBBF24">
+                                                    <TextBlock Text="{Binding Name}"
+                                                               FontSize="10"
+                                                               Foreground="White"
+                                                               Background="#AA0D1015"
+                                                               Padding="3,1"
+                                                               HorizontalAlignment="Left"
+                                                               VerticalAlignment="Bottom" />
+                                                </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </Canvas>
+                            </Viewbox>
+                            <TextBlock Text="绑定后刷新预览"
+                                       Foreground="{StaticResource Text.MutedBrush}"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Visibility="{Binding ClientPreview, Converter={StaticResource NullToVis}}" />
+                        </Grid>
+                    </Border>
+
+                    <Grid Margin="0,14,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.08*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="0.92*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="区域配置" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <ItemsControl ItemsSource="{Binding CombatRegions}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Background="#10141C" BorderBrush="#253041" BorderThickness="1" CornerRadius="8" Padding="10" Margin="0,0,0,8">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="96" />
+                                                    <ColumnDefinition Width="54" />
+                                                    <ColumnDefinition Width="54" />
+                                                    <ColumnDefinition Width="54" />
+                                                    <ColumnDefinition Width="54" />
+                                                    <ColumnDefinition Width="70" />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Grid.Column="0" Text="{Binding Name}" Style="{StaticResource Label}" VerticalAlignment="Center" />
+                                                <TextBox Grid.Column="1" Text="{Binding X, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,6,0" ToolTip="X" />
+                                                <TextBox Grid.Column="2" Text="{Binding Y, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,6,0" ToolTip="Y" />
+                                                <TextBox Grid.Column="3" Text="{Binding Width, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,6,0" ToolTip="宽" />
+                                                <TextBox Grid.Column="4" Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,6,0" ToolTip="高" />
+                                                <CheckBox Grid.Column="5" Content="启用" IsChecked="{Binding Enabled}" VerticalAlignment="Center" />
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+
+                            <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                                <ComboBox ItemsSource="{Binding CombatRegions}"
+                                          SelectedItem="{Binding SelectedCombatRegion}"
+                                          DisplayMemberPath="Name"
+                                          Width="160"
+                                          Height="30"
+                                          Margin="0,0,8,0" />
+                                <Button Content="应用区域配置"
+                                        Style="{StaticResource GhostButton}"
+                                        Width="108"
+                                        Height="30"
+                                        Command="{Binding ApplyCombatRegionsCommand}" />
+                            </StackPanel>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="区域预览" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <Border Height="138" Background="#06080D" BorderBrush="#253041" BorderThickness="1" CornerRadius="8" Padding="8">
+                                <Grid>
+                                    <Image Source="{Binding CombatPreview}" Stretch="Uniform" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+                                    <TextBlock Text="未绑定窗口或尚未预览"
+                                               Foreground="{StaticResource Text.MutedBrush}"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"
+                                               Visibility="{Binding CombatPreview, Converter={StaticResource NullToVis}}" />
+                                </Grid>
+                            </Border>
+
+                            <Border CornerRadius="7" Background="{StaticResource Bg.SurfaceAltBrush}" Padding="10,8" Margin="0,10,0,0">
+                                <TextBlock TextWrapping="Wrap">
+                                    <Run Text="区域结果：" Foreground="{StaticResource Text.MutedBrush}" FontSize="12" />
+                                    <Run Text="{Binding SelectedRegionText}" FontSize="12.5" FontWeight="SemiBold" />
+                                </TextBlock>
+                            </Border>
+
+                            <TextBlock Text="识别结果" Style="{StaticResource Caption}" Margin="0,14,0,8" />
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="72" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="72" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="28" />
+                                    <RowDefinition Height="28" />
+                                    <RowDefinition Height="28" />
+                                    <RowDefinition Height="28" />
+                                    <RowDefinition Height="28" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="目标" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding TargetNameText}" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="目标血" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding TargetHpText}" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding TargetHpPercent}" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="角色血" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding PlayerHpText}" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding PlayerHpPercent}" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="3" Grid.Column="0" Text="角色蓝" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding PlayerMpText}" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="3" Grid.Column="2" Text="{Binding PlayerMpPercent}" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="4" Grid.Column="0" Text="宠物血" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding PetHpText}" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="4" Grid.Column="2" Text="{Binding PetHpPercent}" Style="{StaticResource Label}" />
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <DockPanel>
+                        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                            <Button Content="预览区域"
+                                    Style="{StaticResource GhostButton}"
+                                    Width="86"
+                                    Height="32"
+                                    Margin="0,0,8,0"
+                                    IsEnabled="{Binding HasBoundWindow}"
+                                    Command="{Binding RefreshSelectedNavigationRegionPreviewCommand}" />
+                            <Button Content="刷新识别"
+                                    Style="{StaticResource GhostButton}"
+                                    Width="86"
+                                    Height="32"
+                                    Margin="0,0,8,0"
+                                    IsEnabled="{Binding HasBoundWindow}"
+                                    Command="{Binding RefreshNavigationRecognitionCommand}" />
+                            <Button Content="读取并录入"
+                                    Style="{StaticResource PrimaryButton}"
+                                    Width="96"
+                                    Height="32"
+                                    IsEnabled="{Binding HasBoundWindow}"
+                                    Command="{Binding CaptureCurrentReturnPointCommand}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="坐标校准" Style="{StaticResource H2}" />
+                            <TextBlock Text="{Binding NavigationOcrStatus}" Style="{StaticResource Label}" Margin="0,4,0,0" />
+                        </StackPanel>
+                    </DockPanel>
+
+                    <Grid Margin="0,14,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.08*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="0.92*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="区域配置" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <ItemsControl ItemsSource="{Binding NavigationRegions}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Background="#10141C" BorderBrush="#253041" BorderThickness="1" CornerRadius="8" Padding="10" Margin="0,0,0,8">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="104" />
+                                                    <ColumnDefinition Width="54" />
+                                                    <ColumnDefinition Width="54" />
+                                                    <ColumnDefinition Width="54" />
+                                                    <ColumnDefinition Width="54" />
+                                                    <ColumnDefinition Width="70" />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Grid.Column="0" Text="{Binding Name}" Style="{StaticResource Label}" VerticalAlignment="Center" />
+                                                <TextBox Grid.Column="1" Text="{Binding X, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,6,0" ToolTip="X" />
+                                                <TextBox Grid.Column="2" Text="{Binding Y, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,6,0" ToolTip="Y" />
+                                                <TextBox Grid.Column="3" Text="{Binding Width, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,6,0" ToolTip="宽" />
+                                                <TextBox Grid.Column="4" Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,6,0" ToolTip="高" />
+                                                <CheckBox Grid.Column="5" Content="启用" IsChecked="{Binding Enabled}" VerticalAlignment="Center" />
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+
+                            <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+                                <ComboBox ItemsSource="{Binding NavigationRegions}"
+                                          SelectedItem="{Binding SelectedNavigationRegion}"
+                                          DisplayMemberPath="Name"
+                                          Width="160"
+                                          Height="30"
+                                          Margin="0,0,8,0" />
+                                <Button Content="保存区域配置"
+                                        Style="{StaticResource GhostButton}"
+                                        Width="108"
+                                        Height="30"
+                                        Command="{Binding ApplyNavigationRegionsCommand}" />
+                            </StackPanel>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="区域预览" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <Border Height="138" Background="#06080D" BorderBrush="#253041" BorderThickness="1" CornerRadius="8" Padding="8">
+                                <Grid>
+                                    <Image Source="{Binding NavigationPreview}" Stretch="Uniform" RenderOptions.BitmapScalingMode="NearestNeighbor" />
+                                    <TextBlock Text="未绑定窗口或尚未预览"
+                                               Foreground="{StaticResource Text.MutedBrush}"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"
+                                               Visibility="{Binding NavigationPreview, Converter={StaticResource NullToVis}}" />
+                                </Grid>
+                            </Border>
+
+                            <Border CornerRadius="7" Background="{StaticResource Bg.SurfaceAltBrush}" Padding="10,8" Margin="0,10,0,0">
+                                <StackPanel>
+                                    <TextBlock TextWrapping="Wrap">
+                                        <Run Text="区域结果：" Foreground="{StaticResource Text.MutedBrush}" FontSize="12" />
+                                        <Run Text="{Binding SelectedNavigationRegionText}" FontSize="12.5" FontWeight="SemiBold" />
+                                    </TextBlock>
+                                    <TextBlock Text="{Binding ReturnPointCaptureStatus}" Style="{StaticResource Caption}" Margin="0,6,0,0" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </Border>
+
+                            <TextBlock Text="识别结果" Style="{StaticResource Caption}" Margin="0,14,0,8" />
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="72" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="28" />
+                                    <RowDefinition Height="28" />
+                                    <RowDefinition Height="28" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="地图" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding NavigationMapText}" Style="{StaticResource Label}" TextTrimming="CharacterEllipsis" />
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="坐标" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding NavigationCoordinateText}" Style="{StaticResource Label}" TextTrimming="CharacterEllipsis" />
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="解析" Style="{StaticResource Label}" />
+                                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding NavigationParsedCoordinate}" Style="{StaticResource Label}" />
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+            <ItemsControl ItemsSource="{Binding Tools}" Margin="0,18,0,0">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Style="{StaticResource Card}" Margin="0,0,0,10" Padding="14">
+                            <DockPanel>
+                                <Button DockPanel.Dock="Right"
+                                        Content="打开"
+                                        Style="{StaticResource GhostButton}"
+                                        Width="72"
+                                        Height="32"
+                                        Command="{Binding DataContext.OpenCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                        CommandParameter="{Binding}" />
+                                <Border DockPanel.Dock="Right"
+                                        Style="{StaticResource Badge}"
+                                        VerticalAlignment="Center"
+                                        Margin="0,0,12,0"
+                                        Background="{Binding Status, Converter={StaticResource StatusBg}}">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Ellipse Width="7" Height="7" VerticalAlignment="Center" Fill="{Binding Status, Converter={StaticResource StatusBrush}}" />
+                                        <TextBlock Text="{Binding Status, Converter={StaticResource StatusText}}" FontSize="10.5" Margin="6,0,0,0" Foreground="{StaticResource Text.SecondaryBrush}" />
+                                    </StackPanel>
+                                </Border>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Title}" Style="{StaticResource H2}" FontSize="14" />
+                                    <TextBlock Text="{Binding Description}" Style="{StaticResource Caption}" Margin="0,3,0,0" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </DockPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

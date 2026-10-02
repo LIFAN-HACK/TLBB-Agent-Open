@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "雁北",
+    "source":  "https://tl.changyou.com/data/monster/monster10.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 雁北",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "打草谷辽兵",
+                        "group":  "雁北",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "红枫熊",
+                        "group":  "雁北",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "红枫蜘蛛",
+                        "group":  "雁北",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨护卫",
+                        "group":  "雁北",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨教头",
+                        "group":  "雁北",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦家寨劫匪",
+                        "group":  "雁北",
+                        "allowAttack":  true
+                    }
+                ]
+}

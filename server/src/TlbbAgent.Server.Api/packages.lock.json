@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "dependencies": {
+    "net10.0": {
+      "tlbbagent.server.modules.audit": {
+        "type": "Project",
+        "dependencies": {
+          "TlbbAgent.Server.SharedKernel": "[1.0.0, )"
+        }
+      },
+      "tlbbagent.server.modules.billing": {
+        "type": "Project",
+        "dependencies": {
+          "TlbbAgent.Server.SharedKernel": "[1.0.0, )"
+        }
+      },
+      "tlbbagent.server.modules.entitlement": {
+        "type": "Project",
+        "dependencies": {
+          "TlbbAgent.Server.SharedKernel": "[1.0.0, )"
+        }
+      },
+      "tlbbagent.server.modules.identity": {
+        "type": "Project",
+        "dependencies": {
+          "TlbbAgent.Server.SharedKernel": "[1.0.0, )"
+        }
+      },
+      "tlbbagent.server.modules.licensing": {
+        "type": "Project",
+        "dependencies": {
+          "TlbbAgent.Server.SharedKernel": "[1.0.0, )"
+        }
+      },
+      "tlbbagent.server.modules.release": {
+        "type": "Project",
+        "dependencies": {
+          "TlbbAgent.Server.SharedKernel": "[1.0.0, )"
+        }
+      },
+      "tlbbagent.server.sharedkernel": {
+        "type": "Project"
+      }
+    }
+  }
+}

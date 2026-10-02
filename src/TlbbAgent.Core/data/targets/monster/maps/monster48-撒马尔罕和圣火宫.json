@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "撒马尔罕和圣火宫",
+    "source":  "https://tl.changyou.com/data/monster/monster48.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 撒马尔罕和圣火宫",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "拜火祭司",
+                        "group":  "撒马尔罕和圣火宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "拜火使者",
+                        "group":  "撒马尔罕和圣火宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "火精灵",
+                        "group":  "撒马尔罕和圣火宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "火焰武士",
+                        "group":  "撒马尔罕和圣火宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "沁水驮兽",
+                        "group":  "撒马尔罕和圣火宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "三头犬",
+                        "group":  "撒马尔罕和圣火宫",
+                        "allowAttack":  true
+                    }
+                ]
+}

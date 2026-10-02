@@ -1,0 +1,493 @@
+{
+  "schema": 2,
+  "class_id": "material_panel",
+  "zh_name": "材料加工",
+  "coordinate_space": "exact_l1_v3_crop_pixels_xyxy_half_open",
+  "crop_size": [
+    331,
+    438
+  ],
+  "reference_to_v3_offset_xy": [
+    0,
+    0
+  ],
+  "controls": [
+    {
+      "control_id": "close_window",
+      "zh_name": "标题栏关闭",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        305,
+        1,
+        329,
+        27
+      ],
+      "visual_bbox_norm": [
+        0.92145,
+        0.002283,
+        0.993958,
+        0.061644
+      ],
+      "safe_click_bbox_xyxy": [
+        310,
+        6,
+        324,
+        22
+      ],
+      "safe_click_bbox_norm": [
+        0.936556,
+        0.013699,
+        0.978852,
+        0.050228
+      ],
+      "click_point_xy": [
+        317,
+        14
+      ],
+      "click_point_norm": [
+        0.957704,
+        0.031963
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "material_panel_absent"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "scroll_up",
+      "zh_name": "配方上滚",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        292,
+        82,
+        309,
+        101
+      ],
+      "visual_bbox_norm": [
+        0.882175,
+        0.187215,
+        0.933535,
+        0.230594
+      ],
+      "safe_click_bbox_xyxy": [
+        296,
+        86,
+        305,
+        97
+      ],
+      "safe_click_bbox_norm": [
+        0.89426,
+        0.196347,
+        0.92145,
+        0.221461
+      ],
+      "click_point_xy": [
+        300,
+        91
+      ],
+      "click_point_norm": [
+        0.906344,
+        0.207763
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "scroll_down",
+      "zh_name": "配方下滚",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        292,
+        189,
+        309,
+        208
+      ],
+      "visual_bbox_norm": [
+        0.882175,
+        0.431507,
+        0.933535,
+        0.474886
+      ],
+      "safe_click_bbox_xyxy": [
+        296,
+        193,
+        305,
+        204
+      ],
+      "safe_click_bbox_norm": [
+        0.89426,
+        0.440639,
+        0.92145,
+        0.465753
+      ],
+      "click_point_xy": [
+        300,
+        198
+      ],
+      "click_point_norm": [
+        0.906344,
+        0.452055
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "manufacture_all",
+      "zh_name": "全部制造",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        16,
+        399,
+        97,
+        427
+      ],
+      "visual_bbox_norm": [
+        0.048338,
+        0.910959,
+        0.293051,
+        0.974886
+      ],
+      "safe_click_bbox_xyxy": [
+        24,
+        404,
+        89,
+        422
+      ],
+      "safe_click_bbox_norm": [
+        0.072508,
+        0.922374,
+        0.268882,
+        0.96347
+      ],
+      "click_point_xy": [
+        56,
+        413
+      ],
+      "click_point_norm": [
+        0.169184,
+        0.942922
+      ],
+      "risk": "resource_consuming",
+      "runtime_default": "disabled_requires_explicit_runtime_policy_and_second_confirmation",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "quantity_decrease",
+      "zh_name": "数量减少",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        144,
+        399,
+        162,
+        427
+      ],
+      "visual_bbox_norm": [
+        0.435045,
+        0.910959,
+        0.489426,
+        0.974886
+      ],
+      "safe_click_bbox_xyxy": [
+        148,
+        404,
+        158,
+        422
+      ],
+      "safe_click_bbox_norm": [
+        0.44713,
+        0.922374,
+        0.477341,
+        0.96347
+      ],
+      "click_point_xy": [
+        153,
+        413
+      ],
+      "click_point_norm": [
+        0.462236,
+        0.942922
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "quantity_increase",
+      "zh_name": "数量增加",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        200,
+        399,
+        224,
+        427
+      ],
+      "visual_bbox_norm": [
+        0.60423,
+        0.910959,
+        0.676737,
+        0.974886
+      ],
+      "safe_click_bbox_xyxy": [
+        205,
+        404,
+        219,
+        422
+      ],
+      "safe_click_bbox_norm": [
+        0.619335,
+        0.922374,
+        0.661631,
+        0.96347
+      ],
+      "click_point_xy": [
+        212,
+        413
+      ],
+      "click_point_norm": [
+        0.640483,
+        0.942922
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "manufacture",
+      "zh_name": "制造",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        246,
+        399,
+        278,
+        427
+      ],
+      "visual_bbox_norm": [
+        0.743202,
+        0.910959,
+        0.839879,
+        0.974886
+      ],
+      "safe_click_bbox_xyxy": [
+        251,
+        404,
+        273,
+        422
+      ],
+      "safe_click_bbox_norm": [
+        0.758308,
+        0.922374,
+        0.824773,
+        0.96347
+      ],
+      "click_point_xy": [
+        262,
+        413
+      ],
+      "click_point_norm": [
+        0.791541,
+        0.942922
+      ],
+      "risk": "resource_consuming",
+      "runtime_default": "disabled_requires_explicit_runtime_policy_and_second_confirmation",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "fresh_frame_observed",
+        "panel_state_changed_as_expected"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    },
+    {
+      "control_id": "close_action",
+      "zh_name": "关闭",
+      "kind": "button",
+      "gesture": "left_click",
+      "visual_bbox_xyxy": [
+        281,
+        399,
+        326,
+        427
+      ],
+      "visual_bbox_norm": [
+        0.848943,
+        0.910959,
+        0.984894,
+        0.974886
+      ],
+      "safe_click_bbox_xyxy": [
+        287,
+        404,
+        320,
+        422
+      ],
+      "safe_click_bbox_norm": [
+        0.867069,
+        0.922374,
+        0.966767,
+        0.96347
+      ],
+      "click_point_xy": [
+        303,
+        413
+      ],
+      "click_point_norm": [
+        0.915408,
+        0.942922
+      ],
+      "risk": "normal",
+      "runtime_default": "enabled_after_panel_confirmed",
+      "preconditions": [
+        "panel_present_stable",
+        "control_present_stable"
+      ],
+      "expected_postconditions": [
+        "material_panel_absent"
+      ],
+      "failure_policy": "return_unknown_noop_and_retry_after_fresh_frame"
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "recipe_rows",
+      "zh_name": "加工配方列表",
+      "kind": "dynamic_text_rows",
+      "ocr_required": true,
+      "preconditions": [
+        "material_panel_present_stable",
+        "recipe_text_unique_match"
+      ],
+      "failure_policy": "low_confidence_or_ambiguous_returns_unknown_noop",
+      "bbox_xyxy": [
+        35,
+        78,
+        292,
+        203
+      ],
+      "bbox_norm": [
+        0.10574,
+        0.178082,
+        0.882175,
+        0.46347
+      ]
+    },
+    {
+      "region_id": "recipe_description",
+      "zh_name": "配方说明",
+      "kind": "read_only_ocr",
+      "failure_policy": "low_confidence_or_ambiguous_returns_unknown_noop",
+      "bbox_xyxy": [
+        35,
+        213,
+        304,
+        392
+      ],
+      "bbox_norm": [
+        0.10574,
+        0.486301,
+        0.918429,
+        0.894977
+      ]
+    },
+    {
+      "region_id": "manufacture_quantity",
+      "zh_name": "制造数量",
+      "kind": "read_only_ocr",
+      "failure_policy": "low_confidence_or_ambiguous_returns_unknown_noop",
+      "bbox_xyxy": [
+        162,
+        399,
+        200,
+        427
+      ],
+      "bbox_norm": [
+        0.489426,
+        0.910959,
+        0.60423,
+        0.974886
+      ]
+    },
+    {
+      "region_id": "recipe_scroll_track",
+      "zh_name": "配方滚动条轨道",
+      "kind": "read_only_state",
+      "failure_policy": "low_confidence_or_ambiguous_returns_unknown_noop",
+      "bbox_xyxy": [
+        292,
+        101,
+        309,
+        189
+      ],
+      "bbox_norm": [
+        0.882175,
+        0.230594,
+        0.933535,
+        0.431507
+      ]
+    }
+  ],
+  "policy": {},
+  "annotation_status": "codex_pixel_audited_pending_user_review_not_runtime_authorized",
+  "runtime_authorized": false,
+  "provenance": {
+    "geometry_source": "train/runtime_db/ui_interactions_v2/material_panel/annotation.json",
+    "migration": "pixel-audited control geometry aligned to the exact L1 V3 crop",
+    "legacy_111_rough_boxes_imported": false
+  }
+}

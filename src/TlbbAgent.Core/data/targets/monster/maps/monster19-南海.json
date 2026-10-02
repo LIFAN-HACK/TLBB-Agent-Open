@@ -1,0 +1,65 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "南海",
+    "source":  "https://tl.changyou.com/data/monster/monster19.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 南海",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "鳄鱼帮打手",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "鳄鱼帮混混",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "鳄鱼帮杀手",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "鳄鱼帮堂主",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "鳄鱼帮勇士",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "河妖",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "南海盗神",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "南海鳄鱼",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "南海海盗",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "石老人",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "嗜血鳄鱼",
+                        "group":  "南海",
+                        "allowAttack":  true
+                    }
+                ]
+}

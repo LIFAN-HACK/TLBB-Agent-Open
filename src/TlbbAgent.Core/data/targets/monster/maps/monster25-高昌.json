@@ -1,0 +1,70 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "高昌",
+    "source":  "https://tl.changyou.com/data/monster/monster25.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 高昌",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "大宛马",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "废墟恐蝎",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "骷髅兵",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "辽国萨满",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "辽国战士",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "马场守卫",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "西域劫匪",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "西域窃贼",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "西域萨满",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "西域巫医",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "驯马师",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "耶律延",
+                        "group":  "高昌",
+                        "allowAttack":  true
+                    }
+                ]
+}

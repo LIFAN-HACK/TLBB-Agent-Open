@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "category": "boss",
+  "group": "野外BOSS/镜湖/混江龙",
+  "source": "https://tl.changyou.com/data/monster/monster23.shtml",
+  "entries": [
+    { "name": "出洞蛟", "allowAttack": false, "reason": "混江龙手下" },
+    { "name": "翻江蜃", "allowAttack": false, "reason": "混江龙手下" }
+  ]
+}

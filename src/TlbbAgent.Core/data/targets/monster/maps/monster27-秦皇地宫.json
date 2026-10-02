@@ -1,0 +1,90 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "秦皇地宫",
+    "source":  "https://tl.changyou.com/data/monster/monster27.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 秦皇地宫",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "盗墓贼",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "地宫工匠",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "地宫幽灵",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "帝后",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "机关石人",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "机关守卫",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "墓穴甲虫",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦皇精兵俑",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦皇之魄",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦将护卫",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦将侍卫",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦陵蝙蝠",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦陵御卫",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "秦陵葬妃",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "幽禁守卫",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "幽灵祭祀",
+                        "group":  "秦皇地宫",
+                        "allowAttack":  true
+                    }
+                ]
+}

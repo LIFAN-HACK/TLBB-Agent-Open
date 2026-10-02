@@ -1,0 +1,89 @@
+{
+  "artifact_key": "tlbb_minimap_pixel_digit_templates_v1",
+  "input_contract": "L1 minimap crop; native HUD is 240x228 across collected screen resolutions",
+  "digits": {
+    "0": [
+      "digit_0_01.png"
+    ],
+    "1": [
+      "digit_1_01.png",
+      "digit_1_02.png",
+      "digit_1_03.png",
+      "digit_1_04.png"
+    ],
+    "2": [
+      "digit_2_01.png",
+      "digit_2_02.png",
+      "digit_2_03.png"
+    ],
+    "3": [
+      "digit_3_01.png",
+      "digit_3_02.png"
+    ],
+    "4": [
+      "digit_4_01.png"
+    ],
+    "5": [
+      "digit_5_01.png",
+      "digit_5_02.png"
+    ],
+    "6": [
+      "digit_6_01.png",
+      "digit_6_02.png"
+    ],
+    "7": [
+      "digit_7_01.png"
+    ],
+    "8": [
+      "digit_8_01.png"
+    ],
+    "9": [
+      "digit_9_01.png"
+    ]
+  },
+  "classification_threshold": 0.82,
+  "sources": [
+    {
+      "image": "train/packages/layout_v2_new_modules_r2/dataset/images/map_000001.png",
+      "bbox": [
+        2320,
+        0,
+        2560,
+        228
+      ],
+      "expected": "146108"
+    },
+    {
+      "image": "train/packages/layout_v2_new_modules_r2/dataset/images/boss_000001.png",
+      "bbox": [
+        2320,
+        0,
+        2560,
+        228
+      ],
+      "expected": "253216"
+    },
+    {
+      "image": "train/packages/layout_v2_new_modules_r2/dataset/images/skill_000024.png",
+      "bbox": [
+        2320,
+        0,
+        2560,
+        228
+      ],
+      "expected": "23195"
+    },
+    {
+      "image": "train/review/minimap_marker_validation/user_reference_minimap.png",
+      "bbox": [
+        89,
+        12,
+        94,
+        20
+      ],
+      "expected": "7",
+      "note": "manual glyph crop from the user-provided 137,141 minimap reference"
+    }
+  ],
+  "fallback": "Tesseract is used only when pixel glyph segmentation cannot produce a safe template result."
+}

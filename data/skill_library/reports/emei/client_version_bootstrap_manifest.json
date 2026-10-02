@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "sect": "峨嵋",
+  "purpose": "global_skill_library_bootstrap_for_client_version",
+  "safety_policy": "candidate_only_until_reviewed_ingame_templates_exist",
+  "capture_requirements": {
+    "scope": "one-time shared asset production; never per player or per slot arrangement",
+    "client_version": "0.08.1808 or record the actual tested version",
+    "states": [
+      "ready_without_cd_overlay",
+      "cooling_with_gray_or_digit_overlay"
+    ],
+    "minimum_ready_samples_per_visible_skill": 2,
+    "minimum_cooling_samples_per_visible_skill": 2,
+    "resolutions": [
+      "native",
+      "0.75_scale",
+      "0.50_scale"
+    ],
+    "crop_source": "L1 skill_bar crop; never use a hand-entered full-screen absolute ROI"
+  },
+  "skills": [
+    {
+      "skill_id": "em_001",
+      "name": "貂蝉拜月",
+      "official_icon": "icons_raw/em_001.jpg",
+      "official_sha256": "c1bcaa1f32d41cc57f7122d8c05443134f55247f726ae8e9cede4b6af9f6a516",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_002",
+      "name": "昭君出塞",
+      "official_icon": "icons_raw/em_002.jpg",
+      "official_sha256": "d593bd1de920b28e080a83091aafda942a29f65391e90aa64a58437792baefd5",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_003",
+      "name": "坐怀不乱",
+      "official_icon": "icons_raw/em_003.jpg",
+      "official_sha256": "b6ee6faee7930a72b7e39b80774df181a81a0ba473378a9669a30c46f1427e03",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_004",
+      "name": "西子捧心",
+      "official_icon": "icons_raw/em_004.jpg",
+      "official_sha256": "d8e3bbeb5fbf2a568438193d2b3ca48cb836826b708d99321e5d0226d5697b35",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_005",
+      "name": "金顶绵掌",
+      "official_icon": "icons_raw/em_005.jpg",
+      "official_sha256": "a4f4ad3058ca2318c4910bbba6436287f45750f57d433e94afe12d68d936e9bc",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_006",
+      "name": "月落西山",
+      "official_icon": "icons_raw/em_006.jpg",
+      "official_sha256": "7e94024bfbabc05e1520179582a76415a975b49c57650e362c2088407b389f87",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_007",
+      "name": "佛光普照",
+      "official_icon": "icons_raw/em_007.jpg",
+      "official_sha256": "f962ced33f647cb20505c2593e906d36c80fcd935052d1460055945b21492faf",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_008",
+      "name": "冲虚养气",
+      "official_icon": "icons_raw/em_008.jpg",
+      "official_sha256": "c3a76f92a0deb8a5c6280a0be42a9d5085762974fb265a1188b61066d20fa65d",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_009",
+      "name": "起死回生",
+      "official_icon": "icons_raw/em_009.jpg",
+      "official_sha256": "9f70a95ecffaf15de48574b5516e34ede3b7e3d5d6e13971e093828c47a56d01",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_010",
+      "name": "延年益寿",
+      "official_icon": "icons_raw/em_010.jpg",
+      "official_sha256": "08b0a894ad32838031b64f985c50977821c57c3de65fd760b5e75e6a73ea71f3",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_011",
+      "name": "金针渡劫",
+      "official_icon": "icons_raw/em_011.jpg",
+      "official_sha256": "315328b26ab79be1110d46d88d315501eb96692cbb6c167e646c0dcd2c33ba39",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_012",
+      "name": "窈窕淑女",
+      "official_icon": "icons_raw/em_012.jpg",
+      "official_sha256": "a017132e1129773412f99f773b4191a2a0cac12d6e6f06d6cfa1cfaabfc4a26c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_013",
+      "name": "回天术",
+      "official_icon": "icons_raw/em_013.jpg",
+      "official_sha256": "f171a8aed7e334250a29f56c9b74267eb548f3f966c178404a667d163c51adb4",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_014",
+      "name": "绝剑式",
+      "official_icon": "icons_raw/em_014.jpg",
+      "official_sha256": "bbcb63ec8bca5db78893c04f9881559b0fcde748de8b0181ed05dc2b73b192a3",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_015",
+      "name": "护心诀",
+      "official_icon": "icons_raw/em_015.jpg",
+      "official_sha256": "9c062e4688388beb9f281088fee634ff9ab9771ef8d10a8b9f42206133dc8479",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_016",
+      "name": "君子好逑",
+      "official_icon": "icons_raw/em_016.jpg",
+      "official_sha256": "07cace50bdc242fa0fade61e4512f582a0ce4c227d0ed93900677156ba601f8f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_017",
+      "name": "障眼法",
+      "official_icon": "icons_raw/em_017.jpg",
+      "official_sha256": "ebe35144378a236312468e25b62712743b27a3206708b5a05fbc4419e4e16221",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_018",
+      "name": "灭剑式",
+      "official_icon": "icons_raw/em_018.jpg",
+      "official_sha256": "ae655b7625520f300fa8bc601e57f228691052f5dde183f49de108124cc403b2",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_019",
+      "name": "斩情诀",
+      "official_icon": "icons_raw/em_019.jpg",
+      "official_sha256": "ded2e76e3c60c885694b8c1e8882ed569a0dfdbaca53a254ede2b8feb72ecebf",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_020",
+      "name": "拖泥带水",
+      "official_icon": "icons_raw/em_020.jpg",
+      "official_sha256": "469670c57cc1b1b2cbbe636ef7e65609f16b69d127f2c0d39063164bd54615ce",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_021",
+      "name": "行尸走肉",
+      "official_icon": "icons_raw/em_021.jpg",
+      "official_sha256": "8ef334baa4615b8289b15b688ec764f58ba5ec151010f3c9ff8f5d7d5b95a3fd",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_022",
+      "name": "呆若木鸡",
+      "official_icon": "icons_raw/em_022.jpg",
+      "official_sha256": "eabeacf0209c941ab0a8b172620aa6b9721bbaeed8508ec0e61c06bdf5ad99cf",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_023",
+      "name": "九阴神爪",
+      "official_icon": "icons_raw/em_023.jpg",
+      "official_sha256": "92fe9ce67af00454e144afb1a0a9831067d8eb3adb04585931d48799e9cb3c1a",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_024",
+      "name": "清心普善咒",
+      "official_icon": "icons_raw/em_024.jpg",
+      "official_sha256": "a00c33ffdcc82fdc1bec69e42203a2b4f0fa02878bb9095ada86437e96a69a40",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "em_025",
+      "name": "春花秋月",
+      "official_icon": "icons_raw/em_025.jpg",
+      "official_sha256": "a8c728a5c936c52c36909ac48333585f50768bdfb9619619ac858dca6799a9ef",
+      "ingame_variants": [],
+      "state": "capture_required"
+    }
+  ]
+}

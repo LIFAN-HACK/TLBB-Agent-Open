@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "火焰山",
+    "source":  "https://tl.changyou.com/data/monster/monster24.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 火焰山",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "北方盗贼",
+                        "group":  "火焰山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "北方强盗",
+                        "group":  "火焰山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "荒原蝎",
+                        "group":  "火焰山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "铁翼牛",
+                        "group":  "火焰山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "西域马匪",
+                        "group":  "火焰山",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "翼牛",
+                        "group":  "火焰山",
+                        "allowAttack":  true
+                    }
+                ]
+}

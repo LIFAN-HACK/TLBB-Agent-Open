@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "library_id": "item_assets_v1",
+  "status": "read_only_unknown_protected",
+  "item_count": 20,
+  "runtime_identity_authorized_count": 1,
+  "never_sell_count": 20,
+  "sell_candidate_count": 0,
+  "runtime_sell_authorized": false,
+  "remaining_gate": "至少 20 个经人工复核的 sell_candidate 与 20 个保护相似物，并满足 Tooltip/绑定状态一致且高置信误售为 0",
+  "runtime_template_count": 41,
+  "yuanbao_never_sell_count": 5
+}

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>TLBB Agent 目标采集器</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\TlbbAgent.Contracts\TlbbAgent.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\TlbbAgent.Core\TlbbAgent.Core.csproj" />
+  </ItemGroup>
+</Project>

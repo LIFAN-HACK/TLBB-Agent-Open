@@ -1,0 +1,33 @@
+﻿skill_id,name,kind,targeting,release_rule,safety_tags,hang_usable,runtime_match_eligible,calibration_state,icon_raw,source_url,intro,detail
+tl_001,正阳手,damage,enemy,manual_review_required,,False,False,official_seed_only,icons_raw/tl_001.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天龙弟子的入门功夫。使用之后可以连续对目标造成伤害。,单体远程攻击 增加内外功攻击
+tl_002,三阳开泰,aoe,self,manual_review_required,multi_target,False,False,official_seed_only,icons_raw/tl_002.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天龙绝技之一，是本相大师的得意功夫。使用之后可以对近身多个敌人造成大量伤害。,群体攻击 自身周围5米范围内，最多4个目标，持续受到伤害，内外功攻击增加
+tl_003,正气浩然,buff,friendly_or_self,manual_review_required,friendly_target,False,False,official_seed_only,icons_raw/tl_003.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天龙弟子给予朋友的关怀，使用之后可以提升友方目标的抗玄能力。,单体强化 增加目标玄抗
+tl_004,一阳指,damage,enemy,manual_review_required,conditional_cast,False,False,official_seed_only,icons_raw/tl_004.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,大理段氏武学的象征。使用之后可以直接对目标造成巨大伤害。,单体攻击，对目标造成额外直接伤害。需要装备武器。
+tl_005,衔枚疾走,buff,self,manual_review_required,movement,False,False,official_seed_only,icons_raw/tl_005.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,源自段思平行军时所用的兵法。使用之后可以使你的移动速度大幅提高。,状态 提高自身移动速度50%，持续若干秒。
+tl_006,八门金锁,buff,self,manual_review_required,control,False,False,official_seed_only,icons_raw/tl_006.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,源自段思平布阵时所用的兵法。使用之后可以使目标陷入定身状态。,封印目标 令目标定身
+tl_007,以逸待劳,aoe,friendly_or_self,manual_review_required,"friendly_target,multi_target",False,False,official_seed_only,icons_raw/tl_007.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,源自段思平野战时所用的兵法。使用之后可以提升附近队友的命中率。,群体强化 自身周围7米，有效人数12，队友(包括自己)命中增加
+tl_008,指点江山,damage,self,manual_review_required,,False,False,official_seed_only,icons_raw/tl_008.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天龙绝技之一，是本因方丈的得意功夫。使用之后可以给目标加上天龙标记，使其被击中时受到额外的伤害。,单体标记 令目标进入虚弱状态，所受伤害放大
+tl_009,天罡正气,buff,self,manual_review_required,,False,False,official_seed_only,icons_raw/tl_009.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,凛凛天罡正气，何惧邪魔歪道。使用之后可以提升你的所有抗性。,状态 增加自身所有抗性
+tl_010,静影沉璧,damage,enemy,manual_review_required,,False,False,official_seed_only,icons_raw/tl_010.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天龙绝技之一，是本观大师的得意功夫。使用之后可以对目标造成伤害，并使其损失大量的气。,单体远程攻击 直接减少目标一定的气
+tl_011,涂漆术,buff,unknown,disabled_passive,passive,False,False,official_seed_only,icons_raw/tl_011.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,使你从防具中获得的内、外功防御力大幅提高。,被动蕴含 防具的外、内功防御效果增加
+tl_012,欲擒故纵,damage,enemy,manual_review_required,,False,False,official_seed_only,icons_raw/tl_012.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天龙绝技之一，是本参大师的得意功夫。使用之后可以对目标造成大量伤害，并使其陷入破绽状态。,单体远程攻击 增加内、外功攻击，有一定几率令目标进入破绽状态，内外功攻击降低
+tl_013,截拳式,buff,self,manual_review_required,stance,False,False,official_seed_only,icons_raw/tl_013.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,气度雍容，处乱不惊。使用之后使你摆出防御型姿态。,防御状态 获得怒气的速度增加，增加自身外、内功防御
+tl_014,白虹贯日,buff,self,manual_review_required,"cleanse_or_immunity,conditional_cast,stance",False,False,official_seed_only,icons_raw/tl_014.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,君王临阵，白虹贯日。使用之后可以解除你受到的破绽效果。只有在截拳式姿态下才能使用。,状态解除 解除自己所有的破绽状态
+tl_015,磨砺术,damage,unknown,disabled_passive,passive,False,False,official_seed_only,icons_raw/tl_015.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,使你从扇、环类武器中获得的内、外功攻击力大幅提高。,被动蕴含 扇、环类武器的基本内、外功攻击效果增加
+tl_016,雪拥蓝关,damage,enemy,manual_review_required,control,False,False,official_seed_only,icons_raw/tl_016.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天龙绝技之一，是本因方丈的得意功夫。使用之后可以对目标造成大量伤害，并使其陷入封穴状态。,单体远程攻击 增加内、外功攻击，有一定几率把目标封穴，持续数秒，封穴状态下无法进行任何操作
+tl_017,破剑式,damage,self,manual_review_required,stance,False,False,official_seed_only,icons_raw/tl_017.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,王者风范，势如破竹。使用之后使你摆出攻击型姿态。,攻击状态 获得怒气的速度增加，该状态下攻击目标，有一定几率使目标进入破绽状态，使其在破绽状态下发功类技能持续时间减少
+tl_018,金玉满堂,buff,self,manual_review_required,"conditional_cast,stance",False,False,official_seed_only,icons_raw/tl_018.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,君王之礼，金玉满堂。使用之后可以提升你的会心一击率。只有在破剑式姿态下才能使用。,状态 增加自身会心
+tl_019,万岳朝宗,damage,enemy,manual_review_required,,False,False,official_seed_only,icons_raw/tl_019.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,真气纵横捭阖，如高山仰止，令万岳朝宗。使用之后可以对目标发动充满霸王之气的一击。,单体远程攻击 对目标造成额外直接伤害
+tl_020,非枯非荣,buff,self,manual_review_required,"cleanse_or_immunity,control",False,False,official_seed_only,icons_raw/tl_020.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天龙绝技之一，是枯荣大师的得意武功。使用之后可以使你不再受到散功、封穴状态的影响。,解除自己的散功、封穴状态，并免疫散功、封穴，不能解除心法等级比自己高的玩家施加的散功、封穴状态。
+tl_021,百步穿杨,buff,self,manual_review_required,,False,False,official_seed_only,icons_raw/tl_021.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天龙真气激荡全身，如百步穿杨，例不虚发。使用之后可以使你所有技能的命中率提升到极致。,状态 使自己所有技能的命中率变为100%，持续一定时间
+tl_022,商阳剑,damage,enemy,manual_review_required,cleanse_or_immunity,False,False,official_seed_only,icons_raw/tl_022.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,"六脉神剑中最凶猛的一剑，中剑者的经脉会被剑劲所噬，若不疾走将剑劲散出，将受到极大损伤。
+
+详细介绍：使用之后给目标造成一定的直接伤害，并且附加单体异常状态。该状态每3秒对目标造成一定直接伤害，持续30s。若目标移动一次，则状态解除。",
+tl_023,少泽剑,damage,enemy,manual_review_required,,False,False,official_seed_only,icons_raw/tl_023.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,天下第一剑法六脉神剑中最灵活的一剑。使用之后可以对目标发动石破天惊的一击，并使其陷入破绽状态。,单体远程攻击 对目标造成额外直接伤害，并造成目标的破绽，内外功的攻击与防御降低
+tl_024,中冲剑,buff,self,manual_review_required,,False,False,official_seed_only,icons_raw/tl_024.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,大理段氏的武功传世绝学，运功后以右手中指点穴，出指可缓可快。与敌挣搏凶险之际，用此指法可破坏敌之抗性平衡，实为克敌保身的妙术。,使用之后给目标一个状态，随机降低目标的3种抗性。技能对怪和对人时的效果分开。对怪时的效果约是对人时的一半。降低抗性的效果最低到0，不会出现抗性为负的情况。
+tl_025,龙盘斗里,damage,enemy,manual_review_required,cleanse_or_immunity,False,False,official_seed_only,icons_raw/tl_025.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,"武林至高绝学，根据自己的心法、修炼评分与目标的心法、修炼评分差值决定你对目标的强力控制时间。
+
+详细介绍：
+
+单体远程攻击 强力控制，持续时间根据自己的心法、修炼评分与目标的心法、修炼评分差值决定，不受前七本心法技能加成效果的影响，目标无法移动，无法使用技能，不能被解除，无法免疫。",
+tl_026,黄龙怒鸣,damage,enemy,manual_review_required,,False,False,official_seed_only,icons_raw/tl_026.jpg,https://tl.changyou.com/data/equip/tlzd.shtml,武林至高绝学，根据自己的心法、修炼评分与目标的心法、修炼评分差值决定所能受到造成的伤害。,单体远程攻击，内外功攻击根据自己的心法、修炼评分与目标的心法、修炼评分差值决定，不受前七本心法技能加成效果的影响。

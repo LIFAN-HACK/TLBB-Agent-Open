@@ -1,0 +1,320 @@
+<UserControl x:Class="TlbbAgent.App.Views.HorseBanditPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             FontFamily="{StaticResource AppFont}">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="24,20">
+        <StackPanel MaxWidth="980" HorizontalAlignment="Left">
+            <DockPanel>
+                <Border DockPanel.Dock="Right" Style="{StaticResource Badge}" VerticalAlignment="Center"
+                        Background="{Binding Descriptor.Status, Converter={StaticResource StatusBg}}">
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="7" Height="7" VerticalAlignment="Center" Fill="{Binding Descriptor.Status, Converter={StaticResource StatusBrush}}" />
+                        <TextBlock Text="{Binding Descriptor.Status, Converter={StaticResource StatusText}}" FontSize="11" Margin="6,0,0,0" Foreground="{StaticResource Text.SecondaryBrush}" />
+                    </StackPanel>
+                </Border>
+                <StackPanel>
+                    <TextBlock Text="{Binding Title}" Style="{StaticResource H1}" />
+                    <TextBlock Text="{Binding Subtitle}" Style="{StaticResource Label}" Margin="0,4,0,0" TextWrapping="Wrap" />
+                </StackPanel>
+            </DockPanel>
+
+            <Border Style="{StaticResource Card}" Margin="0,18,0,0" Visibility="{Binding HasController, Converter={StaticResource BoolToVis}}">
+                <StackPanel>
+                    <TextBlock Text="状态机" Style="{StaticResource Caption}" />
+                    <StackPanel Orientation="Horizontal" Margin="0,6,0,0">
+                        <Ellipse Width="9" Height="9" VerticalAlignment="Center" Fill="{Binding RunState, Converter={StaticResource RunStateBrush}}" />
+                        <TextBlock Text="{Binding RunState, Converter={StaticResource RunStateText}}" Margin="8,0,0,0" VerticalAlignment="Center" Style="{StaticResource Label}" />
+                        <Border CornerRadius="6" Background="{StaticResource Bg.WindowBrush}" Padding="8,3" Margin="12,0,0,0">
+                            <TextBlock Text="{Binding CurrentStateName}" FontFamily="Consolas" FontSize="12" Foreground="{StaticResource Accent.CyanBrush}" />
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <DockPanel>
+                        <Border DockPanel.Dock="Right" Style="{StaticResource Badge}"
+                                Background="{Binding IsReady, Converter={StaticResource BoolToStableBg}}">
+                            <TextBlock Text="{Binding ReadySummary}" FontSize="10.5" Foreground="{StaticResource Text.SecondaryBrush}" />
+                        </Border>
+                        <TextBlock Text="运行摘要" Style="{StaticResource H2}" />
+                    </DockPanel>
+
+                    <UniformGrid Columns="3" Margin="0,12,0,0">
+                        <Border CornerRadius="7" Padding="10,8" Background="{StaticResource Bg.SurfaceAltBrush}" Margin="0,0,8,8">
+                            <StackPanel>
+                                <TextBlock Text="角色" Style="{StaticResource Caption}" />
+                                <TextBlock Text="{Binding RoleSummary}" Style="{StaticResource Label}" Margin="0,5,0,0" TextTrimming="CharacterEllipsis" />
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="7" Padding="10,8" Background="{StaticResource Bg.SurfaceAltBrush}" Margin="0,0,8,8">
+                            <StackPanel>
+                                <TextBlock Text="跟随" Style="{StaticResource Caption}" />
+                                <TextBlock Text="{Binding FollowSummary}" Style="{StaticResource Label}" Margin="0,5,0,0" TextTrimming="CharacterEllipsis" />
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="7" Padding="10,8" Background="{StaticResource Bg.SurfaceAltBrush}" Margin="0,0,0,8">
+                            <StackPanel>
+                                <TextBlock Text="队伍检查" Style="{StaticResource Caption}" />
+                                <TextBlock Text="{Binding TeamSummary}" Style="{StaticResource Label}" Margin="0,5,0,0" TextTrimming="CharacterEllipsis" />
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="7" Padding="10,8" Background="{StaticResource Bg.SurfaceAltBrush}" Margin="0,0,8,0">
+                            <StackPanel>
+                                <TextBlock Text="目标" Style="{StaticResource Caption}" />
+                                <TextBlock Text="{Binding TargetSummary}" Style="{StaticResource Label}" Margin="0,5,0,0" TextTrimming="CharacterEllipsis" />
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="7" Padding="10,8" Background="{StaticResource Bg.SurfaceAltBrush}" Margin="0,0,8,0">
+                            <StackPanel>
+                                <TextBlock Text="热键" Style="{StaticResource Caption}" />
+                                <TextBlock Text="{Binding HotkeySummary}" Style="{StaticResource Label}" Margin="0,5,0,0" TextTrimming="CharacterEllipsis" />
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="7" Padding="10,8" Background="{StaticResource Bg.SurfaceAltBrush}">
+                            <StackPanel>
+                                <TextBlock Text="巡逻" Style="{StaticResource Caption}" />
+                                <TextBlock Text="{Binding PatrolSummary}" Style="{StaticResource Label}" Margin="0,5,0,0" TextTrimming="CharacterEllipsis" />
+                            </StackPanel>
+                        </Border>
+                    </UniformGrid>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <DockPanel>
+                        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                            <Button Content="载入跟随" Style="{StaticResource GhostButton}" Width="88" Height="30" Margin="0,0,8,0" Command="{Binding ImportMemberHorseConfigCommand}" />
+                            <Button Content="载入找马" Style="{StaticResource GhostButton}" Width="88" Height="30" Margin="0,0,8,0" Command="{Binding ImportHorse231ConfigCommand}" />
+                            <Button Content="载入路线" Style="{StaticResource GhostButton}" Width="76" Height="30" Margin="0,0,8,0" Command="{Binding ImportHorseRoutesCommand}" />
+                            <Button Content="保存" Style="{StaticResource PrimaryButton}" Width="64" Height="30" Margin="0,0,8,0" Command="{Binding SaveCommand}" />
+                            <Button Content="加载" Style="{StaticResource GhostButton}" Width="64" Height="30" Command="{Binding LoadCommand}" />
+                        </StackPanel>
+                        <StackPanel>
+                    <TextBlock Text="配置数据" Style="{StaticResource H2}" />
+                            <TextBlock Text="{Binding RouteSummary}" Style="{StaticResource Caption}" Margin="0,3,0,0" />
+                        </StackPanel>
+                    </DockPanel>
+                    <TextBlock Text="{Binding ImportStatus}" Style="{StaticResource Caption}" Margin="0,12,0,0" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="队长 / 队员与跟随" Style="{StaticResource H2}" />
+                    <WrapPanel Margin="0,14,0,0">
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="角色" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <ComboBox Width="110" ItemsSource="{Binding Roles}" SelectedItem="{Binding Role}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="自动跟随" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableAutoFollow}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="队伍检查" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding EnableTeamCheck}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="同意邀请" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding AgreeTeamInvite}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="等待队员" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding WaitMembers}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="等待秒数" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="72" Text="{Binding WaitMemberSeconds}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="掉队距离" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="72" Text="{Binding LostFollowDistance}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="转圈拉跟随" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="86" Text="{Binding CirclePullFollowCount}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="向前距离" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="72" Text="{Binding ForwardDistance}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,8">
+                            <TextBlock Text="提前距离" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="72" Text="{Binding LeadDistance}" />
+                        </StackPanel>
+                    </WrapPanel>
+                    <WrapPanel Margin="0,4,0,0">
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="队员选怪打马" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding MemberSelectsTarget}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="队长不打怪" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding LeaderNoAttack}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="队长不下马" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding LeaderStayMounted}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="队员打所有怪" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding MemberAttackAllTargets}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,0">
+                <StackPanel>
+                    <TextBlock Text="找马 / 攻击 / 巡逻" Style="{StaticResource H2}" />
+                    <WrapPanel Margin="0,14,0,0">
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="找马模式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="72" Text="{Binding FindHorseMode}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="搜索热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="88" Text="{Binding SearchHotkey}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="攻击热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="88" Text="{Binding AttackHotkey}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="坐骑热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="88" Text="{Binding MountHotkey}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="跟随热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="88" Text="{Binding FollowHotkey}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="扫描间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="100" Text="{Binding ScanIntervalMs}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,8">
+                            <TextBlock Text="攻击间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="100" Text="{Binding AttackIntervalMs}" />
+                        </StackPanel>
+                    </WrapPanel>
+                    <WrapPanel Margin="0,6,0,0">
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="内置坐标" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding UseBuiltInRoutes}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,18,8">
+                            <TextBlock Text="自定义坐标" Style="{StaticResource Caption}" Margin="0,0,0,6" />
+                            <CheckBox Style="{StaticResource ToggleSwitch}" IsChecked="{Binding UseCustomRoutes}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="等待 X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="72" Text="{Binding WaitX}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,12,8">
+                            <TextBlock Text="等待 Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                            <TextBox Width="72" Text="{Binding WaitY}" />
+                        </StackPanel>
+                    </WrapPanel>
+                    <Border CornerRadius="8"
+                            Background="{StaticResource Bg.WindowBrush}"
+                            BorderBrush="{StaticResource StrokeBrush}"
+                            BorderThickness="1"
+                            Padding="12"
+                            Margin="0,10,0,0">
+                        <StackPanel>
+                            <TextBlock Text="马贼巡逻导航" Style="{StaticResource H2}" />
+                            <TextBlock Text="找不到目标时按路线巡逻。" Style="{StaticResource Caption}" Margin="0,4,0,10" TextWrapping="Wrap" />
+                            <WrapPanel>
+                                <StackPanel Margin="0,0,12,8">
+                                    <TextBlock Text="巡逻模式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <ComboBox Width="172" ItemsSource="{Binding ReturnNavigationModes}" SelectedItem="{Binding PatrolNavigationMode}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,12,8">
+                                    <TextBlock Text="热键" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="88" Text="{Binding PatrolNavigationHotkey}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,12,8">
+                                    <TextBlock Text="开图延迟 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="96" Text="{Binding PatrolOpenMapDelayMs}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,12,8">
+                                    <TextBlock Text="点击 X" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="72" Text="{Binding PatrolClickX}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,12,8">
+                                    <TextBlock Text="点击 Y" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="72" Text="{Binding PatrolClickY}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,12,8">
+                                    <TextBlock Text="动作间隔 ms" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <TextBox Width="104" Text="{Binding PatrolActionIntervalMs}" />
+                                </StackPanel>
+                                <StackPanel Margin="0,0,0,8">
+                                    <TextBlock Text="发送方式" Style="{StaticResource Caption}" Margin="0,0,0,4" />
+                                    <ComboBox Width="132" ItemsSource="{Binding DispatchModes}" SelectedItem="{Binding PatrolDispatchMode}" />
+                                </StackPanel>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                    <TextBlock Text="目标关键词" Style="{StaticResource Caption}" Margin="0,10,0,4" />
+                    <TextBox Width="640" Text="{Binding TargetKeywords}" />
+                    <TextBlock Text="不去地图" Style="{StaticResource Caption}" Margin="0,10,0,4" />
+                    <TextBox Width="640" Text="{Binding AvoidMaps}" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,14,0,24">
+                <StackPanel>
+                    <TextBlock Text="队伍 / 跟随识别" Style="{StaticResource H2}" />
+                    <TextBlock Text="队伍、跟随、距离。" Style="{StaticResource Caption}" Margin="0,4,0,12" TextWrapping="Wrap" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="队伍状态区域" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <WrapPanel>
+                                <StackPanel Margin="0,0,8,8"><TextBlock Text="X" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding TeamRegionX}" /></StackPanel>
+                                <StackPanel Margin="0,0,8,8"><TextBlock Text="Y" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding TeamRegionY}" /></StackPanel>
+                                <StackPanel Margin="0,0,8,8"><TextBlock Text="宽" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding TeamRegionWidth}" /></StackPanel>
+                                <StackPanel Margin="0,0,0,8"><TextBlock Text="高" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding TeamRegionHeight}" /></StackPanel>
+                            </WrapPanel>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="跟随状态区域" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <WrapPanel>
+                                <StackPanel Margin="0,0,8,8"><TextBlock Text="X" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding FollowRegionX}" /></StackPanel>
+                                <StackPanel Margin="0,0,8,8"><TextBlock Text="Y" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding FollowRegionY}" /></StackPanel>
+                                <StackPanel Margin="0,0,8,8"><TextBlock Text="宽" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding FollowRegionWidth}" /></StackPanel>
+                                <StackPanel Margin="0,0,0,8"><TextBlock Text="高" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding FollowRegionHeight}" /></StackPanel>
+                            </WrapPanel>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="4">
+                            <TextBlock Text="距离文本区域" Style="{StaticResource Caption}" Margin="0,0,0,8" />
+                            <WrapPanel>
+                                <StackPanel Margin="0,0,8,8"><TextBlock Text="X" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding DistanceRegionX}" /></StackPanel>
+                                <StackPanel Margin="0,0,8,8"><TextBlock Text="Y" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding DistanceRegionY}" /></StackPanel>
+                                <StackPanel Margin="0,0,8,8"><TextBlock Text="宽" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding DistanceRegionWidth}" /></StackPanel>
+                                <StackPanel Margin="0,0,0,8"><TextBlock Text="高" Style="{StaticResource Caption}" /><TextBox Width="58" Text="{Binding DistanceRegionHeight}" /></StackPanel>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Grid>
+                    <TextBlock Text="跟随正常关键词" Style="{StaticResource Caption}" Margin="0,10,0,4" />
+                    <TextBox Width="640" Text="{Binding FollowOkKeywords}" />
+                    <TextBlock Text="掉队关键词" Style="{StaticResource Caption}" Margin="0,10,0,4" />
+                    <TextBox Width="640" Text="{Binding LostFollowKeywords}" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

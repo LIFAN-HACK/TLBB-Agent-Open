@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "artifact_id": "interaction_controls_v3_20260714",
+  "annotation_schema": 2,
+  "runtime_authorized": false,
+  "status": "human_review_required",
+  "files": [
+    { "path": "canonical/bag_panel.json", "sha256": "77af3897ffdb557b8cf42ce85083973ca900b7c997c9cc7e1ad5bfd8db923d3e" },
+    { "path": "canonical/bank_panel.json", "sha256": "2bb7f75485af907fa22c3e508895edafccc52d766bc2061d0e4e3e5da62acadd" },
+    { "path": "canonical/material_panel.json", "sha256": "91ef626ddbc693e17f4c4b5bc00dfdf471a8e49134994085c40eb3db467383a1" },
+    { "path": "canonical/monthly_card_panel.json", "sha256": "8d3919cde5d3b3acf48b9e00145e97fa57a15bb1d509db36d824aada2c04748b" },
+    { "path": "canonical/shop_panel.json", "sha256": "6347a5128eec6ee72ff11d1486325da63bb793c8a0f5805b163cd2604f511408" },
+    { "path": "validation.json", "sha256": "ce04104bcb533daab329a3b233f184c3d1b481cb7829b8ebeccfeb3fb098441b" }
+  ],
+  "coordinate_contract": "exact L1 V3 crop, integer xyxy half-open; runtime maps normalized coordinates once",
+  "failure_policy": "unavailable or unauthorized is observation-only and never emits input"
+}

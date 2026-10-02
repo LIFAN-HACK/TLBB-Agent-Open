@@ -1,0 +1,130 @@
+{
+  "artifact_key": "tlbb_l2_slots_20260710_v2",
+  "coordinate_contract": {
+    "l1": "Every L2 worker consumes an L1 crop and its screen xyxy bbox.",
+    "l2": "Results use crop_xyxy and expose screen_* fields after bbox translation.",
+    "screen_coordinate_rule": "screen_x = l1_bbox.x1 + crop_x; screen_y = l1_bbox.y1 + crop_y"
+  },
+  "l1_aux": {
+    "worker": "../l1_ui_aux/ui_aux_locator.py",
+    "config": "../l1_ui_aux/locator_config.json",
+    "classes": [
+      "material_panel",
+      "monthly_card_panel",
+      "shop_panel",
+      "bag_panel",
+      "bank_panel",
+      "death_dialog",
+      "npc_destination_panel",
+      "auto_nav_panel",
+      "confirm_dialog"
+    ],
+    "status": "implemented_template_fallback_and_labeled_for_future_detector_training"
+  },
+  "click_safety_contract": {
+    "fixed_controls": "L1 identity plus an approved in-panel control template or OCR confirmation is required.",
+    "generic_dialogs": "confirm_dialog and npc_destination_panel remain OCR-only.",
+    "shop_sell": "A sell button match never authorizes an item; external item_policy=allow_sell is mandatory.",
+    "unknown": "Unknown identity, state, action, coordinate, or item policy exposes no click."
+  },
+  "action_planner": {
+    "path": "slot_action_planner.py",
+    "modes": [
+      "player_mana",
+      "player_health",
+      "pet_health",
+      "hotkey",
+      "policy",
+      "minimap_tracking",
+      "auto_nav_arrival",
+      "auto_nav_progress",
+      "shop_item_policy"
+    ],
+    "rule": "Only planner output action=click may be executed; minimap single-frame absent/unknown is noop.",
+    "project_overrides": "The packaged planner keeps the project player_health mode and <= threshold semantics while merging the upstream minimap policy."
+  },
+  "slots": {
+    "player": {
+      "input_l1_class": "player_status_panel",
+      "worker": "l2_slot_worker.py --mode player",
+      "outputs": ["hp_ratio", "mp_ratio"],
+      "status": "implemented_color_slot"
+    },
+    "pet": {
+      "input_l1_class": "pet_status_panel",
+      "worker": "l2_slot_worker.py --mode pet",
+      "outputs": ["state", "hp_ratio"],
+      "absence_policy": "No L1 pet panel means resting_or_absent; unknown keeps previous state or noops.",
+      "status": "implemented_color_slot"
+    },
+    "hotkeys": {
+      "input_l1_class": "skill_bar",
+      "worker": "l2_slot_worker.py --mode hotkeys",
+      "outputs": ["F1-F7 slot_bbox", "screen_click_point", "cd_state"],
+      "status": "implemented_color_slot"
+    },
+    "pet_restore_skill": {
+      "input_l1_class": "skill_bar",
+      "worker": "../fixed_ui_slots/fixed_ui_slot_worker.py",
+      "variants": ["blood_sacrifice", "advanced_blood_sacrifice", "symbiosis", "advanced_symbiosis"],
+      "slot_policy": "Scan pet active slot 1 and slot 2; click only when identity_state=matched and cd_state=ready.",
+      "status": "implemented_multi_template_slot"
+    },
+    "minimap_tracking": {
+      "input_l1_class": "minimap",
+      "worker": "l2_slot_worker.py --mode minimap",
+      "temporal_worker": "minimap_temporal_fusion.py",
+      "outputs": ["nearby_monster_state", "monster_markers", "resource_markers", "uu_target_ring_count", "native_or_uu_orange_dot_count", "screen_bbox"],
+      "state_policy": "A marker in any frame is strong positive evidence. Single-frame absence is weak evidence. Stop polling only after at least 5 absent frames spanning 800ms and at least 3 failed target-acquisition attempts; target panel or world-monster evidence overrides absence.",
+      "resource_policy": "Bright yellow diamond/quadrilateral resource markers are explicit non-monsters and never enable attack polling.",
+      "status": "implemented_warm_marker_template_plus_temporal_fusion"
+    },
+    "minimap_coordinate": {
+      "input_l1_class": "minimap",
+      "worker": "minimap_coordinate_worker.py",
+      "templates": "templates/minimap_digits/manifest.json",
+      "outputs": ["coordinate.x", "coordinate.y", "coord_text_screen_roi", "map_name_screen_roi"],
+      "engine_policy": "0-9 pixel templates are primary; Tesseract is fallback only.",
+      "status": "implemented_pixel_template_ocr_slot"
+    },
+    "material": {
+      "input_l1_class": "material_panel",
+      "worker": "../l2_ui_panels/ui_panel_slot_worker.py",
+      "actions": ["manufacture", "manufacture_all", "close"],
+      "status": "implemented_l1_aux_plus_l2_control_slot"
+    },
+    "monthly_card": {
+      "input_l1_class": "monthly_card_panel",
+      "worker": "../l2_ui_panels/ui_panel_slot_worker.py",
+      "actions": ["open_portable_pet_shop", "open_portable_bank", "repair_equipment", "repair_weapon", "repair_artifact", "close"],
+      "status": "implemented_l1_aux_plus_l2_control_slot"
+    },
+    "town_return_and_auto_nav": {
+      "input_l1_classes": ["npc_destination_panel", "auto_nav_panel", "confirm_dialog"],
+      "worker": "../l2_ui_panels/ui_panel_slot_worker.py",
+      "actions": ["accept", "continue", "move", "confirm", "cancel"],
+      "status": "implemented_ocr_gated_low_sample_slot"
+    },
+    "shop_cleanup": {
+      "input_l1_classes": ["shop_panel", "bag_panel", "bank_panel"],
+      "worker": "../l2_ui_panels/ui_panel_slot_worker.py",
+      "actions": ["sell", "organize", "close"],
+      "item_policy": "OCR item name plus external keep/sell allowlist; unknown item never sells.",
+      "status": "implemented_panel_and_action_pipeline_external_item_policy_required"
+    },
+    "death_dialog": {
+      "input_l1_class": "death_dialog",
+      "worker": "../l2_ui_panels/ui_panel_slot_worker.py",
+      "actions": ["revive", "exit"],
+      "status": "implemented_l1_aux_plus_l2_control_slot"
+    }
+  },
+  "known_data_gaps": {
+    "core_l1_r6": "train/artifacts/l1_layout_v2_20260710_r6_pet_lowhp is the promoted model; PT, ONNX, 95-image test, and 450-image regression all passed.",
+    "pet_label_review": "28 changed local pet labels and six target-reviewed overrides are pinned by train/reference/pet_label_manual_review_20260710.json.",
+    "l1_aux_native_variation": "New panel captures are sequential; keep template fallback until independent sessions and native resolutions are collected.",
+    "shop_cleanup": "The visual pipeline is complete, but the project owner must supply the item keep/sell policy.",
+    "town_return": "Only two destination panels and one confirmation dialog are available; retain OCR gating.",
+    "world_monster_detector": "No dedicated world-scene monster detector is promoted yet. Until one exists, repeated target-acquisition misses are required to confirm minimap absence."
+  }
+}

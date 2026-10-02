@@ -1,0 +1,60 @@
+{
+    "schemaVersion":  1,
+    "category":  "monster",
+    "group":  "盐湖",
+    "source":  "https://tl.changyou.com/data/monster/monster28.shtml",
+    "sourceTitle":  "Official TLBB enemy catalog - 盐湖",
+    "generatedBy":  "tools/Sync-OfficialMonsterCatalog.ps1",
+    "entries":  [
+                    {
+                        "name":  "古里赤",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "挖盐苦工",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "挖盐木人",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "雪原怪",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "雪原狼",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "盐湖鳄鱼",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "盐湖熊",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "偃师监工",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "偃师守卫",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    },
+                    {
+                        "name":  "银皑雪人",
+                        "group":  "盐湖",
+                        "allowAttack":  true
+                    }
+                ]
+}

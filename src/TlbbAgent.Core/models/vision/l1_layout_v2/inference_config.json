@@ -1,0 +1,82 @@
+{
+  "artifact_key": "l1_layout_v4_20260712_target_pet_geometry_deployed",
+  "model": "layout_v2_7class.onnx",
+  "weights": "layout_v2_7class.pt",
+  "task": "detect",
+  "hashes": {
+    "onnx_sha256": "903e52f163d2c3467bdb1ec2ea2f8b83df07937e813c0c67d62d4f7305d90a43",
+    "pt_sha256": "a5b5bf88cd61908dc94602e40edcc3010595368644e991a3a30e5bad4a4b8b2d"
+  },
+  "input": {
+    "image_size": 960,
+    "layout": "NCHW",
+    "color": "RGB",
+    "preprocess": "letterbox"
+  },
+  "postprocess": {
+    "confidence_threshold": 0.25,
+    "class_confidence_thresholds": {
+      "target_panel": 0.25,
+      "target_hp_bar": 0.25,
+      "target_name": 0.25,
+      "player_status_panel": 0.25,
+      "pet_status_panel": 0.25,
+      "skill_bar": 0.10,
+      "minimap": 0.25
+    },
+    "iou_threshold": 0.7,
+    "max_detections": 100,
+    "coordinate_space": "source_frame_xyxy_after_letterbox_undo"
+  },
+  "classes": {
+    "0": "target_panel",
+    "1": "target_hp_bar",
+    "2": "target_name",
+    "3": "player_status_panel",
+    "4": "pet_status_panel",
+    "5": "skill_bar",
+    "6": "minimap"
+  },
+  "geometry_contract": {
+    "coordinate_model": "L1 presence classification plus fixed-HUD geometry normalized by detected HUD scale",
+    "target_panel_client_xyxy_1x": [248, 0, 508, 82],
+    "target_hp_bar_semantics": "complete_hp_bar_group_including_all_boss_rows",
+    "target_hp_group_rel_xyxy": [0.1076923077, 0.3170731707, 0.6230769231, 0.6097560976],
+    "target_name_rel_xyxy": [0.1, 0.012195122, 0.6307692308, 0.3414634146],
+    "player_panel_client_xyxy_1x": [0, 0, 240, 66],
+    "pet_panel_client_xyxy_1x": [78, 70, 240, 138],
+    "supported_hud_scale": [0.5, 1.6]
+  },
+  "training": {
+    "dataset": "layout_v4_combined_20260712_target_pet_geometry",
+    "images": 936,
+    "splits": {
+      "train": 681,
+      "val": 160,
+      "test": 95
+    },
+    "best_epoch": 47,
+    "best_val_map50": 0.995,
+    "best_val_map50_95": 0.99349,
+    "source_dataset": "layout_v2_combined_20260710_r6_pet_lowhp"
+  },
+  "test": {
+    "onnxruntime": {
+      "metrics/precision(B)": 0.9979566305,
+      "metrics/recall(B)": 0.9984962406,
+      "metrics/mAP50(B)": 0.9934962406,
+      "metrics/mAP50-95(B)": 0.9926130985,
+      "fitness": 0.9926130985
+    }
+  },
+  "l2_contract": {
+    "player_status_panel": "send L1 crop to l2_slots --mode player",
+    "pet_status_panel": "send L1 crop to l2_slots --mode pet; on L1 miss verify scaled fixed client ROI before changing state",
+    "skill_bar": "send normalized content crop to identity and CD slots; on L1 miss use scaled bottom-center ROI as an untrusted candidate",
+    "minimap": "send L1 crop to temporally fused marker and coordinate slots",
+    "target_panel": "overall target frame",
+    "target_hp_bar": "complete HP group for normal and three-row boss targets",
+    "target_name": "OCR-safe target name strip for OpenText"
+  },
+  "failure_policy": "Fallback ROIs never authorize actions by themselves. Unknown identity, unknown CD, ambiguous HP, or fewer than five consecutive pet-absence observations must remain no-click/unknown."
+}

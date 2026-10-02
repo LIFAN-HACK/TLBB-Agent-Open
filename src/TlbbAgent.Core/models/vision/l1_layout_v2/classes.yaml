@@ -1,0 +1,8 @@
+names:
+  0: target_panel
+  1: target_hp_bar
+  2: target_name
+  3: player_status_panel
+  4: pet_status_panel
+  5: skill_bar
+  6: minimap

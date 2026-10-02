@@ -1,0 +1,20 @@
+{
+  "artifact_key": "l1_layout_v4_20260712_target_pet_geometry_deployed",
+  "files": [
+    {
+      "path": "classes.yaml",
+      "size": 144,
+      "sha256": "71c573b8ca6d535c44481b07fe63d4daee9cfd3a27082e72fc32bd8be62d559e"
+    },
+    {
+      "path": "inference_config.json",
+      "size": 3109,
+      "sha256": "820ac7e96612cde1b9d9a3c2b049ef62b6cdb56a8abbaa8e2e402b7b3f47705d"
+    },
+    {
+      "path": "layout_v2_7class.onnx",
+      "size": 12480179,
+      "sha256": "903e52f163d2c3467bdb1ec2ea2f8b83df07937e813c0c67d62d4f7305d90a43"
+    }
+  ]
+}

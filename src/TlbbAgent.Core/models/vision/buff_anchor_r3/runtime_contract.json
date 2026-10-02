@@ -1,0 +1,8 @@
+{
+  "model_role": "l1_auxiliary_coordinate_detector",
+  "output": "visible first Buff row bbox",
+  "not_l2_state_model": true,
+  "derived_roi": "measure icon pitch inside detected row, then expand to 6 columns and 5 rows",
+  "failure_policy": "low confidence returns unknown/noop; never infer mounted or cooldown from L1",
+  "authorization": "candidate_only_pending_visual_review_and_independent_hard_negative_test"
+}

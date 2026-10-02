@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "artifact_id": "system_feedback_region_l1_v2",
+  "classes": [
+    "system_feedback_region"
+  ],
+  "input": {
+    "imgsz": 960
+  },
+  "postprocess": {
+    "confidence_threshold": 0.4,
+    "nms_iou_threshold": 0.7,
+    "max_detections": 20,
+    "center_x_tolerance_normalized": 0.11,
+    "center_y_min_normalized": 0.015,
+    "center_y_max_normalized": 0.27,
+    "merge_horizontal_gap_normalized": 0.08,
+    "merge_vertical_gap_normalized": 0.025,
+    "merge_center_x_distance_normalized": 0.12
+  },
+  "hashes": {
+    "onnx_sha256": "56fb1054252da8583be9b34ea136363a2a0d5809e9add4f7c48235b7d3768bae"
+  }
+}

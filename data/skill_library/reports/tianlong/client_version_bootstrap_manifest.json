@@ -1,0 +1,232 @@
+{
+  "schema": 1,
+  "sect": "天龙",
+  "purpose": "global_skill_library_bootstrap_for_client_version",
+  "safety_policy": "candidate_only_until_reviewed_ingame_templates_exist",
+  "capture_requirements": {
+    "scope": "one-time shared asset production; never per player or per slot arrangement",
+    "client_version": "0.08.1808 or record the actual tested version",
+    "states": [
+      "ready_without_cd_overlay",
+      "cooling_with_gray_or_digit_overlay"
+    ],
+    "minimum_ready_samples_per_visible_skill": 2,
+    "minimum_cooling_samples_per_visible_skill": 2,
+    "resolutions": [
+      "native",
+      "0.75_scale",
+      "0.50_scale"
+    ],
+    "crop_source": "L1 skill_bar crop; never use a hand-entered full-screen absolute ROI"
+  },
+  "skills": [
+    {
+      "skill_id": "tl_001",
+      "name": "正阳手",
+      "official_icon": "icons_raw/tl_001.jpg",
+      "official_sha256": "0a3399778ac42ce98c7b083e61bccfc2aa4318626315d82115ffde80e3447436",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_002",
+      "name": "三阳开泰",
+      "official_icon": "icons_raw/tl_002.jpg",
+      "official_sha256": "d59b2d06312fdc6d208f921cf5c33507bc57154a4cd4696545c5ee23623a60d0",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_003",
+      "name": "正气浩然",
+      "official_icon": "icons_raw/tl_003.jpg",
+      "official_sha256": "145738dea6fed8086241c9d22e604916c53ef3cf0f04afb3588665d7da2cae5b",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_004",
+      "name": "一阳指",
+      "official_icon": "icons_raw/tl_004.jpg",
+      "official_sha256": "cf86950e5e145510f27d0dcc21162d0caf56eb154deaefa13e71365e359095d4",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_005",
+      "name": "衔枚疾走",
+      "official_icon": "icons_raw/tl_005.jpg",
+      "official_sha256": "39e78e68f9d807fbf494a97e397c4b8a6ece0abc658e598f1abc1d004ec18a5f",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_006",
+      "name": "八门金锁",
+      "official_icon": "icons_raw/tl_006.jpg",
+      "official_sha256": "b90285cd96b8775fa06e3daed65fa2e3befc176c20711c022f8d67881620c6c0",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_007",
+      "name": "以逸待劳",
+      "official_icon": "icons_raw/tl_007.jpg",
+      "official_sha256": "b3f9808604093d66e9bfe6b07097bd2b7a4923cdf80f16c5ae7159c058165ac5",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_008",
+      "name": "指点江山",
+      "official_icon": "icons_raw/tl_008.jpg",
+      "official_sha256": "b939e64f26ddbd4a837140e67503ce65abb8cbf54d9e96132f608295e084fcd9",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_009",
+      "name": "天罡正气",
+      "official_icon": "icons_raw/tl_009.jpg",
+      "official_sha256": "e04695c0b71926aa07af6413fd8f5014dea789d3b466e9bb5dc5e6f965cb2218",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_010",
+      "name": "静影沉璧",
+      "official_icon": "icons_raw/tl_010.jpg",
+      "official_sha256": "f87f2e60abad8cda30199b2ba87f69ff3ea935777c23cb2d861cec619ef9a2de",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_011",
+      "name": "涂漆术",
+      "official_icon": "icons_raw/tl_011.jpg",
+      "official_sha256": "c98619b10bf0abe0c81e3eb954e9ba5a6b3ba4c6c859cc2815c0560668583084",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_012",
+      "name": "欲擒故纵",
+      "official_icon": "icons_raw/tl_012.jpg",
+      "official_sha256": "1facb7a4220777ac603c0f49ba2eee2c0b07fb6ced95536e27782f036a6d89f2",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_013",
+      "name": "截拳式",
+      "official_icon": "icons_raw/tl_013.jpg",
+      "official_sha256": "83d8cb357046fc3f34bad838683a9de58eb76ba13efae092b1dc18a33cc6952c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_014",
+      "name": "白虹贯日",
+      "official_icon": "icons_raw/tl_014.jpg",
+      "official_sha256": "9f979c336585fb16b9c584a48711a32d4ae485040c69bab8391e3156b6c8ec7d",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_015",
+      "name": "磨砺术",
+      "official_icon": "icons_raw/tl_015.jpg",
+      "official_sha256": "7b451a7f984ac882bd1aa843f9982fc13aa6577d92d2d02409dc37e0f3e4ab9a",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_016",
+      "name": "雪拥蓝关",
+      "official_icon": "icons_raw/tl_016.jpg",
+      "official_sha256": "ead3d3a31d2f1c020a504a01ac53c4088d8062f53b13feeb998b8a5793be75c0",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_017",
+      "name": "破剑式",
+      "official_icon": "icons_raw/tl_017.jpg",
+      "official_sha256": "0c004845c8090d4274dbe20886b8398843e2e0e2928b6cebf729f01a820628c9",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_018",
+      "name": "金玉满堂",
+      "official_icon": "icons_raw/tl_018.jpg",
+      "official_sha256": "2099997b43d47bf8a5e145163bc923a50440d09abfcb8e392baf591da2e2fd47",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_019",
+      "name": "万岳朝宗",
+      "official_icon": "icons_raw/tl_019.jpg",
+      "official_sha256": "04486d6da6c02e9b143cd2baa3479e36dd777c1a568712eac0cbc79fd98b7cd2",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_020",
+      "name": "非枯非荣",
+      "official_icon": "icons_raw/tl_020.jpg",
+      "official_sha256": "f3f16b5b6440aebc35d7dbcc9b435d8aa8e20000fdc0676211d10b522cf4a5ba",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_021",
+      "name": "百步穿杨",
+      "official_icon": "icons_raw/tl_021.jpg",
+      "official_sha256": "919f8bada9aedc0ee8c7287554fdd515975d465cbe9dcbb91a4b53e38b298281",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_022",
+      "name": "商阳剑",
+      "official_icon": "icons_raw/tl_022.jpg",
+      "official_sha256": "97cbb316e17ea2440009d5f2efb13166d0452c2ec78f4caeea010c25871fd909",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_023",
+      "name": "少泽剑",
+      "official_icon": "icons_raw/tl_023.jpg",
+      "official_sha256": "60129b5f4870542446591c035e8636583100d5e8f0abea5091c2ea922c86fdd7",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_024",
+      "name": "中冲剑",
+      "official_icon": "icons_raw/tl_024.jpg",
+      "official_sha256": "8bd870b67a62ad71fdc37fd9096c2bbc1dfd8d3e47e3615c3280a09ebb14858c",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_025",
+      "name": "龙盘斗里",
+      "official_icon": "icons_raw/tl_025.jpg",
+      "official_sha256": "5c000c19c5fb6c1598620852bdc1c0066cad0e1b4bcb942b4bfb15aa4afb4849",
+      "ingame_variants": [],
+      "state": "capture_required"
+    },
+    {
+      "skill_id": "tl_026",
+      "name": "黄龙怒鸣",
+      "official_icon": "icons_raw/tl_026.jpg",
+      "official_sha256": "ef7e9ef1e1486127dac3bb6dabcb7e9a9d7c8e071b1790bf7b61ecd2ab91243d",
+      "ingame_variants": [],
+      "state": "capture_required"
+    }
+  ]
+}
